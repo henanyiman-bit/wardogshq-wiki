@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "routeIntegrity": {
+    "missingOrMismatched": [],
+    "count": 0
+  },
+  "internalLinks": {
+    "broken": [],
+    "brokenCount": 0,
+    "orphanIndexablePages": [],
+    "orphanCount": 0
+  },
+  "dataQA": {
+    "duplicateEntityIds": [],
+    "invalidEntityReferences": [],
+    "missingRequiredFrontmatter": []
+  },
+  "searchQA": {
+    "pagefindLoaderReferenced": true,
+    "bodyScoped": true,
+    "repeatedChromeIgnored": true
+  },
+  "mediaQA": {
+    "renderedLocalImages": 0,
+    "brokenLocalMedia": 0,
+    "officialLaunchVideoIdPresent": true,
+    "mediaRegistryRecords": 7,
+    "note": "Remote image research records are not rendered in Phase 3; therefore unresolved remote image dimensions do not create broken public media."
+  },
+  "mobileUIQA": {
+    "375": true,
+    "390": true,
+    "430": true,
+    "tableOverflowFallback": true,
+    "searchStacksOnMobile": true,
+    "headerNavHidesBelow780": true
+  },
+  "performanceQA": {
+    "staticOutput": true,
+    "clientDirectives": 0,
+    "searchOnlyRuntimeJS": true,
+    "responsiveVideo": true
+  },
+  "crossSiteDifferentiation": {
+    "themeFingerprint": "Industrial Field Manual",
+    "homepagePriority": "Money / Map / Loadouts / Vehicles / Weapons / FOB / beginner intent",
+    "genericTemplateSwapRejected": true
+  },
+  "phase5BuildRun": false,
+  "notes": [
+    "Actual Astro/Zod/Pagefind build remains locked to Phase 5.",
+    "Deployment domain is not supplied; SITE environment variable must be set before publication so canonicals/robots use the final domain."
+  ]
+}

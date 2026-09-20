@@ -1,0 +1,66 @@
+---
+const { updated, pageType } = Astro.props;
+const updatedText = updated ? new Date(updated).toISOString().slice(0,10) : '2026-09-20';
+const category = pageType === 'archive' ? 'Database / reference' : pageType === 'hub' ? 'Wiki hub' : 'Guide / reference';
+---
+<aside class="wiki-sidebar" data-pagefind-ignore>
+  <section class="side-card side-card--facts">
+    <h2>Wiki snapshot</h2>
+    <dl class="side-facts">
+      <div><dt>Category</dt><dd>{category}</dd></div>
+      <div><dt>Season</dt><dd>Season 1</dd></div>
+      <div><dt>Patch</dt><dd>0.11 snapshot</dd></div>
+      <div><dt>Game status</dt><dd>Early Access</dd></div>
+      <div><dt>Updated</dt><dd>{updatedText}</dd></div>
+    </dl>
+  </section>
+
+  <section class="side-card">
+    <h2>On this page</h2>
+    <nav id="auto-toc" class="auto-toc" aria-label="Table of contents"></nav>
+  </section>
+
+  <section class="side-card">
+    <h2>Primary sources</h2>
+    <nav class="side-links">
+      <a href="https://www.team17.com/games/wardogs" rel="nofollow">Team17 game page</a>
+      <a href="https://store.steampowered.com/app/1867240/WARDOGS/" rel="nofollow">WARDOGS on Steam</a>
+    </nav>
+    <p class="source-note">Community-observed mechanics are labeled in the article instead of being presented as official facts.</p>
+  </section>
+
+  <section class="side-card">
+    <h2>Wiki navigation</h2>
+    <nav class="side-links">
+      <a href="/guide/how-to-play/">Beginner guide</a>
+      <a href="/money/">Money</a>
+      <a href="/map/">Map</a>
+      <a href="/loadouts/">Loadouts</a>
+      <a href="/building/fob/">FOB building</a>
+      <a href="/vehicles/">Vehicles</a>
+      <a href="/weapons/">Weapons</a>
+      <a href="/progression/">Progression</a>
+    </nav>
+  </section>
+</aside>
+
+<script is:inline>
+(() => {
+  const toc = document.getElementById('auto-toc');
+  const root = document.querySelector('.wiki-main');
+  if (!toc || !root) return;
+  const headings = [...root.querySelectorAll('h2, h3')];
+  if (!headings.length) {
+    toc.innerHTML = '<span class="toc-empty">No subsections</span>';
+    return;
+  }
+  headings.forEach((heading, i) => {
+    if (!heading.id) heading.id = `section-${i + 1}`;
+    const a = document.createElement('a');
+    a.href = `#${heading.id}`;
+    a.textContent = heading.textContent || `Section ${i + 1}`;
+    if (heading.tagName === 'H3') a.className = 'toc-h3';
+    toc.appendChild(a);
+  });
+})();
+</script>

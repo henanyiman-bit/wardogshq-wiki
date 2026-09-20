@@ -1,0 +1,34 @@
+{
+  "mode": "AUTO_WIKI_MODE",
+  "themeName": "Industrial Field Manual",
+  "fingerprint": "wardogs-industrial-grid-amber-signal",
+  "visualIntent": "dense tactical field manual, not a marketing landing page",
+  "tokens": {
+    "background": "#0b0d0f",
+    "surface": "#12161a",
+    "surfaceRaised": "#181d22",
+    "text": "#e8ebed",
+    "muted": "#99a1a8",
+    "accent": "#d5a63a",
+    "danger": "#cc5c4a",
+    "border": "#2a3036",
+    "radius": "10px",
+    "contentWidth": "1180px"
+  },
+  "homepageComposition": [
+    "identity rail",
+    "hero search",
+    "official Steam CTA",
+    "game overview",
+    "five high-priority hubs",
+    "quick facts",
+    "current version",
+    "media"
+  ],
+  "differentiation": [
+    "map/economy weighted navigation",
+    "field-report cards",
+    "high-density tables for vehicle/progression data",
+    "community-observed mechanic callouts"
+  ]
+}

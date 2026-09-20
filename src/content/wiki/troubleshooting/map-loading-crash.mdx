@@ -1,0 +1,58 @@
+---
+title: "WARDOGS Crash When Loading a Map: Troubleshooting Checklist"
+description: "WARDOGS map-loading crash troubleshooting flow that separates service issues, server-specific failures and local client problems without recommending unsafe file changes."
+primaryKeyword: "wardogs crash when loading map"
+intent: "Troubleshooting"
+pageType: "guide"
+canonicalPath: "/troubleshooting/map-loading-crash/"
+indexable: true
+priority: "P1"
+updated: "2026-09-20"
+pageId: "map-crash"
+---
+import MediaFigure from '../../../components/wiki/MediaFigure.astro';
+
+<div class="ref-portal">
+  <div class="ref-portal-copy">
+    <span class="ref-kicker">TROUBLESHOOTING FLOW</span>
+    <h2>Separate a service problem from a server problem from a local crash</h2>
+    <p>The current source set does not establish one universal cause for map-loading crashes. Use a controlled triage sequence instead of deleting files at random.</p>
+    <div class="ref-stat-grid">
+      <div><small>First check</small><strong>Service / maintenance</strong></div>
+      <div><small>Second check</small><strong>Another server</strong></div>
+      <div><small>Local repair</small><strong>Verify only after reproducing</strong></div>
+    </div>
+  </div>
+  <MediaFigure src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/e2b163a2a2679533f65cf408b30e3d8966bd81f5/ss_e2b163a2a2679533f65cf408b30e3d8966bd81f5.1920x1080.jpg?t=1785318392" fallback="/media/wiki/map-objective-stack.svg" fallbackFit="contain" alt="WARDOGS map session used as loading-crash troubleshooting context" title="A failed load does not identify the cause by itself" explanation="Test the service, server and local-client layers separately before changing files or reinstalling." />
+</div>
+
+## Triage in this order
+
+<div class="ref-timeline">
+<div><time>Step 1</time><section><strong>Check service status and maintenance</strong><span>If many players or servers are affected, local repair is unlikely to be the first useful step.</span></section></div>
+<div><time>Step 2</time><section><strong>Try another server</strong><span>Compare one Official and one Community server when both are available.</span></section></div>
+<div><time>Step 3</time><section><strong>Restart the game and Steam</strong><span>Reproduce the same failure before escalating.</span></section></div>
+<div><time>Step 4</time><section><strong>Verify game files</strong><span>Use Steam's verification flow before reinstalling the whole game.</span></section></div>
+<div><time>Step 5</time><section><strong>Test without nonessential overlays</strong><span>Remove injected variables for one clean reproduction attempt.</span></section></div>
+<div><time>Step 6</time><section><strong>Record the failure</strong><span>Note the map, server type, error text, time and whether another server loads successfully.</span></section></div>
+</div>
+
+## Why the service check comes first
+
+Launch-period official updates acknowledged server-join failures, unexpected kicks and long login queues. Those are not the same thing as a local map-loading crash, but they prove that a failed session can originate outside the local game files.
+
+<div class="ref-split">
+<div class="ref-panel"><h3>Safe local checks</h3><ul><li>Confirm your PC meets the published minimum requirements.</li><li>Update the GPU driver and Windows.</li><li>Restart Steam and the game.</li><li>Verify files through Steam.</li><li>Temporarily disable nonessential overlays for one test.</li></ul></div>
+<MediaFigure src="https://www.team17.com/hs-fs/hubfs/WD_Screenshot_River_2_WD1.jpg?length=1000&name=WD_Screenshot_River_2_WD1.jpg" fallback="/media/wiki/map-objective-stack.svg" fallbackFit="contain" alt="WARDOGS map environment used as server-versus-map troubleshooting context" title="Compare more than one map or server" explanation="A single failing session is not enough evidence to diagnose the whole installation. Reproduce the problem under a second condition before escalating." />
+</div>
+
+## Avoid unsafe or low-evidence fixes
+
+This Wiki does **not** recommend deleting undocumented configuration folders, modifying anti-cheat internals or downloading third-party “repair” packages. Those steps are difficult to validate and can introduce a second problem before the first one is understood.
+
+## Related pages
+
+- [Community Servers](/community-servers/)
+- [System Requirements](/system-requirements/)
+- [Updates](/updates/)
+- [Guide Hub](/guide/)

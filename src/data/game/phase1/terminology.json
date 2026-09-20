@@ -1,0 +1,48 @@
+{
+  "canonical": [
+    {
+      "term": "WARDOGS",
+      "aliases": [
+        "Wardogs"
+      ],
+      "type": "game"
+    },
+    {
+      "term": "Control Zone",
+      "aliases": [],
+      "type": "game_system"
+    },
+    {
+      "term": "Hot Zone",
+      "aliases": [],
+      "type": "game_system"
+    },
+    {
+      "term": "Valkyra",
+      "aliases": [],
+      "type": "faction"
+    },
+    {
+      "term": "Lonestar",
+      "aliases": [],
+      "type": "faction"
+    },
+    {
+      "term": "Manticore",
+      "aliases": [],
+      "type": "faction"
+    },
+    {
+      "term": "GeForce NOW",
+      "aliases": [
+        "GeForce Now"
+      ],
+      "type": "platform_service"
+    }
+  ],
+  "normalizationRules": [
+    "Use official capitalization where available.",
+    "Do not conflate Control Zone with Hot Zone.",
+    "Keep vehicle variants as distinct entities when the official changelog names them separately."
+  ]
+}

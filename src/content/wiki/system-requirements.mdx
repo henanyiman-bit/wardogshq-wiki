@@ -1,0 +1,77 @@
+---
+title: "WARDOGS System Requirements: Minimum & Recommended PC Specs"
+description: "Official WARDOGS PC requirements with minimum and recommended hardware, target resolution, quality presets, upscaling assumptions and troubleshooting context."
+primaryKeyword: "wardogs system requirements"
+intent: "Informational"
+pageType: "guide"
+canonicalPath: "/system-requirements/"
+indexable: true
+priority: "P1"
+updated: "2026-09-20"
+pageId: "system-requirements"
+---
+import MediaFigure from '../../components/wiki/MediaFigure.astro';
+
+<div class="ref-portal">
+  <div class="ref-portal-copy">
+    <span class="ref-kicker">PC REQUIREMENTS</span>
+    <h2>The performance target matters as much as the hardware list</h2>
+    <p>Steam publishes separate minimum and recommended targets. The important difference is not only the GPU name: resolution, preset and upscaling assumptions change what each tier is promising.</p>
+    <div class="ref-stat-grid">
+      <div><small>Memory</small><strong>16 GB</strong></div>
+      <div><small>Storage</small><strong>50 GB</strong></div>
+      <div><small>Platform</small><strong>64-bit Windows PC</strong></div>
+    </div>
+  </div>
+  <MediaFigure src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/3346771e7507b80daddf2d84c13b27b8e06bc77d/ss_3346771e7507b80daddf2d84c13b27b8e06bc77d.1920x1080.jpg?t=1785318392" fallback="/media/wiki/map-terrain-routing.svg" fallbackFit="contain" alt="WARDOGS large battlefield scene used as performance-target context" title="Large-scale combat is the context behind the PC targets" explanation="Compare your hardware against the target resolution and preset listed by Steam, not against a GPU name in isolation." />
+</div>
+
+## Official PC requirements
+
+<div class="table-wrap">
+
+| | Minimum | Recommended |
+|---|---|---|
+| OS | Windows 10 | Windows 11 |
+| CPU | Intel Core i5-8600 / AMD Ryzen 5 3500 | Intel Core i7-12700K / AMD Ryzen 7 5700X |
+| Memory | 16 GB RAM | 16 GB RAM |
+| GPU | Nvidia GTX 1660 / Radeon RX 590 | Nvidia RTX 3070 / Radeon RX 6700 XT |
+| Storage | 50 GB available | 50 GB available |
+| Network | Broadband internet | Broadband internet |
+| Steam target | 1080p Low · 60 FPS · upscaled | 1440p Medium · 70+ FPS native, or 4K Medium · 60+ FPS upscaled |
+
+</div>
+
+## How to read the two tiers
+
+<div class="ref-index-grid">
+<div class="ref-index-card"><strong>Minimum is not “1080p native”</strong><span>Steam explicitly ties the minimum tier to 1080p Low at 60 FPS with upscaling.</span><small>Target context</small></div>
+<div class="ref-index-card"><strong>Recommended is a higher render target</strong><span>The recommended tier targets 1440p Medium above 70 FPS natively, or 4K Medium around 60 FPS with upscaling.</span><small>Target context</small></div>
+<div class="ref-index-card"><strong>RAM and storage do not change by tier</strong><span>Both official tiers list 16 GB memory and 50 GB available storage.</span><small>Shared baseline</small></div>
+</div>
+
+## Before blaming the game or the PC
+
+<div class="ref-split">
+<div class="ref-panel">
+<h3>Use a controlled test</h3>
+<p>Match the Steam target as closely as possible: resolution, quality preset and whether upscaling is enabled. A result at a completely different target is not a direct comparison with the published requirement.</p>
+<ul>
+<li>Confirm the game is using the discrete GPU.</li>
+<li>Update the graphics driver and reboot.</li>
+<li>Disable nonessential overlays for one test run.</li>
+<li>Check whether the issue is map-specific, server-specific or global.</li>
+</ul>
+</div>
+<MediaFigure src="https://www.team17.com/hs-fs/hubfs/WD_Screenshot_Foundry_1_WD1.jpg?length=1000&name=WD_Screenshot_Foundry_1_WD1.jpg" fallback="/media/wiki/map-terrain-routing.svg" fallbackFit="contain" alt="WARDOGS dense foundry combat scene used as graphics-load context" title="Dense scenes are a better stress test than an empty menu" explanation="A representative combat scene gives more useful performance context than comparing frame rate only in menus or low-load areas." />
+</div>
+
+## What this page does not claim
+
+The official requirements do not provide a universal CPU/GPU benchmark table for every modern component. This Wiki therefore does not convert the published parts into unsupported equivalence tiers or guaranteed frame rates on unlisted hardware.
+
+## Related pages
+
+- [Map Loading Crash](/troubleshooting/map-loading-crash/)
+- [Early Access](/early-access/)
+- [Guide Hub](/guide/)

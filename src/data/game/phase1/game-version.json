@@ -1,0 +1,13 @@
+{
+  "releaseChannel": "Steam Early Access",
+  "earlyAccessReleaseDate": "2026-09-10",
+  "currentVersion": "Patch 0.11",
+  "currentVersionBasis": "Latest numbered patch found in official WARDOGS announcements checked 2026-09-19; later official post on Sep 15 was a sales milestone, not a newer numbered patch.",
+  "season": "Season 1",
+  "versionSensitive": true,
+  "sources": [
+    "src-patch011",
+    "src-steam-announcements",
+    "src-season1"
+  ]
+}

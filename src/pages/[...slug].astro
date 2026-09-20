@@ -1,0 +1,26 @@
+---
+import { getCollection, render } from 'astro:content';
+import WikiLayout from '../layouts/WikiLayout.astro';
+import PageSidebar from '../components/wiki/PageSidebar.astro';
+export async function getStaticPaths() {
+  const pages = await getCollection('wiki');
+  return pages.map((page) => {
+    const canonicalPath = page.data.canonicalPath;
+    const slug = canonicalPath.replace(/^\/+|\/+$/g, '');
+    return { params: { slug }, props: { page } };
+  });
+}
+const { page } = Astro.props;
+const { Content } = await render(page);
+const contentOwnsH1 = new Set(['/money/', '/map/', '/loadouts/', '/progression/']).has(page.data.canonicalPath);
+---
+<WikiLayout title={page.data.title} description={page.data.description} canonicalPath={page.data.canonicalPath} indexable={page.data.indexable} pageType={page.data.pageType === 'archive' || page.data.pageType === 'hub' ? 'CollectionPage' : 'Article'}>
+  <div class="wiki-content-grid">
+    <div class="wiki-main">
+      <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">WARDOGS Wiki</a><span>›</span><span>{page.data.title}</span></nav>
+      {!contentOwnsH1 && <h1>{page.data.title}</h1>}
+      <Content />
+    </div>
+    <PageSidebar updated={page.data.updated} pageType={page.data.pageType} />
+  </div>
+</WikiLayout>

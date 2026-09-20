@@ -1,0 +1,51 @@
+{
+  "game": "WARDOGS",
+  "mode": "AUTO_WIKI_MODE",
+  "keywordSourceOfTruth": "user uploaded keyword files",
+  "inputKeywordCount": 562,
+  "uniqueNormalizedKeywords": 551,
+  "clusters": 37,
+  "plannedPages": 36,
+  "indexablePages": 30,
+  "holdNoindexPages": 6,
+  "principles": [
+    "one URL = one primary intent",
+    "same intent merges into authority page",
+    "long-tail does not automatically create a page",
+    "unsupported/ambiguous queries do not become indexable pages",
+    "entity pages require independent page value"
+  ],
+  "priorityHubs": [
+    "/money/",
+    "/map/",
+    "/loadouts/",
+    "/vehicles/",
+    "/weapons/"
+  ],
+  "publicationHolds": [
+    {
+      "url": "/map/interactive/",
+      "reason": "Intent exists, but publication/indexing is gated until enough unique validated data or a real functional tool/data asset exists."
+    },
+    {
+      "url": "/map/mortar-artillery/",
+      "reason": "Intent exists, but publication/indexing is gated until enough unique validated data or a real functional tool/data asset exists."
+    },
+    {
+      "url": "/factions/valkyra/",
+      "reason": "Intent exists, but publication/indexing is gated until enough unique validated data or a real functional tool/data asset exists."
+    },
+    {
+      "url": "/factions/lonestar/",
+      "reason": "Intent exists, but publication/indexing is gated until enough unique validated data or a real functional tool/data asset exists."
+    },
+    {
+      "url": "/factions/manticore/",
+      "reason": "Intent exists, but publication/indexing is gated until enough unique validated data or a real functional tool/data asset exists."
+    },
+    {
+      "url": "/settings/",
+      "reason": "Intent exists, but publication/indexing is gated until enough unique validated data or a real functional tool/data asset exists."
+    }
+  ]
+}

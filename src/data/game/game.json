@@ -1,0 +1,42 @@
+{
+  "id": "game-wardogs",
+  "name": "WARDOGS",
+  "slug": "wardogs",
+  "platforms": [
+    "Windows PC (Steam Early Access)",
+    "GeForce NOW"
+  ],
+  "genres": [
+    "FPS",
+    "Tactical",
+    "Action",
+    "Massively Multiplayer",
+    "Simulation"
+  ],
+  "developer": "BULKHEAD",
+  "publisher": "Team17",
+  "releaseDate": "2026-09-10",
+  "currentVersion": "Patch 0.11",
+  "summary": "A tactical all-out warfare FPS with up to 100 players split across three teams fighting over a Control Zone in a destructible Eastern European battlefield.",
+  "coreGameplay": [
+    "three-team Control Zone warfare",
+    "combined-arms combat",
+    "cash-based loadout purchasing",
+    "teamplay rewards",
+    "building",
+    "destruction",
+    "vehicles",
+    "local voice chat"
+  ],
+  "keySystems": [
+    "Control Zone",
+    "Hot Zone",
+    "persistent cash economy",
+    "loadouts",
+    "vehicles",
+    "building",
+    "destruction",
+    "role progression",
+    "community servers"
+  ]
+}

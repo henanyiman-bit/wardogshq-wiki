@@ -1,0 +1,176 @@
+[
+  {
+    "entityId": "faction-valkyra",
+    "entityName": "Valkyra",
+    "entityType": "faction",
+    "ownerUrl": "/factions/"
+  },
+  {
+    "entityId": "faction-lonestar",
+    "entityName": "Lonestar",
+    "entityType": "faction",
+    "ownerUrl": "/factions/"
+  },
+  {
+    "entityId": "faction-manticore",
+    "entityName": "Manticore",
+    "entityType": "faction",
+    "ownerUrl": "/factions/"
+  },
+  {
+    "entityId": "system-control-zone",
+    "entityName": "Control Zone",
+    "entityType": "game_system",
+    "ownerUrl": "/map/control-zone/"
+  },
+  {
+    "entityId": "system-hot-zone",
+    "entityName": "Hot Zone",
+    "entityType": "game_system",
+    "ownerUrl": "/map/control-zone/"
+  },
+  {
+    "entityId": "role-career",
+    "entityName": "Career",
+    "entityType": "progression_role",
+    "ownerUrl": "/progression/"
+  },
+  {
+    "entityId": "role-medic",
+    "entityName": "Medic",
+    "entityType": "progression_role",
+    "ownerUrl": "/progression/"
+  },
+  {
+    "entityId": "role-support",
+    "entityName": "Support",
+    "entityType": "progression_role",
+    "ownerUrl": "/progression/"
+  },
+  {
+    "entityId": "role-driver",
+    "entityName": "Driver",
+    "entityType": "progression_role",
+    "ownerUrl": "/progression/"
+  },
+  {
+    "entityId": "role-pilot",
+    "entityName": "Pilot",
+    "entityType": "progression_role",
+    "ownerUrl": "/progression/"
+  },
+  {
+    "entityId": "vehicle-z20-lakota",
+    "entityName": "Z20 Lakota",
+    "entityType": "vehicle",
+    "ownerUrl": "/vehicles/"
+  },
+  {
+    "entityId": "vehicle-ural",
+    "entityName": "URAL",
+    "entityType": "vehicle",
+    "ownerUrl": "/vehicles/"
+  },
+  {
+    "entityId": "vehicle-dune-buggy",
+    "entityName": "Dune Buggy",
+    "entityType": "vehicle",
+    "ownerUrl": "/vehicles/"
+  },
+  {
+    "entityId": "vehicle-kodiak-flatbed",
+    "entityName": "Kodiak Flatbed",
+    "entityType": "vehicle",
+    "ownerUrl": "/vehicles/"
+  },
+  {
+    "entityId": "vehicle-kodiak-assault",
+    "entityName": "Kodiak Assault",
+    "entityType": "vehicle",
+    "ownerUrl": "/vehicles/"
+  },
+  {
+    "entityId": "vehicle-ural-covered",
+    "entityName": "URAL Covered",
+    "entityType": "vehicle",
+    "ownerUrl": "/vehicles/"
+  },
+  {
+    "entityId": "vehicle-ural-attack",
+    "entityName": "URAL Attack",
+    "entityType": "vehicle",
+    "ownerUrl": "/vehicles/"
+  },
+  {
+    "entityId": "vehicle-humvee-with-minigun",
+    "entityName": "Humvee with minigun",
+    "entityType": "vehicle",
+    "ownerUrl": "/vehicles/"
+  },
+  {
+    "entityId": "vehicle-heavy-tank",
+    "entityName": "Heavy Tank",
+    "entityType": "vehicle",
+    "ownerUrl": "/vehicles/"
+  },
+  {
+    "entityId": "vehicle-artillery-tank",
+    "entityName": "Artillery Tank",
+    "entityType": "vehicle",
+    "ownerUrl": "/vehicles/"
+  },
+  {
+    "entityId": "equipment-large-supply-crate",
+    "entityName": "Large Supply Crate",
+    "entityType": "equipment",
+    "ownerUrl": null
+  },
+  {
+    "entityId": "equipment-large-hammer",
+    "entityName": "Large Hammer",
+    "entityType": "equipment",
+    "ownerUrl": null
+  },
+  {
+    "entityId": "equipment-sports-parachute",
+    "entityName": "Sports Parachute",
+    "entityType": "equipment",
+    "ownerUrl": null
+  },
+  {
+    "entityId": "equipment-large-backpack",
+    "entityName": "Large Backpack",
+    "entityType": "equipment",
+    "ownerUrl": null
+  },
+  {
+    "entityId": "equipment-music-tape-h",
+    "entityName": "Music Tape H",
+    "entityType": "equipment",
+    "ownerUrl": null
+  },
+  {
+    "entityId": "weapon-deagle",
+    "entityName": "Deagle",
+    "entityType": "weapon",
+    "ownerUrl": null
+  },
+  {
+    "entityId": "attachment-pp19-drum",
+    "entityName": "PP-19 50 round drum magazine",
+    "entityType": "attachment",
+    "ownerUrl": null
+  },
+  {
+    "entityId": "ammo-762x54mm-ap",
+    "entityName": "762x54mm AP",
+    "entityType": "ammunition",
+    "ownerUrl": null
+  },
+  {
+    "entityId": "ammo-556mm-ap",
+    "entityName": "556mm AP",
+    "entityType": "ammunition",
+    "ownerUrl": null
+  }
+]

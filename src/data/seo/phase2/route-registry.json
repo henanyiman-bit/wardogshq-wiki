@@ -1,0 +1,770 @@
+[
+  {
+    "pageId": "home",
+    "url": "/",
+    "pageType": "home",
+    "index": true,
+    "status": "planned",
+    "canonical": "/"
+  },
+  {
+    "pageId": "guide",
+    "url": "/guide/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/guide/"
+  },
+  {
+    "pageId": "money",
+    "url": "/money/",
+    "pageType": "hub",
+    "index": true,
+    "status": "planned",
+    "canonical": "/money/"
+  },
+  {
+    "pageId": "money-making",
+    "url": "/money/how-to-make-money/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/money/how-to-make-money/"
+  },
+  {
+    "pageId": "money-persistence",
+    "url": "/money/persistence/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/money/persistence/"
+  },
+  {
+    "pageId": "money-pilot",
+    "url": "/money/pilot/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/money/pilot/"
+  },
+  {
+    "pageId": "money-logistics",
+    "url": "/money/logistics/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/money/logistics/"
+  },
+  {
+    "pageId": "weapons",
+    "url": "/weapons/",
+    "pageType": "archive",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/"
+  },
+  {
+    "pageId": "best-weapons",
+    "url": "/weapons/best-weapons/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/best-weapons/"
+  },
+  {
+    "pageId": "weapon-builds",
+    "url": "/weapons/builds/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/builds/"
+  },
+  {
+    "pageId": "loadouts",
+    "url": "/loadouts/",
+    "pageType": "hub",
+    "index": true,
+    "status": "planned",
+    "canonical": "/loadouts/"
+  },
+  {
+    "pageId": "best-loadouts",
+    "url": "/loadouts/best-loadouts/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/loadouts/best-loadouts/"
+  },
+  {
+    "pageId": "budget-loadouts",
+    "url": "/loadouts/budget/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/loadouts/budget/"
+  },
+  {
+    "pageId": "medic-loadout",
+    "url": "/loadouts/medic/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/loadouts/medic/"
+  },
+  {
+    "pageId": "pilot-loadout",
+    "url": "/loadouts/pilot/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/loadouts/pilot/"
+  },
+  {
+    "pageId": "save-loadout",
+    "url": "/loadouts/save-rebuy/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/loadouts/save-rebuy/"
+  },
+  {
+    "pageId": "vehicles",
+    "url": "/vehicles/",
+    "pageType": "archive",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/"
+  },
+  {
+    "pageId": "ground-vehicles",
+    "url": "/vehicles/ground/",
+    "pageType": "archive",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/ground/"
+  },
+  {
+    "pageId": "air-vehicles",
+    "url": "/vehicles/air/",
+    "pageType": "archive",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/air/"
+  },
+  {
+    "pageId": "map",
+    "url": "/map/",
+    "pageType": "hub",
+    "index": true,
+    "status": "planned",
+    "canonical": "/map/"
+  },
+  {
+    "pageId": "interactive-map",
+    "url": "/map/interactive/",
+    "pageType": "tool",
+    "index": false,
+    "status": "planned",
+    "canonical": "/map/interactive/"
+  },
+  {
+    "pageId": "control-zone",
+    "url": "/map/control-zone/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/map/control-zone/"
+  },
+  {
+    "pageId": "towers",
+    "url": "/map/towers/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/map/towers/"
+  },
+  {
+    "pageId": "drills",
+    "url": "/map/drills/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/map/drills/"
+  },
+  {
+    "pageId": "mortar-artillery",
+    "url": "/map/mortar-artillery/",
+    "pageType": "tool",
+    "index": false,
+    "status": "planned",
+    "canonical": "/map/mortar-artillery/"
+  },
+  {
+    "pageId": "factions",
+    "url": "/factions/",
+    "pageType": "hub",
+    "index": true,
+    "status": "planned",
+    "canonical": "/factions/"
+  },
+  {
+    "pageId": "valkyra",
+    "url": "/factions/valkyra/",
+    "pageType": "entity",
+    "index": false,
+    "status": "planned",
+    "canonical": "/factions/valkyra/"
+  },
+  {
+    "pageId": "lonestar",
+    "url": "/factions/lonestar/",
+    "pageType": "entity",
+    "index": false,
+    "status": "planned",
+    "canonical": "/factions/lonestar/"
+  },
+  {
+    "pageId": "manticore",
+    "url": "/factions/manticore/",
+    "pageType": "entity",
+    "index": false,
+    "status": "planned",
+    "canonical": "/factions/manticore/"
+  },
+  {
+    "pageId": "progression",
+    "url": "/progression/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/progression/"
+  },
+  {
+    "pageId": "community-servers",
+    "url": "/community-servers/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/community-servers/"
+  },
+  {
+    "pageId": "system-requirements",
+    "url": "/system-requirements/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/system-requirements/"
+  },
+  {
+    "pageId": "early-access",
+    "url": "/early-access/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/early-access/"
+  },
+  {
+    "pageId": "updates",
+    "url": "/updates/",
+    "pageType": "archive",
+    "index": true,
+    "status": "planned",
+    "canonical": "/updates/"
+  },
+  {
+    "pageId": "map-crash",
+    "url": "/troubleshooting/map-loading-crash/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/troubleshooting/map-loading-crash/"
+  },
+  {
+    "pageId": "settings",
+    "url": "/settings/",
+    "pageType": "guide",
+    "index": false,
+    "status": "planned",
+    "canonical": "/settings/"
+  },
+  {
+    "pageId": "guide-how-to-play",
+    "url": "/guide/how-to-play/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/guide/how-to-play/"
+  },
+  {
+    "pageId": "building-fob",
+    "url": "/building/fob/",
+    "pageType": "guide",
+    "index": true,
+    "status": "planned",
+    "canonical": "/building/fob/"
+  },
+  {
+    "pageId": "weapon-bushmaster-m17s",
+    "url": "/weapons/bushmaster-m17s/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/bushmaster-m17s/"
+  },
+  {
+    "pageId": "weapon-t-21",
+    "url": "/weapons/t-21/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/t-21/"
+  },
+  {
+    "pageId": "weapon-ak74",
+    "url": "/weapons/ak74/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/ak74/"
+  },
+  {
+    "pageId": "weapon-galil",
+    "url": "/weapons/galil/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/galil/"
+  },
+  {
+    "pageId": "weapon-m4",
+    "url": "/weapons/m4/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/m4/"
+  },
+  {
+    "pageId": "weapon-fal",
+    "url": "/weapons/fal/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/fal/"
+  },
+  {
+    "pageId": "weapon-a-91",
+    "url": "/weapons/a-91/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/a-91/"
+  },
+  {
+    "pageId": "weapon-kh-2002",
+    "url": "/weapons/kh-2002/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/kh-2002/"
+  },
+  {
+    "pageId": "weapon-amp-9",
+    "url": "/weapons/amp-9/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/amp-9/"
+  },
+  {
+    "pageId": "weapon-pp-19-vityaz",
+    "url": "/weapons/pp-19-vityaz/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/pp-19-vityaz/"
+  },
+  {
+    "pageId": "weapon-mp5",
+    "url": "/weapons/mp5/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/mp5/"
+  },
+  {
+    "pageId": "weapon-super-45",
+    "url": "/weapons/super-45/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/super-45/"
+  },
+  {
+    "pageId": "weapon-m249-saw",
+    "url": "/weapons/m249-saw/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/m249-saw/"
+  },
+  {
+    "pageId": "weapon-pkm",
+    "url": "/weapons/pkm/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/pkm/"
+  },
+  {
+    "pageId": "weapon-mp43",
+    "url": "/weapons/mp43/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/mp43/"
+  },
+  {
+    "pageId": "weapon-m500",
+    "url": "/weapons/m500/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/m500/"
+  },
+  {
+    "pageId": "weapon-m12g",
+    "url": "/weapons/m12g/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/m12g/"
+  },
+  {
+    "pageId": "weapon-sks",
+    "url": "/weapons/sks/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/sks/"
+  },
+  {
+    "pageId": "weapon-svd",
+    "url": "/weapons/svd/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/svd/"
+  },
+  {
+    "pageId": "weapon-bmr-308",
+    "url": "/weapons/bmr-308/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/bmr-308/"
+  },
+  {
+    "pageId": "weapon-scout-rifle-td",
+    "url": "/weapons/scout-rifle-td/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/scout-rifle-td/"
+  },
+  {
+    "pageId": "weapon-mosin-nagant",
+    "url": "/weapons/mosin-nagant/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/mosin-nagant/"
+  },
+  {
+    "pageId": "weapon-sv98",
+    "url": "/weapons/sv98/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/sv98/"
+  },
+  {
+    "pageId": "weapon-mk22",
+    "url": "/weapons/mk22/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/mk22/"
+  },
+  {
+    "pageId": "weapon-amr-50",
+    "url": "/weapons/amr-50/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/amr-50/"
+  },
+  {
+    "pageId": "weapon-ggx-17",
+    "url": "/weapons/ggx-17/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/ggx-17/"
+  },
+  {
+    "pageId": "weapon-ggx-18",
+    "url": "/weapons/ggx-18/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/ggx-18/"
+  },
+  {
+    "pageId": "weapon-judge",
+    "url": "/weapons/judge/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/judge/"
+  },
+  {
+    "pageId": "weapon-m1911",
+    "url": "/weapons/m1911/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/m1911/"
+  },
+  {
+    "pageId": "weapon-deagle",
+    "url": "/weapons/deagle/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/deagle/"
+  },
+  {
+    "pageId": "weapon-rpg-7",
+    "url": "/weapons/rpg-7/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/rpg-7/"
+  },
+  {
+    "pageId": "weapon-maaws",
+    "url": "/weapons/maaws/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/maaws/"
+  },
+  {
+    "pageId": "weapon-mgl-40",
+    "url": "/weapons/mgl-40/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/mgl-40/"
+  },
+  {
+    "pageId": "weapon-9k333-verba",
+    "url": "/weapons/9k333-verba/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/9k333-verba/"
+  },
+  {
+    "pageId": "weapon-compound-bow",
+    "url": "/weapons/compound-bow/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/weapons/compound-bow/"
+  },
+  {
+    "pageId": "vehicle-bobcat",
+    "url": "/vehicles/bobcat/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/bobcat/"
+  },
+  {
+    "pageId": "vehicle-dune-buggy",
+    "url": "/vehicles/dune-buggy/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/dune-buggy/"
+  },
+  {
+    "pageId": "vehicle-kodiak",
+    "url": "/vehicles/kodiak/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/kodiak/"
+  },
+  {
+    "pageId": "vehicle-kodiak-pickup",
+    "url": "/vehicles/kodiak-pickup/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/kodiak-pickup/"
+  },
+  {
+    "pageId": "vehicle-humvee",
+    "url": "/vehicles/humvee/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/humvee/"
+  },
+  {
+    "pageId": "vehicle-kodiak-m249",
+    "url": "/vehicles/kodiak-m249/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/kodiak-m249/"
+  },
+  {
+    "pageId": "vehicle-humvee-m249",
+    "url": "/vehicles/humvee-m249/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/humvee-m249/"
+  },
+  {
+    "pageId": "vehicle-humvee-minigun",
+    "url": "/vehicles/humvee-minigun/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/humvee-minigun/"
+  },
+  {
+    "pageId": "vehicle-ural",
+    "url": "/vehicles/ural/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/ural/"
+  },
+  {
+    "pageId": "vehicle-ural-defender",
+    "url": "/vehicles/ural-defender/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/ural-defender/"
+  },
+  {
+    "pageId": "vehicle-ural-defender-m249",
+    "url": "/vehicles/ural-defender-m249/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/ural-defender-m249/"
+  },
+  {
+    "pageId": "vehicle-flakpanzer-gepard",
+    "url": "/vehicles/flakpanzer-gepard/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/flakpanzer-gepard/"
+  },
+  {
+    "pageId": "vehicle-l2a6",
+    "url": "/vehicles/l2a6/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/l2a6/"
+  },
+  {
+    "pageId": "vehicle-sph-2",
+    "url": "/vehicles/sph-2/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/sph-2/"
+  },
+  {
+    "pageId": "vehicle-ah-6m-miniguns",
+    "url": "/vehicles/ah-6m-miniguns/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/ah-6m-miniguns/"
+  },
+  {
+    "pageId": "vehicle-uh-1y-miniguns",
+    "url": "/vehicles/uh-1y-miniguns/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/uh-1y-miniguns/"
+  },
+  {
+    "pageId": "vehicle-ah-6r-rockets",
+    "url": "/vehicles/ah-6r-rockets/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/ah-6r-rockets/"
+  },
+  {
+    "pageId": "vehicle-havoc",
+    "url": "/vehicles/havoc/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/havoc/"
+  },
+  {
+    "pageId": "vehicle-mh-6",
+    "url": "/vehicles/mh-6/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/mh-6/"
+  },
+  {
+    "pageId": "vehicle-uh-1y",
+    "url": "/vehicles/uh-1y/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/vehicles/uh-1y/"
+  },
+  {
+    "pageId": "map-bakurani",
+    "url": "/map/bakurani/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/map/bakurani/"
+  },
+  {
+    "pageId": "map-ozeti",
+    "url": "/map/ozeti/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/map/ozeti/"
+  },
+  {
+    "pageId": "map-zestafona",
+    "url": "/map/zestafona/",
+    "pageType": "entity",
+    "index": true,
+    "status": "planned",
+    "canonical": "/map/zestafona/"
+  }
+]

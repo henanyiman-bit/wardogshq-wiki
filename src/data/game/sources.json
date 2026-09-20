@@ -1,0 +1,153 @@
+[
+  {
+    "id": "src-steam-store",
+    "type": "official-platform",
+    "title": "WARDOGS on Steam",
+    "url": "https://store.steampowered.com/app/1867240/WARDOGS/",
+    "publisher": "Valve / BULKHEAD",
+    "checked": "2026-09-19",
+    "supports": [
+      "release date",
+      "developer",
+      "publisher",
+      "Early Access status",
+      "Windows platform",
+      "system requirements",
+      "official store distribution"
+    ]
+  },
+  {
+    "id": "src-team17-game",
+    "type": "official-publisher",
+    "title": "WARDOGS - Team17",
+    "url": "https://www.team17.com/games/wardogs",
+    "publisher": "Team17",
+    "checked": "2026-09-19",
+    "supports": [
+      "core gameplay",
+      "100 players",
+      "three teams",
+      "Control Zone",
+      "256 km\u00b2 battlefield",
+      "2x2 km Control Zone",
+      "cash metagame",
+      "building",
+      "destruction",
+      "vehicles",
+      "local voice chat",
+      "GeForce NOW"
+    ]
+  },
+  {
+    "id": "src-bulkhead",
+    "type": "official-developer",
+    "title": "BULKHEAD official site",
+    "url": "https://bulkhead.com/",
+    "publisher": "BULKHEAD",
+    "checked": "2026-09-19",
+    "supports": [
+      "developer identity",
+      "WARDOGS positioning",
+      "three-team tactical all-out warfare"
+    ]
+  },
+  {
+    "id": "src-steam-faq",
+    "type": "official-developer-post",
+    "title": "WARDOGS FAQ",
+    "url": "https://steamcommunity.com/app/1867240/discussions/0/762932533852726673/",
+    "publisher": "BULKHEAD",
+    "checked": "2026-09-19",
+    "supports": [
+      "Valkyra",
+      "Lonestar",
+      "Manticore",
+      "Control Zone",
+      "100-player three-team format",
+      "building",
+      "destruction",
+      "economy"
+    ]
+  },
+  {
+    "id": "src-season1",
+    "type": "official-developer-announcement",
+    "title": "Pre-Load Live & Season 1 Changelog",
+    "url": "https://steamcommunity.com/app/1867240/announcements/",
+    "publisher": "BULKHEAD",
+    "checked": "2026-09-19",
+    "supports": [
+      "Season 1 unlocks",
+      "role tracks",
+      "named vehicles/equipment",
+      "server browser changes",
+      "voice chat fixes",
+      "balance changes"
+    ]
+  },
+  {
+    "id": "src-patch011",
+    "type": "official-developer-announcement",
+    "title": "Scheduled Maintenance & Patch 0.11",
+    "url": "https://store.steampowered.com/news/app/1867240/view/701027323413005176",
+    "publisher": "BULKHEAD",
+    "checked": "2026-09-19",
+    "supports": [
+      "Patch 0.11",
+      "community server browser improvements",
+      "latest confirmed numbered patch"
+    ]
+  },
+  {
+    "id": "src-steam-announcements",
+    "type": "official-developer-announcements",
+    "title": "WARDOGS Official Announcements",
+    "url": "https://steamcommunity.com/app/1867240/announcements/",
+    "publisher": "BULKHEAD",
+    "checked": "2026-09-19",
+    "supports": [
+      "2 million copies announcement",
+      "launch hotfix",
+      "console 2028 announcement",
+      "community hosting partners"
+    ]
+  },
+  {
+    "id": "src-team17-launch-video",
+    "type": "official-video",
+    "title": "WARDOGS | Launch Trailer",
+    "url": "https://www.youtube.com/watch?v=KQ8wMOpXOS0",
+    "publisher": "Team17",
+    "checked": "2026-09-19",
+    "supports": [
+      "official launch video",
+      "Early Access release timing"
+    ]
+  },
+  {
+    "id": "src-team17-reveal-video",
+    "type": "official-video",
+    "title": "WARDOGS | Reveal Trailer",
+    "url": "https://www.youtube.com/watch?v=hVtmnaUCpuQ",
+    "publisher": "Team17",
+    "checked": "2026-09-19",
+    "supports": [
+      "official reveal footage",
+      "100 players",
+      "three teams",
+      "Control Zone"
+    ]
+  },
+  {
+    "id": "src-creator-tacticalbrit",
+    "type": "creator-video",
+    "title": "I Played Wardogs EARLY... (Gameplay & Impressions)",
+    "url": "https://www.youtube.com/watch?v=USXwdP-qOB0",
+    "publisher": "TheTacticalBrit",
+    "checked": "2026-09-19",
+    "supports": [
+      "creator gameplay footage",
+      "mechanics demonstration"
+    ]
+  }
+]

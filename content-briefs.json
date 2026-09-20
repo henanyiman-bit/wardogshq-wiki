@@ -1,0 +1,1353 @@
+[
+  {
+    "pageId": "home",
+    "url": "/",
+    "title": "Wardogs",
+    "primaryKeyword": "wardogs",
+    "intent": "Navigational",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "WARDOGS"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Overview",
+      "Core data",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/guide/",
+      "/money/",
+      "/weapons/",
+      "/loadouts/",
+      "/vehicles/",
+      "/map/",
+      "/factions/",
+      "/community-servers/",
+      "/system-requirements/",
+      "/early-access/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Main Wiki entry point and overview"
+  },
+  {
+    "pageId": "guide",
+    "url": "/guide/",
+    "title": "Wardogs Guide",
+    "primaryKeyword": "wardogs guide",
+    "intent": "Informational",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "WARDOGS"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/",
+      "/money/how-to-make-money/",
+      "/loadouts/",
+      "/map/control-zone/",
+      "/guide/how-to-play/",
+      "/building/fob/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Beginner-oriented guide hub for core systems and next-step navigation"
+  },
+  {
+    "pageId": "money",
+    "url": "/money/",
+    "title": "Wardogs Money",
+    "primaryKeyword": "wardogs money",
+    "intent": "Mechanics",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Persistent cash economy"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Overview",
+      "Core data",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/",
+      "/money/how-to-make-money/",
+      "/money/persistence/",
+      "/money/pilot/",
+      "/money/logistics/",
+      "/loadouts/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Explain the cash economy and route money questions"
+  },
+  {
+    "pageId": "money-making",
+    "url": "/money/how-to-make-money/",
+    "title": "How To Make Money In Wardogs",
+    "primaryKeyword": "how to make money in wardogs",
+    "intent": "How-To",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Cash earning"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Consolidated authority guide for earning cash without duplicating economy basics"
+  },
+  {
+    "pageId": "money-persistence",
+    "url": "/money/persistence/",
+    "title": "Do You Keep Money In Wardogs",
+    "primaryKeyword": "do you keep money in wardogs",
+    "intent": "Mechanics",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Cash persistence"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Answer persistence, leaving-match and no-cash questions"
+  },
+  {
+    "pageId": "money-pilot",
+    "url": "/money/pilot/",
+    "title": "How To Make Money As A Pilot In Wardogs",
+    "primaryKeyword": "how to make money as a pilot in wardogs",
+    "intent": "How-To",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Pilot earnings"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Pilot-specific money intent"
+  },
+  {
+    "pageId": "money-logistics",
+    "url": "/money/logistics/",
+    "title": "Wardogs Make Money Doing Logistics",
+    "primaryKeyword": "wardogs make money doing logistics",
+    "intent": "How-To",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Logistics earnings"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Supply runs",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Transport/supply/logistics earning intent"
+  },
+  {
+    "pageId": "weapons",
+    "url": "/weapons/",
+    "title": "Wardogs Weapons",
+    "primaryKeyword": "wardogs weapons",
+    "intent": "Database Lookup",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Weapons"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Overview",
+      "Core data",
+      "Ammunition",
+      "Attachments",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/",
+      "/weapons/best-weapons/",
+      "/weapons/builds/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Weapons hub and database/archive"
+  },
+  {
+    "pageId": "best-weapons",
+    "url": "/weapons/best-weapons/",
+    "title": "Wardogs Best Weapons",
+    "primaryKeyword": "wardogs best weapons",
+    "intent": "Best / Ranking",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Weapons"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Best-weapons intent; only evidence-backed comparisons in Phase 3"
+  },
+  {
+    "pageId": "weapon-builds",
+    "url": "/weapons/builds/",
+    "title": "Wardogs Gun Builds",
+    "primaryKeyword": "wardogs gun builds",
+    "intent": "Build",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Weapon builds"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Attachment/build guidance without duplicating weapon database"
+  },
+  {
+    "pageId": "loadouts",
+    "url": "/loadouts/",
+    "title": "Wardogs Loadout",
+    "primaryKeyword": "wardogs loadout",
+    "intent": "Build",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Loadouts"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Overview",
+      "Core data",
+      "Armor and protection",
+      "Storage and backpacks",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/",
+      "/loadouts/best-loadouts/",
+      "/loadouts/budget/",
+      "/loadouts/medic/",
+      "/loadouts/pilot/",
+      "/loadouts/save-rebuy/",
+      "/weapons/",
+      "/money/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Loadout creation and navigation hub"
+  },
+  {
+    "pageId": "best-loadouts",
+    "url": "/loadouts/best-loadouts/",
+    "title": "Wardogs Best Loadouts",
+    "primaryKeyword": "wardogs best loadouts",
+    "intent": "Best / Ranking",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Loadouts"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Consolidated best/meta loadout intent"
+  },
+  {
+    "pageId": "budget-loadouts",
+    "url": "/loadouts/budget/",
+    "title": "Wardogs Cheap Loadouts",
+    "primaryKeyword": "wardogs cheap loadouts",
+    "intent": "Build",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Budget loadouts"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Budget/early-game loadout intent"
+  },
+  {
+    "pageId": "medic-loadout",
+    "url": "/loadouts/medic/",
+    "title": "Wardogs Medic Loadout",
+    "primaryKeyword": "wardogs medic loadout",
+    "intent": "Build",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Medic"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Reviving teammates",
+      "Medic tools",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Medic-role loadout intent"
+  },
+  {
+    "pageId": "pilot-loadout",
+    "url": "/loadouts/pilot/",
+    "title": "Wardogs Recommend Pilot Loadout",
+    "primaryKeyword": "wardogs recommend pilot loadout",
+    "intent": "Build",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Pilot"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Pilot-role loadout intent"
+  },
+  {
+    "pageId": "save-loadout",
+    "url": "/loadouts/save-rebuy/",
+    "title": "How To Save Loadout Wardogs",
+    "primaryKeyword": "how to save loadout wardogs",
+    "intent": "How-To",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Loadout presets / rebuy"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Own high-volume save/rebuy/preset intent"
+  },
+  {
+    "pageId": "vehicles",
+    "url": "/vehicles/",
+    "title": "Wardogs Vehicles",
+    "primaryKeyword": "wardogs vehicles",
+    "intent": "Database Lookup",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Vehicles"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Overview",
+      "Core data",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/",
+      "/vehicles/ground/",
+      "/vehicles/air/",
+      "/money/pilot/",
+      "/money/logistics/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Vehicle database/archive and overview"
+  },
+  {
+    "pageId": "ground-vehicles",
+    "url": "/vehicles/ground/",
+    "title": "Wardogs Ground Vehicles",
+    "primaryKeyword": "wardogs ground vehicles",
+    "intent": "Database Lookup",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Ground vehicles"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Overview",
+      "Core data",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Ground vehicle subset"
+  },
+  {
+    "pageId": "air-vehicles",
+    "url": "/vehicles/air/",
+    "title": "Wardogs Helicopters",
+    "primaryKeyword": "wardogs helicopters",
+    "intent": "Database Lookup",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Air vehicles"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Overview",
+      "Core data",
+      "Helicopter controls",
+      "Flight assists",
+      "Parachute keybind",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": true,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Air vehicle subset"
+  },
+  {
+    "pageId": "map",
+    "url": "/map/",
+    "title": "Wardogs Map",
+    "primaryKeyword": "wardogs map",
+    "intent": "Database Lookup",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Maps"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Overview",
+      "Core data",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/",
+      "/map/interactive/",
+      "/map/control-zone/",
+      "/map/towers/",
+      "/map/drills/",
+      "/map/mortar-artillery/",
+      "/map/control-zone/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Map hub for battlefield, map count/size and map-navigation questions"
+  },
+  {
+    "pageId": "interactive-map",
+    "url": "/map/interactive/",
+    "title": "Wardogs Interactive Map",
+    "primaryKeyword": "wardogs interactive map",
+    "intent": "Tool / Calculator",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Interactive map"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": false,
+    "pageValueGate": "HOLD",
+    "contentGoal": "Dedicated tool intent; requires real local map asset/data before Phase 3 publication"
+  },
+  {
+    "pageId": "control-zone",
+    "url": "/map/control-zone/",
+    "title": "Wardogs Control Zone",
+    "primaryKeyword": "wardogs control zone",
+    "intent": "Mechanics",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Control Zone"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Hot Zone",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/",
+      "/map/towers/",
+      "/map/drills/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Explain scoring and Control Zone mechanics"
+  },
+  {
+    "pageId": "towers",
+    "url": "/map/towers/",
+    "title": "Wardogs Towers",
+    "primaryKeyword": "wardogs towers",
+    "intent": "Mechanics",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Towers"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/",
+      "/map/drills/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Consolidate tower purpose/capture/code intent; community-sourced mechanics require careful attribution"
+  },
+  {
+    "pageId": "drills",
+    "url": "/map/drills/",
+    "title": "Wardogs Drills",
+    "primaryKeyword": "wardogs drills",
+    "intent": "Mechanics",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Drills"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Building a drill rig",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/",
+      "/map/control-zone/",
+      "/building/fob/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Explain drill relationship to Hot Zone and building"
+  },
+  {
+    "pageId": "mortar-artillery",
+    "url": "/map/mortar-artillery/",
+    "title": "Wardogs Mortar Map",
+    "primaryKeyword": "wardogs mortar map",
+    "intent": "Tool / Calculator",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Mortar / artillery mapping"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": false,
+    "pageValueGate": "HOLD",
+    "contentGoal": "Own calculator/map-tool intent; publication gated on real firing/map data"
+  },
+  {
+    "pageId": "factions",
+    "url": "/factions/",
+    "title": "Wardogs Factions",
+    "primaryKeyword": "wardogs factions",
+    "intent": "Entity Lookup",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Factions"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Overview",
+      "Core data",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/",
+      "/factions/valkyra/",
+      "/factions/lonestar/",
+      "/factions/manticore/",
+      "/map/control-zone/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Faction overview and comparison without unsupported balance claims"
+  },
+  {
+    "pageId": "valkyra",
+    "url": "/factions/valkyra/",
+    "title": "Wardogs Valkyra",
+    "primaryKeyword": "wardogs valkyra",
+    "intent": "Entity Lookup",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Valkyra"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Overview",
+      "Core data",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": false,
+    "pageValueGate": "HOLD",
+    "contentGoal": "Faction entity page"
+  },
+  {
+    "pageId": "lonestar",
+    "url": "/factions/lonestar/",
+    "title": "Wardogs Lonestar",
+    "primaryKeyword": "wardogs lonestar",
+    "intent": "Entity Lookup",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Lonestar"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Overview",
+      "Core data",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": false,
+    "pageValueGate": "HOLD",
+    "contentGoal": "Faction entity page"
+  },
+  {
+    "pageId": "manticore",
+    "url": "/factions/manticore/",
+    "title": "Wardogs Manticore",
+    "primaryKeyword": "wardogs manticore",
+    "intent": "Entity Lookup",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Manticore"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Overview",
+      "Core data",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": false,
+    "pageValueGate": "HOLD",
+    "contentGoal": "Faction entity page"
+  },
+  {
+    "pageId": "progression",
+    "url": "/progression/",
+    "title": "Wardogs Progression",
+    "primaryKeyword": "wardogs progression",
+    "intent": "Progression",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Progression"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Career/role progression hub"
+  },
+  {
+    "pageId": "community-servers",
+    "url": "/community-servers/",
+    "title": "Wardogs Community Servers",
+    "primaryKeyword": "wardogs community servers",
+    "intent": "How-To",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Community servers"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Using the server browser",
+      "Joining a server",
+      "Server connection problems",
+      "Login queue",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/",
+      "/updates/"
+    ],
+    "faqNeeds": true,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Community server browser/hosting overview"
+  },
+  {
+    "pageId": "system-requirements",
+    "url": "/system-requirements/",
+    "title": "Wardogs System Requirements",
+    "primaryKeyword": "wardogs system requirements",
+    "intent": "Informational",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "PC requirements"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Official Steam minimum/recommended requirements"
+  },
+  {
+    "pageId": "early-access",
+    "url": "/early-access/",
+    "title": "Wardogs Release Date",
+    "primaryKeyword": "wardogs release date",
+    "intent": "Informational",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Early Access and platforms"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/",
+      "/updates/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Release/channel/platform status"
+  },
+  {
+    "pageId": "updates",
+    "url": "/updates/",
+    "title": "Wardogs Update",
+    "primaryKeyword": "wardogs update",
+    "intent": "Update / Patch",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Updates"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Overview",
+      "Core data",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Build-time update/version archive only; no monitoring daemon"
+  },
+  {
+    "pageId": "map-crash",
+    "url": "/troubleshooting/map-loading-crash/",
+    "title": "Wardogs Crash When Loading Map",
+    "primaryKeyword": "wardogs crash when loading map",
+    "intent": "Troubleshooting",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Map loading crash"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Troubleshooting owner for map-loading/compiling crashes"
+  },
+  {
+    "pageId": "settings",
+    "url": "/settings/",
+    "title": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs best settings",
+    "intent": "How-To",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "Settings"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/"
+    ],
+    "faqNeeds": false,
+    "indexable": false,
+    "pageValueGate": "HOLD",
+    "contentGoal": "Settings/keybind guidance only where validated"
+  },
+  {
+    "pageId": "guide-how-to-play",
+    "url": "/guide/how-to-play/",
+    "title": "Wardogs Beginner Guide",
+    "primaryKeyword": "wardogs beginner guide",
+    "intent": "How-To",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "WARDOGS"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "First match priorities",
+      "Winning the match",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/map/control-zone/",
+      "/money/",
+      "/loadouts/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Explain the first-match loop, objective, economy, useful early roles, and first actions for a new player."
+  },
+  {
+    "pageId": "building-fob",
+    "url": "/building/fob/",
+    "title": "Wardogs Fob Guide",
+    "primaryKeyword": "wardogs fob guide",
+    "intent": "How-To",
+    "targetUser": "WARDOGS player searching this exact intent",
+    "requiredEntities": [
+      "FOB"
+    ],
+    "requiredData": [
+      "Phase 1 SSOT facts relevant to page scope",
+      "Phase 2 expanded long-tail intent assignments"
+    ],
+    "requiredSections": [
+      "Quick answer",
+      "Core explanation",
+      "Practical next step",
+      "Supplying a FOB",
+      "Building tools",
+      "Related pages"
+    ],
+    "requiredTables": [
+      "Use structured table only where verified rows exist"
+    ],
+    "requiredMedia": [
+      "Bind only researched WARDOGS media when it supports this intent"
+    ],
+    "internalLinks": [
+      "/map/drills/",
+      "/money/logistics/"
+    ],
+    "faqNeeds": false,
+    "indexable": true,
+    "pageValueGate": "PASS",
+    "contentGoal": "Explain FOB purpose, construction flow, supply interaction, building tools, and how FOBs connect to drill-rig play without inventing disputed values."
+  }
+]

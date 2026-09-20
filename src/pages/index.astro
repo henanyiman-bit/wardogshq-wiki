@@ -1,0 +1,128 @@
+---
+import WikiLayout from '../layouts/WikiLayout.astro';
+import HeroSearch from '../components/wiki/HeroSearch.astro';
+import GamePlatformCTA from '../components/wiki/GamePlatformCTA.astro';
+import VideoEmbed from '../components/wiki/VideoEmbed.astro';
+---
+<WikiLayout title="WARDOGS Wiki: Guides, Money, Map, Weapons & Vehicles" description="WARDOGS Wiki for beginner help, money, map systems, loadouts, FOB building, vehicles, weapons, progression and community servers. Season 1 / Patch 0.11 research snapshot." canonicalPath="/" indexable={true} pageType="WebPage">
+  <section class="home-hero portal-hero">
+    <div class="home-hero-grid">
+      <div class="home-hero-copy">
+        <p class="eyebrow">TACTICAL ALL-OUT WARFARE · PLAYER WIKI</p>
+        <h1>WARDOGS Wiki</h1>
+        <p class="lede">Guides, maps, weapons, vehicles, loadouts and battlefield systems for Season 1 / Patch 0.11.</p>
+        <HeroSearch />
+        <div class="hero-actions">
+          <GamePlatformCTA />
+          <a class="secondary-cta" href="/guide/how-to-play/">Start with the beginner guide</a>
+        </div>
+      </div>
+      <figure class="hero-media">
+        <img src="https://www.team17.com/hs-fs/hubfs/WD_Screenshot_ResidentialStreet_1_WD1.jpg?length=1200&name=WD_Screenshot_ResidentialStreet_1_WD1.jpg" alt="WARDOGS battle taking place on a residential street" loading="eager" />
+        <figcaption>Large-scale three-team combat with vehicles, objectives and player-built positions.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="portal-stat-strip" aria-label="WARDOGS quick facts">
+    <div><small>Players</small><strong>Up to 100</strong></div>
+    <div><small>Teams</small><strong>3</strong></div>
+    <div><small>Battlefield</small><strong>256 km²</strong></div>
+    <div><small>Control Zone</small><strong>2×2 km</strong></div>
+    <div><small>Starting cash</small><strong>$10,000</strong></div>
+    <div><small>Win target</small><strong>100 points</strong></div>
+  </section>
+
+  <section class="portal-section portal-section--intro">
+    <div class="section-heading">
+      <p class="eyebrow">START HERE</p>
+      <h2>Learn the match, then go deeper</h2>
+      <p>WARDOGS combines persistent cash, objective control, logistics, vehicles and building. Use these entry points instead of reading the whole Wiki in order.</p>
+    </div>
+    <div class="portal-card-grid portal-card-grid--4">
+      <a class="portal-card" href="/guide/how-to-play/"><span class="portal-card-index">01</span><strong>How to Play</strong><small>First-match route, objective priorities and the core gameplay loop.</small></a>
+      <a class="portal-card" href="/money/how-to-make-money/"><span class="portal-card-index">02</span><strong>Make Money</strong><small>Compare objective, transport, revive and logistics income paths.</small></a>
+      <a class="portal-card" href="/map/control-zone/"><span class="portal-card-index">03</span><strong>Control Zone</strong><small>Scoring, presence, Hot Zone pressure and match flow.</small></a>
+      <a class="portal-card" href="/building/fob/"><span class="portal-card-index">04</span><strong>FOB Building</strong><small>Construction, supply movement and forward positions.</small></a>
+    </div>
+  </section>
+
+  <section class="portal-section portal-section--visual">
+    <div class="section-heading section-heading--split">
+      <div>
+        <p class="eyebrow">BATTLEFIELD SYSTEMS</p>
+        <h2>Fight, build, move and resupply</h2>
+      </div>
+      <p>The objective only works because several systems overlap: large travel distances, vehicles, FOBs, Towers, Drills and a cash economy that persists between matches.</p>
+    </div>
+    <div class="visual-story-grid">
+      <figure class="visual-story visual-story--large">
+        <img src="https://www.team17.com/hs-fs/hubfs/WD_Screenshot_River_2_WD1.jpg?length=1200&name=WD_Screenshot_River_2_WD1.jpg" alt="WARDOGS soldiers moving through a river battlefield" loading="lazy" />
+        <figcaption><strong>Map control</strong><span>Randomized Control Zones pull the fight into different parts of the wider battlefield.</span><a href="/map/">Explore maps →</a></figcaption>
+      </figure>
+      <figure class="visual-story">
+        <img src="https://www.team17.com/hs-fs/hubfs/WD_Screenshot_Foundry_1_WD1.jpg?length=1200&name=WD_Screenshot_Foundry_1_WD1.jpg" alt="WARDOGS combat in an industrial foundry environment" loading="lazy" />
+        <figcaption><strong>Combined arms</strong><span>Transport, logistics, tanks, artillery and helicopters have distinct battlefield jobs.</span><a href="/vehicles/">Browse vehicles →</a></figcaption>
+      </figure>
+      <figure class="visual-story">
+        <img src="https://www.team17.com/hs-fs/hubfs/WD_Screenshot_house%20interior_WD2.jpg?length=1200&name=WD_Screenshot_house+interior_WD2.jpg" alt="WARDOGS close-quarters gameplay inside a building" loading="lazy" />
+        <figcaption><strong>Build & destroy</strong><span>FOBs and supplies change how teams reinforce and hold useful ground.</span><a href="/building/fob/">FOB guide →</a></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="portal-section">
+    <div class="section-heading">
+      <p class="eyebrow">DATABASE</p>
+      <h2>Browse the game like a Wiki</h2>
+      <p>Use database hubs for quick lookups, then open individual entity pages for details.</p>
+    </div>
+    <div class="database-portal-grid">
+      <a class="database-portal database-portal--weapons" href="/weapons/">
+        <span class="database-count">35</span><strong>Weapons</strong><small>Weapon classes, ammo, observed stats and individual pages.</small><span class="database-link">Open weapon database →</span>
+      </a>
+      <a class="database-portal database-portal--vehicles" href="/vehicles/">
+        <span class="database-count">20</span><strong>Vehicles</strong><small>Transport, logistics, tanks, artillery and aircraft.</small><span class="database-link">Open vehicle database →</span>
+      </a>
+      <a class="database-portal database-portal--maps" href="/map/">
+        <span class="database-count">3</span><strong>Named maps</strong><small>Bakurani, Ozeti and Zestafona plus battlefield mechanics.</small><span class="database-link">Open map database →</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="portal-section portal-featured">
+    <div class="section-heading section-heading--split">
+      <div><p class="eyebrow">FEATURED ENTRIES</p><h2>Jump directly to useful pages</h2></div>
+      <p>Popular lookups across the three main databases.</p>
+    </div>
+    <div class="featured-columns">
+      <div class="featured-column"><h3>Weapons</h3><a href="/weapons/m4/">M4</a><a href="/weapons/deagle/">Deagle</a><a href="/weapons/mosin-nagant/">Mosin-Nagant</a><a href="/weapons/rpg-7/">RPG-7</a><a class="featured-more" href="/weapons/">All weapons →</a></div>
+      <div class="featured-column"><h3>Vehicles</h3><a href="/vehicles/ural/">URAL</a><a href="/vehicles/dune-buggy/">Dune Buggy</a><a href="/vehicles/mh-6/">MH-6</a><a href="/vehicles/l2a6/">L2A6</a><a class="featured-more" href="/vehicles/">All vehicles →</a></div>
+      <div class="featured-column"><h3>Maps</h3><a href="/map/bakurani/">Bakurani</a><a href="/map/ozeti/">Ozeti</a><a href="/map/zestafona/">Zestafona</a><a href="/map/towers/">Towers</a><a class="featured-more" href="/map/">All map topics →</a></div>
+      <div class="featured-column"><h3>Systems</h3><a href="/money/">Money & Economy</a><a href="/loadouts/">Loadouts</a><a href="/progression/">Progression</a><a href="/community-servers/">Community Servers</a><a class="featured-more" href="/guide/">All guides →</a></div>
+    </div>
+  </section>
+
+  <section class="portal-section portal-section--split-content">
+    <div class="portal-copy-block">
+      <p class="eyebrow">CORE LOOP</p>
+      <h2>Persistent cash changes every life</h2>
+      <p>Every player begins their WARDOG journey with <strong>$10,000</strong>. Cash is used to assemble a life from weapons, equipment and vehicles, while revives, transport, logistics and objective play can generate more money. Because cash persists between matches, spending choices matter beyond a single firefight.</p>
+      <div class="inline-link-row"><a href="/money/">Economy overview</a><a href="/loadouts/">Build a loadout</a><a href="/progression/">Role progression</a></div>
+    </div>
+    <figure class="portal-inline-media">
+      <img src="https://www.team17.com/hs-fs/hubfs/WD_Screenshot_ResidentialStreet_1_WD1.jpg?length=1200&name=WD_Screenshot_ResidentialStreet_1_WD1.jpg" alt="WARDOGS combat on a residential street" loading="lazy" />
+      <figcaption>Combat choices, positioning and equipment are tied to the persistent match economy.</figcaption>
+    </figure>
+  </section>
+
+  <section class="portal-section portal-section--trailer">
+    <div class="section-heading"><p class="eyebrow">WATCH</p><h2>WARDOGS launch trailer</h2></div>
+    <div class="trailer-shell"><VideoEmbed id="KQ8wMOpXOS0" title="WARDOGS Launch Trailer" /></div>
+  </section>
+
+  <section class="portal-section portal-snapshot" data-pagefind-ignore>
+    <div><p class="eyebrow">WIKI SNAPSHOT</p><h2>Season 1 · Patch 0.11</h2></div>
+    <p>WARDOGS is in Early Access. Balance, progression, prices and systems can change, so version-sensitive values on this Wiki should be read as a snapshot rather than permanent rules.</p>
+  </section>
+</WikiLayout>

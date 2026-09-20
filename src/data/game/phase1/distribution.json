@@ -1,0 +1,33 @@
+{
+  "current": [
+    {
+      "platform": "Windows PC",
+      "channel": "Steam Early Access",
+      "url": "https://store.steampowered.com/app/1867240/WARDOGS/",
+      "status": "available",
+      "sources": [
+        "src-steam-store",
+        "src-team17-game"
+      ]
+    },
+    {
+      "platform": "GeForce NOW",
+      "channel": "cloud gaming",
+      "status": "available",
+      "sources": [
+        "src-team17-game"
+      ]
+    }
+  ],
+  "future": [
+    {
+      "platform": "Consoles",
+      "targetYear": 2028,
+      "specificConsoleStores": [],
+      "status": "announced, exact console store URLs not established here",
+      "sources": [
+        "src-steam-announcements"
+      ]
+    }
+  ]
+}

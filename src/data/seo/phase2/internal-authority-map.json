@@ -1,0 +1,49 @@
+{
+  "tier0": [
+    "/"
+  ],
+  "tier1": [
+    "/guide/",
+    "/money/",
+    "/weapons/",
+    "/loadouts/",
+    "/vehicles/",
+    "/map/",
+    "/factions/",
+    "/community-servers/",
+    "/system-requirements/",
+    "/early-access/"
+  ],
+  "tier2": [
+    "/money/how-to-make-money/",
+    "/money/persistence/",
+    "/money/pilot/",
+    "/money/logistics/",
+    "/weapons/best-weapons/",
+    "/weapons/builds/",
+    "/loadouts/best-loadouts/",
+    "/loadouts/budget/",
+    "/loadouts/medic/",
+    "/loadouts/pilot/",
+    "/loadouts/save-rebuy/",
+    "/vehicles/ground/",
+    "/vehicles/air/",
+    "/map/control-zone/",
+    "/map/towers/",
+    "/map/drills/",
+    "/progression/",
+    "/updates/",
+    "/troubleshooting/map-loading-crash/",
+    "/guide/how-to-play/",
+    "/building/fob/"
+  ],
+  "tier3_hold_noindex": [
+    "/map/interactive/",
+    "/map/mortar-artillery/",
+    "/factions/valkyra/",
+    "/factions/lonestar/",
+    "/factions/manticore/",
+    "/settings/"
+  ],
+  "orphanIndexablePages": []
+}

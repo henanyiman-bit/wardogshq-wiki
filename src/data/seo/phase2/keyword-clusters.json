@@ -1,0 +1,726 @@
+[
+  {
+    "cluster": "map",
+    "keywordCount": 77,
+    "ownerUrl": "/map/",
+    "primaryIntent": "Database Lookup",
+    "sampleKeywords": [
+      "wardogs map",
+      "wardogs maps",
+      "wardogs map",
+      "wardogs roadmap",
+      "wardogs map size",
+      "wardogs road map",
+      "wardog map",
+      "wardogs how many maps",
+      "wardogs game map",
+      "wardogs how to ping map",
+      "wardogs new map",
+      "wardogs all maps",
+      "wardogs in map",
+      "how many maps will be on wardogs?",
+      "how many maps does wardogs have",
+      "wardogs motor maps",
+      "how long do wardogs map sessions last",
+      "wardogs map keeps moving bug",
+      "wardogs best map",
+      "interacrive map wardogs"
+    ]
+  },
+  {
+    "cluster": "money-making",
+    "keywordCount": 61,
+    "ownerUrl": "/money/how-to-make-money/",
+    "primaryIntent": "How-To",
+    "sampleKeywords": [
+      "how to make money wardogs",
+      "wardogs best way to make money",
+      "how to make money in wardogs",
+      "wardogs easy money",
+      "best way to make money in wardogs",
+      "fastest way to make money wardogs",
+      "fastest way to make money in wardogs",
+      "wardogs make money",
+      "best way to make money wardogs",
+      "wardogs easiest way to make money",
+      "wardogs how to make money",
+      "best way to earn money wardogs",
+      "wardogs best money maker",
+      "wardogs fastest way to make money",
+      "wardogs how to make most money",
+      "wardogs fastest money",
+      "best way to get money in wardogs",
+      "wardogs money farm",
+      "wardogs money earned from killing",
+      "wardogs best money"
+    ]
+  },
+  {
+    "cluster": "towers",
+    "keywordCount": 53,
+    "ownerUrl": "/map/towers/",
+    "primaryIntent": "Mechanics",
+    "sampleKeywords": [
+      "wardogs towers",
+      "wardogs drill towers",
+      "wardogs tower",
+      "wardogs what do the towers do",
+      "wardogs how do towers work",
+      "wardogs tower code",
+      "wardogs tower codes",
+      "war dogs how to capture towers",
+      "wardogs what do towers do",
+      "wardogs towers",
+      "how is the building mechanics for the towers in wardogs ?",
+      "towers wardogs",
+      "wardogs how to take towers",
+      "what happens if u write the code from the towers on wardogs?",
+      "what do the towers do in wardogs",
+      "wardogs what are towers for",
+      "purpose of towers in wardogs",
+      "wardogs how to capture towers",
+      "wardogs gamemode towers",
+      "wardogs how to conquest towers"
+    ]
+  },
+  {
+    "cluster": "off-topic",
+    "keywordCount": 36,
+    "ownerUrl": "/",
+    "primaryIntent": "Navigational",
+    "sampleKeywords": [
+      "steam",
+      "steam charts",
+      "hotas",
+      "steamdb",
+      "cs money",
+      "world map",
+      "google map",
+      "bakurani",
+      "zestafona",
+      "utc",
+      "dayz map",
+      "zomboid map",
+      "valheim map",
+      "planetside 2 factions",
+      "poe 2 builds",
+      "bisecthosting",
+      "nexus mods",
+      "valheim mods",
+      "valheim",
+      "dawnwalker mods"
+    ]
+  },
+  {
+    "cluster": "money",
+    "keywordCount": 34,
+    "ownerUrl": "/money/",
+    "primaryIntent": "Mechanics",
+    "sampleKeywords": [
+      "wardogs money",
+      "wardogs money glitch",
+      "wardogs cash bonus",
+      "wardogs money",
+      "the money system in wardogs just took any interest i had for the game out",
+      "wardogs devs talk about gold ingots and paid money",
+      "wardogs do you get money healing people",
+      "wardogs money cheat",
+      "making money in wardogs",
+      "how much money has wardogs from steam made so far",
+      "wardogs what do you do with the money after the game",
+      "how to get a lot of money in wardogs",
+      "what do you do in wardogs when you're out of money",
+      "glich money wardogs",
+      "money in wardogs",
+      "money making wardogs",
+      "wardogs can u buy stuff without money",
+      "wardogs firing range taking money",
+      "how does wardogs balance persistent money",
+      "helo money gain rate should be halved in wardogs"
+    ]
+  },
+  {
+    "cluster": "vehicles",
+    "keywordCount": 26,
+    "ownerUrl": "/vehicles/",
+    "primaryIntent": "Database Lookup",
+    "sampleKeywords": [
+      "wardogs vehicles",
+      "wardogs spawn vehicle",
+      "wardogs tank",
+      "wardogs apc",
+      "wardogs humvee",
+      "wardogs vehicles",
+      "wardogs all vehicles",
+      "how to play music on vehicles in wardogs",
+      "what armoured vehicles are in wardogs",
+      "wardogs the point of land vehicles vs air",
+      "wardogs can you drag people into vehicles",
+      "wardogs how to unlock vehicles for passengers",
+      "wardogs how long does it take for destroyed vehicles to despawn",
+      "wardogs best vehicles",
+      "in wardogs what vehicles can you use",
+      "will wardogs have more vehicles",
+      "wardogs vehicles feel cluncy",
+      "wardogs can you puck up crates with vehicles",
+      "wardogs vehicles blow up by themselves",
+      "how to turn on music in vehicles in wardogs"
+    ]
+  },
+  {
+    "cluster": "loadout-save-rebuy",
+    "keywordCount": 21,
+    "ownerUrl": "/loadouts/save-rebuy/",
+    "primaryIntent": "How-To",
+    "sampleKeywords": [
+      "wardogs save loadout",
+      "wardogs loadouts save",
+      "save loadout wardogs",
+      "wardogs how to save loadout",
+      "how to save loadout wardogs",
+      "can we save loadouts wardogs",
+      "wardogs where is rebuy last loadout",
+      "save a loadout wardogs",
+      "can ytou save loadout in wardogs",
+      "wardogs rebuy loadout",
+      "wardogs loadout button",
+      "how to buy last used loadout wardogs",
+      "how to save a loadout in wardogs",
+      "wardogs rebuy last loadout not appearing",
+      "save loadouts wardogs",
+      "wardogs keybind for buying previous loadout",
+      "wardogs how to savev loadout",
+      "loadout save wardogs",
+      "wardogs buy previous loadout",
+      "can you make a preset loadout wardogs"
+    ]
+  },
+  {
+    "cluster": "loadouts",
+    "keywordCount": 21,
+    "ownerUrl": "/loadouts/",
+    "primaryIntent": "Build",
+    "sampleKeywords": [
+      "wardogs loadout",
+      "wardogs loadouts",
+      "wardogs loadout",
+      "wardogs game can you make loadouts",
+      "safe loadout wardogs",
+      "safe loadout wardogs how to",
+      "wardogs saving loadouts",
+      "wardogs win keep loadout",
+      "loadout wardogs",
+      "wardogs beest m4 loadout",
+      "wardogs custom loadout",
+      "sani loadouts wardogs",
+      "how to create loadout wardogs",
+      "wardogs skill and loadouts",
+      "does wardogs have a free starter loadout",
+      "wardogs ak loadout",
+      "wardogs how do i create loadouts",
+      "how to safe loadouts in wardogs",
+      "can you create standard loadouts in wardogs",
+      "wardogs armor guide",
+      "wardogs backpack guide"
+    ]
+  },
+  {
+    "cluster": "money-persistence",
+    "keywordCount": 18,
+    "ownerUrl": "/money/persistence/",
+    "primaryIntent": "Mechanics",
+    "sampleKeywords": [
+      "what happens when you have no money in wardogs",
+      "wardogs do you get to keep money made if you dont win the match?",
+      "wardogs does money cross servers",
+      "do get i get back the money from supply crate dropsfrom wardogs",
+      "do you keep your money in wardogs after the match",
+      "wardogs to you keep money between games",
+      "wardogs lost money",
+      "wardogs do you keep money forever",
+      "wardogs do you need to finish match to get money",
+      "if you leave wardogs early do you keep money",
+      "what's the point of wardogs if the money goes away",
+      "wardogs do i only get my money if i finish a game",
+      "wardogs do you get your gear money back at the end",
+      "wardogs does it allow you to keep money earned if you leave early?",
+      "wardogs loosing money against exploiters",
+      "wardogs money back",
+      "wardogs what if you run out of money",
+      "how do you make money in wardogs with no money"
+    ]
+  },
+  {
+    "cluster": "mortar-artillery",
+    "keywordCount": 17,
+    "ownerUrl": "/map/mortar-artillery/",
+    "primaryIntent": "Tool / Calculator",
+    "sampleKeywords": [
+      "wardogs artillery",
+      "wardogs mortar",
+      "wardogs mortar calculator",
+      "wardogs artillery calculator",
+      "wardogs map for mortar",
+      "wardogs artillery calculator & 3d map tools",
+      "wardogs mortar map",
+      "wardogs artilery map",
+      "wardogs artillery map",
+      "mortar map wardogs",
+      "wardogs map artillery",
+      "artillery map wardogs",
+      "mortar map ewardogs",
+      "mortar distance map wardogs",
+      "mörser map wardogs",
+      "wardogs aterlary map",
+      "wardogs map arty"
+    ]
+  },
+  {
+    "cluster": "release-platform",
+    "keywordCount": 17,
+    "ownerUrl": "/early-access/",
+    "primaryIntent": "Informational",
+    "sampleKeywords": [
+      "wardogs beta",
+      "wardogs price",
+      "wardogs playtest",
+      "wardogs player count",
+      "wardogs release date",
+      "wardogs release time",
+      "wardogs release",
+      "wardogs ps5",
+      "wardogs linux",
+      "wardogs how many maps on release",
+      "how many maps on wardogs release",
+      "wardogs beta absturz wenn er die map lad",
+      "wardogs beta störtzt beim laden der map ab",
+      "what to expect on wardogs release? new maps?",
+      "wardogs will they release more maps",
+      "wardogs release map",
+      "wardogs early access release maps"
+    ]
+  },
+  {
+    "cluster": "external-nav",
+    "keywordCount": 16,
+    "ownerUrl": "/early-access/",
+    "primaryIntent": "Informational",
+    "sampleKeywords": [
+      "reddit wardogs",
+      "wardogs reddit",
+      "wardogs steam",
+      "wardogs discord",
+      "wardogs steam charts",
+      "wardogs steamdb",
+      "wardogs twitter",
+      "wardogs steam key",
+      "steam charts wardogs",
+      "steamdb wardogs",
+      "steam wardogs",
+      "wardogs money reddit",
+      "wardogs how to make money reddit",
+      "wardogs discord map",
+      "wardogs best map reddit",
+      "wardogs do you get loadout back when the matchs ends reddit"
+    ]
+  },
+  {
+    "cluster": "misc",
+    "keywordCount": 16,
+    "ownerUrl": "/guide/",
+    "primaryIntent": "Informational",
+    "sampleKeywords": [
+      "wardogs key",
+      "wardogs vault",
+      "wardogs radio",
+      "wardogs havoc",
+      "what is wardogs",
+      "wardogs server",
+      "wardogs calculator",
+      "wardogs stuck",
+      "wardogs zone",
+      "bulkhead",
+      "wardogs review",
+      "wardogs meta",
+      "wardogs tier list",
+      "wardogs items",
+      "wardogs lore",
+      "wardogs servers"
+    ]
+  },
+  {
+    "cluster": "weapons",
+    "keywordCount": 17,
+    "ownerUrl": "/weapons/",
+    "primaryIntent": "Database Lookup",
+    "sampleKeywords": [
+      "wardogs weapons",
+      "wardogs weapons",
+      "wardogs guns",
+      "war dogs weapons",
+      "t-21",
+      "t-21 wardogs",
+      "war dogs weapons list",
+      "wardogs ttk",
+      "wardogs svd",
+      "sks",
+      "a-91",
+      "wardogs rpg",
+      "wardogs all weapons",
+      "wardogs database | weapons, armor, vehicles and items",
+      "wardogs ammo types",
+      "wardogs fmj vs ap",
+      "wardogs weapon attachments"
+    ]
+  },
+  {
+    "cluster": "best-loadouts",
+    "keywordCount": 12,
+    "ownerUrl": "/loadouts/best-loadouts/",
+    "primaryIntent": "Best / Ranking",
+    "sampleKeywords": [
+      "wardogs best loadouts",
+      "best sniper loadout in wardogs",
+      "wardogs best loadout",
+      "best loadout wardogs",
+      "wardogs meta loadout",
+      "wardogs good loadouts",
+      "wardogs what loadout to use",
+      "best wardogs loadout",
+      "wardogs best ak loadout",
+      "wardogs good loadout",
+      "best wardogs loadouts",
+      "wardogs best amp loadout"
+    ]
+  },
+  {
+    "cluster": "factions",
+    "keywordCount": 12,
+    "ownerUrl": "/factions/",
+    "primaryIntent": "Entity Lookup",
+    "sampleKeywords": [
+      "wardogs factions",
+      "wardogs factions",
+      "war dogs factions",
+      "manticore",
+      "wardogs teams",
+      "wardogs lonestar",
+      "wardogs factions pro con",
+      "wardogs game factions explained",
+      "wardogs game factions",
+      "what is the factions in wardogs game",
+      "all wardogs upcoming factions name",
+      "wardogs difference between factions"
+    ]
+  },
+  {
+    "cluster": "community-servers",
+    "keywordCount": 14,
+    "ownerUrl": "/community-servers/",
+    "primaryIntent": "How-To",
+    "sampleKeywords": [
+      "wardogs community servers",
+      "wardogs community servers",
+      "wardogs community servers cash bonus",
+      "wardogs community server",
+      "wardogs server hosting",
+      "xrealm wardogs",
+      "wardogs host server",
+      "burnt peanut wardogs community servers",
+      "wardogs check player-hosted community servers in the server browser.",
+      "wardogs community servers update",
+      "wardogs will you still get xp in community servers",
+      "wardogs server browser",
+      "wardogs how to join a server",
+      "wardogs community server browser"
+    ]
+  },
+  {
+    "cluster": "troubleshooting",
+    "keywordCount": 13,
+    "ownerUrl": "/troubleshooting/map-loading-crash/",
+    "primaryIntent": "Troubleshooting",
+    "sampleKeywords": [
+      "wardogs crashing",
+      "wardogs crash when loading map",
+      "wardogs crash building map",
+      "wardogs keeps crashing when loading map",
+      "wardogs crash on map loading screen",
+      "do all players lose money if the pilot crashes the helicopter wardogs",
+      "wardogs stuck under map",
+      "under the map wardogs",
+      "compiling map wardogs",
+      "wardogs crash to desktop compiling map",
+      "wardogs map compling crash",
+      "wardogs cant join server",
+      "wardogs login queue"
+    ]
+  },
+  {
+    "cluster": "money-pilot",
+    "keywordCount": 10,
+    "ownerUrl": "/money/pilot/",
+    "primaryIntent": "How-To",
+    "sampleKeywords": [
+      "wardogs how to make money as a pilot?",
+      "wardogs how does using the heli to drop material off make money?",
+      "wardogs how to make money with helicopter",
+      "wardogs make money with helicopter",
+      "wardogs money as pilot",
+      "how to make money as pilot in wardogs",
+      "wardogs easy money farm no heli",
+      "wardogs does piloting give you a lot of money",
+      "apc money limit? wardogs",
+      "wardogs do you make money from spawn vehicle after exiting it"
+    ]
+  },
+  {
+    "cluster": "money-logistics",
+    "keywordCount": 11,
+    "ownerUrl": "/money/logistics/",
+    "primaryIntent": "How-To",
+    "sampleKeywords": [
+      "wardogs pallets",
+      "wardogs ural transport money for cargo bay passengers",
+      "make money driving the ural wardogs",
+      "wardogs make money doing logistics",
+      "wardogs how much money for pallet",
+      "do ural's make more money wardogs",
+      "how to make money as transport wardogs",
+      "wardogs logistics what makes more money",
+      "does wardogs give you money for delivering supplies",
+      "wardogs supply guide",
+      "wardogs how to deliver supplies"
+    ]
+  },
+  {
+    "cluster": "brand",
+    "keywordCount": 8,
+    "ownerUrl": "/",
+    "primaryIntent": "Navigational",
+    "sampleKeywords": [
+      "Wardogs",
+      "war dogs",
+      "war dogs game",
+      "wardogs wiki",
+      "wardogs game",
+      "wardog",
+      "wardogs guide: weapons, vehicles and player wiki",
+      "wardogs wiki — tactical fps guides, weapons & loadouts"
+    ]
+  },
+  {
+    "cluster": "building",
+    "keywordCount": 12,
+    "ownerUrl": "/guide/",
+    "primaryIntent": "Informational",
+    "sampleKeywords": [
+      "wardogs builds",
+      "fob builds wardogs",
+      "how to download steam builds wardogs",
+      "wardogs builds",
+      "stackable builds wardogs",
+      "best base builds wardogs",
+      "wardogs recon builds",
+      "wardogs fob guide",
+      "wardogs how do fobs work",
+      "wardogs how to build a fob",
+      "wardogs how to supply a fob",
+      "wardogs large hammer"
+    ]
+  },
+  {
+    "cluster": "interactive-map",
+    "keywordCount": 7,
+    "ownerUrl": "/map/interactive/",
+    "primaryIntent": "Tool / Calculator",
+    "sampleKeywords": [
+      "wardogs interactive map",
+      "wardogs interactive maps",
+      "wardogs map online",
+      "wardogs map tools",
+      "wardogs live map",
+      "wardogs live map web url?",
+      "wardogs interactive map with build functions"
+    ]
+  },
+  {
+    "cluster": "system-requirements",
+    "keywordCount": 7,
+    "ownerUrl": "/system-requirements/",
+    "primaryIntent": "Informational",
+    "sampleKeywords": [
+      "wardogs system requirements",
+      "war dogs system requirements",
+      "wardogs minimum requirements",
+      "wardogs system requirements",
+      "wardogs minmal system requirements",
+      "wardogs game system requirements",
+      "wardogs system requirements: pc specs and storage"
+    ]
+  },
+  {
+    "cluster": "best-weapons",
+    "keywordCount": 6,
+    "ownerUrl": "/weapons/best-weapons/",
+    "primaryIntent": "Best / Ranking",
+    "sampleKeywords": [
+      "wardogs best guns",
+      "wardogs best weapons",
+      "best weapons wardogs",
+      "wardogs best weapon",
+      "wardogs best sniper",
+      "wardogs how much money for spotting for sniper"
+    ]
+  },
+  {
+    "cluster": "budget-loadout",
+    "keywordCount": 6,
+    "ownerUrl": "/loadouts/budget/",
+    "primaryIntent": "Build",
+    "sampleKeywords": [
+      "best budget wardogs loadout",
+      "wardogs best early game loadout",
+      "wardogs early game meta loadout",
+      "wardogs , best budget loadout",
+      "wardogs good starting loadout",
+      "wardogs cheap loadouts"
+    ]
+  },
+  {
+    "cluster": "control-zone",
+    "keywordCount": 9,
+    "ownerUrl": "/map/control-zone/",
+    "primaryIntent": "Mechanics",
+    "sampleKeywords": [
+      "wardogs control zone",
+      "how does zone control work in wardogs",
+      "wardogs what is control zone",
+      "wardogs how to control zone",
+      "wardogs map zone",
+      "why is the wardogs map so big but the control zone is small",
+      "wardogs hot zone",
+      "wardogs hot zone guide",
+      "wardogs how does hot zone work"
+    ]
+  },
+  {
+    "cluster": "mods-unsupported",
+    "keywordCount": 5,
+    "ownerUrl": "/guide/",
+    "primaryIntent": "Informational",
+    "sampleKeywords": [
+      "wardogs mods",
+      "wardogs mods",
+      "is wardogs launching with mods support",
+      "ingame overlays and addons for wardogs map extras etc",
+      "mods for wardogs"
+    ]
+  },
+  {
+    "cluster": "progression",
+    "keywordCount": 4,
+    "ownerUrl": "/progression/",
+    "primaryIntent": "Progression",
+    "sampleKeywords": [
+      "wardogs unlocks",
+      "wardogs classes",
+      "wardogs will levels reset or just money",
+      "wardogs does it have progression other than money?"
+    ]
+  },
+  {
+    "cluster": "drills",
+    "keywordCount": 4,
+    "ownerUrl": "/map/drills/",
+    "primaryIntent": "Mechanics",
+    "sampleKeywords": [
+      "wardogs drill",
+      "wardogs drills",
+      "what is the money reward for drills in wardogs",
+      "wardogs how to build drill rig"
+    ]
+  },
+  {
+    "cluster": "guide",
+    "keywordCount": 8,
+    "ownerUrl": "/guide/",
+    "primaryIntent": "Informational",
+    "sampleKeywords": [
+      "wardogs guide",
+      "wardogs tips",
+      "wardogs explained",
+      "wardogs beginner guide",
+      "how to play wardogs",
+      "wardogs first match guide",
+      "wardogs what to do first",
+      "wardogs how to win"
+    ]
+  },
+  {
+    "cluster": "weapon-builds",
+    "keywordCount": 3,
+    "ownerUrl": "/weapons/builds/",
+    "primaryIntent": "Build",
+    "sampleKeywords": [
+      "wardogs best attachments",
+      "wardogs gun builds",
+      "wardogs wepon builds"
+    ]
+  },
+  {
+    "cluster": "air-vehicles",
+    "keywordCount": 2,
+    "ownerUrl": "/vehicles/air/",
+    "primaryIntent": "Database Lookup",
+    "sampleKeywords": [
+      "wardogs helicopters",
+      "wardogs do people actually use ground vehicles or just helicopters?"
+    ]
+  },
+  {
+    "cluster": "medic-loadout",
+    "keywordCount": 6,
+    "ownerUrl": "/loadouts/medic/",
+    "primaryIntent": "Build",
+    "sampleKeywords": [
+      "wardogs medic loadout",
+      "best early game medic loadout for wardogs",
+      "wardogs how to revive",
+      "wardogs revive guide",
+      "wardogs medic guide",
+      "wardogs defibrillator"
+    ]
+  },
+  {
+    "cluster": "pilot-loadout",
+    "keywordCount": 1,
+    "ownerUrl": "/loadouts/pilot/",
+    "primaryIntent": "Build",
+    "sampleKeywords": [
+      "wardogs recommend pilot loadout"
+    ]
+  },
+  {
+    "cluster": "settings",
+    "keywordCount": 5,
+    "ownerUrl": "/settings/",
+    "primaryIntent": "How-To",
+    "sampleKeywords": [
+      "wardogs best settings",
+      "wardogs helicopter controls",
+      "wardogs helicopter keybinds",
+      "wardogs flight assists",
+      "wardogs parachute key"
+    ]
+  },
+  {
+    "cluster": "updates",
+    "keywordCount": 1,
+    "ownerUrl": "/updates/",
+    "primaryIntent": "Update / Patch",
+    "sampleKeywords": [
+      "wardogs update"
+    ]
+  }
+]

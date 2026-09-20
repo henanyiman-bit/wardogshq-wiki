@@ -1,0 +1,11 @@
+{
+  "generated_page_count": 96,
+  "content_page_count": 95,
+  "canonical_route_count": 96,
+  "internal_link_references": 743,
+  "local_asset_references": 4,
+  "broken_internal_links": [],
+  "missing_local_assets": [],
+  "duplicate_canonical_routes": [],
+  "structural_issue_fixed": "Dynamic route generation now uses canonicalPath instead of content file id, preventing /entities/ URL mismatches."
+}

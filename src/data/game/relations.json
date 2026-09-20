@@ -1,0 +1,92 @@
+[
+  {
+    "source": "faction-valkyra",
+    "relation": "part_of",
+    "target": "game-wardogs"
+  },
+  {
+    "source": "faction-lonestar",
+    "relation": "part_of",
+    "target": "game-wardogs"
+  },
+  {
+    "source": "faction-manticore",
+    "relation": "part_of",
+    "target": "game-wardogs"
+  },
+  {
+    "source": "role-career",
+    "relation": "part_of",
+    "target": "system-progression"
+  },
+  {
+    "source": "role-medic",
+    "relation": "part_of",
+    "target": "system-progression"
+  },
+  {
+    "source": "role-support",
+    "relation": "part_of",
+    "target": "system-progression"
+  },
+  {
+    "source": "role-driver",
+    "relation": "part_of",
+    "target": "system-progression"
+  },
+  {
+    "source": "role-pilot",
+    "relation": "part_of",
+    "target": "system-progression"
+  },
+  {
+    "source": "vehicle-z20-lakota",
+    "relation": "part_of",
+    "target": "system-vehicles"
+  },
+  {
+    "source": "vehicle-ural",
+    "relation": "part_of",
+    "target": "system-vehicles"
+  },
+  {
+    "source": "vehicle-dune-buggy",
+    "relation": "part_of",
+    "target": "system-vehicles"
+  },
+  {
+    "source": "vehicle-kodiak-flatbed",
+    "relation": "part_of",
+    "target": "system-vehicles"
+  },
+  {
+    "source": "vehicle-kodiak-assault",
+    "relation": "part_of",
+    "target": "system-vehicles"
+  },
+  {
+    "source": "vehicle-ural-covered",
+    "relation": "part_of",
+    "target": "system-vehicles"
+  },
+  {
+    "source": "vehicle-ural-attack",
+    "relation": "part_of",
+    "target": "system-vehicles"
+  },
+  {
+    "source": "vehicle-humvee-with-minigun",
+    "relation": "part_of",
+    "target": "system-vehicles"
+  },
+  {
+    "source": "vehicle-heavy-tank",
+    "relation": "part_of",
+    "target": "system-vehicles"
+  },
+  {
+    "source": "vehicle-artillery-tank",
+    "relation": "part_of",
+    "target": "system-vehicles"
+  }
+]

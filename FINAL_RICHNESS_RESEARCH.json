@@ -1,0 +1,52 @@
+{
+  "generatedAt": "2026-09-20",
+  "scope": "Final richness expansion",
+  "sources": [
+    {
+      "name": "Team17 WARDOGS official game page",
+      "url": "https://www.team17.com/games/wardogs",
+      "use": "core game systems, cash, combined arms, Hot Zone, building/destruction"
+    },
+    {
+      "name": "Team17 Press & Creator Hub",
+      "url": "https://www.team17.com/press-and-creator-hub",
+      "use": "official WARDOGS press kit availability and key art source"
+    },
+    {
+      "name": "Steam WARDOGS store",
+      "url": "https://store.steampowered.com/app/1867240/WARDOGS/",
+      "use": "release, official screenshots, platform/system requirements, core description"
+    },
+    {
+      "name": "Steam announcements",
+      "url": "https://steamcommunity.com/app/1867240/allnews/",
+      "use": "Patch 0.11, Season 1, server browser and progression changes"
+    },
+    {
+      "name": "GameWatcher WARDOGS weapons",
+      "url": "https://www.gamewatcher.com/wardogs/weapons",
+      "use": "35 observed weapon entries and current secondary stat snapshot"
+    },
+    {
+      "name": "GameWatcher WARDOGS vehicles",
+      "url": "https://www.gamewatcher.com/wardogs/vehicles",
+      "use": "20 observed vehicle entries and current secondary stat snapshot"
+    },
+    {
+      "name": "GameWatcher WARDOGS maps",
+      "url": "https://www.gamewatcher.com/wardogs/maps",
+      "use": "Bakurani, Ozeti, Zestafona and map descriptions"
+    },
+    {
+      "name": "GameWatcher WARDOGS towers",
+      "url": "https://www.gamewatcher.com/wardogs/towers-what-they-are-and-how-to-capture-them",
+      "use": "tower counts and capture/Hot Zone loop"
+    }
+  ],
+  "entityPagesAdded": {
+    "weapons": 35,
+    "vehicles": 20,
+    "maps": 3
+  },
+  "note": "Secondary stats are labeled as current observed guide data and not presented as immutable official balance values."
+}

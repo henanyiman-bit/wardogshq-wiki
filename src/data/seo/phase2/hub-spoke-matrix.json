@@ -1,0 +1,74 @@
+[
+  {
+    "hub": "/",
+    "spokes": [
+      "/community-servers/",
+      "/early-access/",
+      "/factions/",
+      "/guide/",
+      "/loadouts/",
+      "/map/",
+      "/money/",
+      "/system-requirements/",
+      "/vehicles/",
+      "/weapons/"
+    ]
+  },
+  {
+    "hub": "/money/",
+    "spokes": [
+      "/loadouts/",
+      "/money/how-to-make-money/",
+      "/money/logistics/",
+      "/money/persistence/",
+      "/money/pilot/"
+    ]
+  },
+  {
+    "hub": "/weapons/",
+    "spokes": [
+      "/weapons/best-weapons/",
+      "/weapons/builds/"
+    ]
+  },
+  {
+    "hub": "/loadouts/",
+    "spokes": [
+      "/loadouts/best-loadouts/",
+      "/loadouts/budget/",
+      "/loadouts/medic/",
+      "/loadouts/pilot/",
+      "/loadouts/save-rebuy/",
+      "/money/",
+      "/weapons/"
+    ]
+  },
+  {
+    "hub": "/vehicles/",
+    "spokes": [
+      "/money/logistics/",
+      "/money/pilot/",
+      "/vehicles/air/",
+      "/vehicles/ground/"
+    ]
+  },
+  {
+    "hub": "/map/",
+    "spokes": [
+      "/map/control-zone/",
+      "/map/drills/",
+      "/map/interactive/",
+      "/map/mortar-artillery/",
+      "/map/towers/"
+    ]
+  },
+  {
+    "hub": "/factions/",
+    "spokes": [
+      "/factions/lonestar/",
+      "/factions/manticore/",
+      "/factions/valkyra/",
+      "/map/control-zone/"
+    ]
+  }
+]

@@ -1,0 +1,482 @@
+[
+  {
+    "url": "/",
+    "canonical": "/",
+    "index": true
+  },
+  {
+    "url": "/guide/",
+    "canonical": "/guide/",
+    "index": true
+  },
+  {
+    "url": "/money/",
+    "canonical": "/money/",
+    "index": true
+  },
+  {
+    "url": "/money/how-to-make-money/",
+    "canonical": "/money/how-to-make-money/",
+    "index": true
+  },
+  {
+    "url": "/money/persistence/",
+    "canonical": "/money/persistence/",
+    "index": true
+  },
+  {
+    "url": "/money/pilot/",
+    "canonical": "/money/pilot/",
+    "index": true
+  },
+  {
+    "url": "/money/logistics/",
+    "canonical": "/money/logistics/",
+    "index": true
+  },
+  {
+    "url": "/weapons/",
+    "canonical": "/weapons/",
+    "index": true
+  },
+  {
+    "url": "/weapons/best-weapons/",
+    "canonical": "/weapons/best-weapons/",
+    "index": true
+  },
+  {
+    "url": "/weapons/builds/",
+    "canonical": "/weapons/builds/",
+    "index": true
+  },
+  {
+    "url": "/loadouts/",
+    "canonical": "/loadouts/",
+    "index": true
+  },
+  {
+    "url": "/loadouts/best-loadouts/",
+    "canonical": "/loadouts/best-loadouts/",
+    "index": true
+  },
+  {
+    "url": "/loadouts/budget/",
+    "canonical": "/loadouts/budget/",
+    "index": true
+  },
+  {
+    "url": "/loadouts/medic/",
+    "canonical": "/loadouts/medic/",
+    "index": true
+  },
+  {
+    "url": "/loadouts/pilot/",
+    "canonical": "/loadouts/pilot/",
+    "index": true
+  },
+  {
+    "url": "/loadouts/save-rebuy/",
+    "canonical": "/loadouts/save-rebuy/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/",
+    "canonical": "/vehicles/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/ground/",
+    "canonical": "/vehicles/ground/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/air/",
+    "canonical": "/vehicles/air/",
+    "index": true
+  },
+  {
+    "url": "/map/",
+    "canonical": "/map/",
+    "index": true
+  },
+  {
+    "url": "/map/interactive/",
+    "canonical": "/map/interactive/",
+    "index": false
+  },
+  {
+    "url": "/map/control-zone/",
+    "canonical": "/map/control-zone/",
+    "index": true
+  },
+  {
+    "url": "/map/towers/",
+    "canonical": "/map/towers/",
+    "index": true
+  },
+  {
+    "url": "/map/drills/",
+    "canonical": "/map/drills/",
+    "index": true
+  },
+  {
+    "url": "/map/mortar-artillery/",
+    "canonical": "/map/mortar-artillery/",
+    "index": false
+  },
+  {
+    "url": "/factions/",
+    "canonical": "/factions/",
+    "index": true
+  },
+  {
+    "url": "/factions/valkyra/",
+    "canonical": "/factions/valkyra/",
+    "index": false
+  },
+  {
+    "url": "/factions/lonestar/",
+    "canonical": "/factions/lonestar/",
+    "index": false
+  },
+  {
+    "url": "/factions/manticore/",
+    "canonical": "/factions/manticore/",
+    "index": false
+  },
+  {
+    "url": "/progression/",
+    "canonical": "/progression/",
+    "index": true
+  },
+  {
+    "url": "/community-servers/",
+    "canonical": "/community-servers/",
+    "index": true
+  },
+  {
+    "url": "/system-requirements/",
+    "canonical": "/system-requirements/",
+    "index": true
+  },
+  {
+    "url": "/early-access/",
+    "canonical": "/early-access/",
+    "index": true
+  },
+  {
+    "url": "/updates/",
+    "canonical": "/updates/",
+    "index": true
+  },
+  {
+    "url": "/troubleshooting/map-loading-crash/",
+    "canonical": "/troubleshooting/map-loading-crash/",
+    "index": true
+  },
+  {
+    "url": "/settings/",
+    "canonical": "/settings/",
+    "index": false
+  },
+  {
+    "url": "/guide/how-to-play/",
+    "canonical": "/guide/how-to-play/",
+    "index": true
+  },
+  {
+    "url": "/building/fob/",
+    "canonical": "/building/fob/",
+    "index": true
+  },
+  {
+    "url": "/weapons/bushmaster-m17s/",
+    "canonical": "/weapons/bushmaster-m17s/",
+    "index": true
+  },
+  {
+    "url": "/weapons/t-21/",
+    "canonical": "/weapons/t-21/",
+    "index": true
+  },
+  {
+    "url": "/weapons/ak74/",
+    "canonical": "/weapons/ak74/",
+    "index": true
+  },
+  {
+    "url": "/weapons/galil/",
+    "canonical": "/weapons/galil/",
+    "index": true
+  },
+  {
+    "url": "/weapons/m4/",
+    "canonical": "/weapons/m4/",
+    "index": true
+  },
+  {
+    "url": "/weapons/fal/",
+    "canonical": "/weapons/fal/",
+    "index": true
+  },
+  {
+    "url": "/weapons/a-91/",
+    "canonical": "/weapons/a-91/",
+    "index": true
+  },
+  {
+    "url": "/weapons/kh-2002/",
+    "canonical": "/weapons/kh-2002/",
+    "index": true
+  },
+  {
+    "url": "/weapons/amp-9/",
+    "canonical": "/weapons/amp-9/",
+    "index": true
+  },
+  {
+    "url": "/weapons/pp-19-vityaz/",
+    "canonical": "/weapons/pp-19-vityaz/",
+    "index": true
+  },
+  {
+    "url": "/weapons/mp5/",
+    "canonical": "/weapons/mp5/",
+    "index": true
+  },
+  {
+    "url": "/weapons/super-45/",
+    "canonical": "/weapons/super-45/",
+    "index": true
+  },
+  {
+    "url": "/weapons/m249-saw/",
+    "canonical": "/weapons/m249-saw/",
+    "index": true
+  },
+  {
+    "url": "/weapons/pkm/",
+    "canonical": "/weapons/pkm/",
+    "index": true
+  },
+  {
+    "url": "/weapons/mp43/",
+    "canonical": "/weapons/mp43/",
+    "index": true
+  },
+  {
+    "url": "/weapons/m500/",
+    "canonical": "/weapons/m500/",
+    "index": true
+  },
+  {
+    "url": "/weapons/m12g/",
+    "canonical": "/weapons/m12g/",
+    "index": true
+  },
+  {
+    "url": "/weapons/sks/",
+    "canonical": "/weapons/sks/",
+    "index": true
+  },
+  {
+    "url": "/weapons/svd/",
+    "canonical": "/weapons/svd/",
+    "index": true
+  },
+  {
+    "url": "/weapons/bmr-308/",
+    "canonical": "/weapons/bmr-308/",
+    "index": true
+  },
+  {
+    "url": "/weapons/scout-rifle-td/",
+    "canonical": "/weapons/scout-rifle-td/",
+    "index": true
+  },
+  {
+    "url": "/weapons/mosin-nagant/",
+    "canonical": "/weapons/mosin-nagant/",
+    "index": true
+  },
+  {
+    "url": "/weapons/sv98/",
+    "canonical": "/weapons/sv98/",
+    "index": true
+  },
+  {
+    "url": "/weapons/mk22/",
+    "canonical": "/weapons/mk22/",
+    "index": true
+  },
+  {
+    "url": "/weapons/amr-50/",
+    "canonical": "/weapons/amr-50/",
+    "index": true
+  },
+  {
+    "url": "/weapons/ggx-17/",
+    "canonical": "/weapons/ggx-17/",
+    "index": true
+  },
+  {
+    "url": "/weapons/ggx-18/",
+    "canonical": "/weapons/ggx-18/",
+    "index": true
+  },
+  {
+    "url": "/weapons/judge/",
+    "canonical": "/weapons/judge/",
+    "index": true
+  },
+  {
+    "url": "/weapons/m1911/",
+    "canonical": "/weapons/m1911/",
+    "index": true
+  },
+  {
+    "url": "/weapons/deagle/",
+    "canonical": "/weapons/deagle/",
+    "index": true
+  },
+  {
+    "url": "/weapons/rpg-7/",
+    "canonical": "/weapons/rpg-7/",
+    "index": true
+  },
+  {
+    "url": "/weapons/maaws/",
+    "canonical": "/weapons/maaws/",
+    "index": true
+  },
+  {
+    "url": "/weapons/mgl-40/",
+    "canonical": "/weapons/mgl-40/",
+    "index": true
+  },
+  {
+    "url": "/weapons/9k333-verba/",
+    "canonical": "/weapons/9k333-verba/",
+    "index": true
+  },
+  {
+    "url": "/weapons/compound-bow/",
+    "canonical": "/weapons/compound-bow/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/bobcat/",
+    "canonical": "/vehicles/bobcat/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/dune-buggy/",
+    "canonical": "/vehicles/dune-buggy/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/kodiak/",
+    "canonical": "/vehicles/kodiak/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/kodiak-pickup/",
+    "canonical": "/vehicles/kodiak-pickup/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/humvee/",
+    "canonical": "/vehicles/humvee/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/kodiak-m249/",
+    "canonical": "/vehicles/kodiak-m249/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/humvee-m249/",
+    "canonical": "/vehicles/humvee-m249/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/humvee-minigun/",
+    "canonical": "/vehicles/humvee-minigun/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/ural/",
+    "canonical": "/vehicles/ural/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/ural-defender/",
+    "canonical": "/vehicles/ural-defender/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/ural-defender-m249/",
+    "canonical": "/vehicles/ural-defender-m249/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/flakpanzer-gepard/",
+    "canonical": "/vehicles/flakpanzer-gepard/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/l2a6/",
+    "canonical": "/vehicles/l2a6/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/sph-2/",
+    "canonical": "/vehicles/sph-2/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/ah-6m-miniguns/",
+    "canonical": "/vehicles/ah-6m-miniguns/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/uh-1y-miniguns/",
+    "canonical": "/vehicles/uh-1y-miniguns/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/ah-6r-rockets/",
+    "canonical": "/vehicles/ah-6r-rockets/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/havoc/",
+    "canonical": "/vehicles/havoc/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/mh-6/",
+    "canonical": "/vehicles/mh-6/",
+    "index": true
+  },
+  {
+    "url": "/vehicles/uh-1y/",
+    "canonical": "/vehicles/uh-1y/",
+    "index": true
+  },
+  {
+    "url": "/map/bakurani/",
+    "canonical": "/map/bakurani/",
+    "index": true
+  },
+  {
+    "url": "/map/ozeti/",
+    "canonical": "/map/ozeti/",
+    "index": true
+  },
+  {
+    "url": "/map/zestafona/",
+    "canonical": "/map/zestafona/",
+    "index": true
+  }
+]

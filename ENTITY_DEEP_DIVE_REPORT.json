@@ -1,0 +1,8 @@
+{
+  "weaponEntityPages": 35,
+  "vehicleEntityPages": 20,
+  "mapEntityPages": 3,
+  "newComponent": "src/components/wiki/EntityVisual.astro",
+  "homepageModified": false,
+  "notes": "Entity pages expanded with dedicated entity renders where available, richer decision modules, contextual media, FAQs and map terrain references."
+}

@@ -1,0 +1,452 @@
+[
+  {
+    "from": "/",
+    "to": "/guide/",
+    "relation": "hub"
+  },
+  {
+    "from": "/",
+    "to": "/money/",
+    "relation": "hub"
+  },
+  {
+    "from": "/",
+    "to": "/weapons/",
+    "relation": "hub"
+  },
+  {
+    "from": "/",
+    "to": "/loadouts/",
+    "relation": "hub"
+  },
+  {
+    "from": "/",
+    "to": "/vehicles/",
+    "relation": "hub"
+  },
+  {
+    "from": "/",
+    "to": "/map/",
+    "relation": "hub"
+  },
+  {
+    "from": "/",
+    "to": "/factions/",
+    "relation": "hub"
+  },
+  {
+    "from": "/",
+    "to": "/community-servers/",
+    "relation": "hub"
+  },
+  {
+    "from": "/",
+    "to": "/system-requirements/",
+    "relation": "hub"
+  },
+  {
+    "from": "/",
+    "to": "/early-access/",
+    "relation": "hub"
+  },
+  {
+    "from": "/guide/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/money/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/money/",
+    "to": "/money/how-to-make-money/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/money/how-to-make-money/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/money/",
+    "to": "/money/persistence/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/money/persistence/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/money/",
+    "to": "/money/pilot/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/money/pilot/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/money/",
+    "to": "/money/logistics/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/money/logistics/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/weapons/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/weapons/",
+    "to": "/weapons/best-weapons/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/weapons/best-weapons/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/weapons/",
+    "to": "/weapons/builds/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/weapons/builds/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/loadouts/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/loadouts/",
+    "to": "/loadouts/best-loadouts/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/loadouts/best-loadouts/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/loadouts/",
+    "to": "/loadouts/budget/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/loadouts/budget/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/loadouts/",
+    "to": "/loadouts/medic/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/loadouts/medic/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/loadouts/",
+    "to": "/loadouts/pilot/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/loadouts/pilot/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/loadouts/",
+    "to": "/loadouts/save-rebuy/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/loadouts/save-rebuy/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/vehicles/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/vehicles/",
+    "to": "/vehicles/ground/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/vehicles/ground/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/vehicles/",
+    "to": "/vehicles/air/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/vehicles/air/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/map/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/map/",
+    "to": "/map/interactive/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/map/interactive/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/map/",
+    "to": "/map/control-zone/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/map/control-zone/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/map/",
+    "to": "/map/towers/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/map/towers/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/map/",
+    "to": "/map/drills/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/map/drills/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/map/",
+    "to": "/map/mortar-artillery/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/map/mortar-artillery/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/factions/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/factions/",
+    "to": "/factions/valkyra/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/factions/valkyra/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/factions/",
+    "to": "/factions/lonestar/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/factions/lonestar/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/factions/",
+    "to": "/factions/manticore/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/factions/manticore/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/progression/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/community-servers/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/system-requirements/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/early-access/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/updates/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/troubleshooting/map-loading-crash/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/settings/",
+    "to": "/",
+    "relation": "breadcrumb-root"
+  },
+  {
+    "from": "/money/",
+    "to": "/loadouts/",
+    "relation": "related"
+  },
+  {
+    "from": "/loadouts/",
+    "to": "/weapons/",
+    "relation": "related"
+  },
+  {
+    "from": "/loadouts/",
+    "to": "/money/",
+    "relation": "related"
+  },
+  {
+    "from": "/vehicles/",
+    "to": "/money/pilot/",
+    "relation": "related"
+  },
+  {
+    "from": "/vehicles/",
+    "to": "/money/logistics/",
+    "relation": "related"
+  },
+  {
+    "from": "/map/",
+    "to": "/map/control-zone/",
+    "relation": "related"
+  },
+  {
+    "from": "/map/control-zone/",
+    "to": "/map/towers/",
+    "relation": "related"
+  },
+  {
+    "from": "/map/control-zone/",
+    "to": "/map/drills/",
+    "relation": "related"
+  },
+  {
+    "from": "/map/towers/",
+    "to": "/map/drills/",
+    "relation": "related"
+  },
+  {
+    "from": "/map/drills/",
+    "to": "/map/control-zone/",
+    "relation": "related"
+  },
+  {
+    "from": "/factions/",
+    "to": "/map/control-zone/",
+    "relation": "related"
+  },
+  {
+    "from": "/guide/",
+    "to": "/money/how-to-make-money/",
+    "relation": "related"
+  },
+  {
+    "from": "/guide/",
+    "to": "/loadouts/",
+    "relation": "related"
+  },
+  {
+    "from": "/guide/",
+    "to": "/map/control-zone/",
+    "relation": "related"
+  },
+  {
+    "from": "/community-servers/",
+    "to": "/updates/",
+    "relation": "related"
+  },
+  {
+    "from": "/early-access/",
+    "to": "/updates/",
+    "relation": "related"
+  },
+  {
+    "from": "/guide/",
+    "to": "/guide/how-to-play/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/guide/how-to-play/",
+    "to": "/map/control-zone/",
+    "relation": "related"
+  },
+  {
+    "from": "/guide/how-to-play/",
+    "to": "/money/",
+    "relation": "related"
+  },
+  {
+    "from": "/guide/how-to-play/",
+    "to": "/loadouts/",
+    "relation": "related"
+  },
+  {
+    "from": "/guide/",
+    "to": "/building/fob/",
+    "relation": "spoke"
+  },
+  {
+    "from": "/building/fob/",
+    "to": "/map/drills/",
+    "relation": "related"
+  },
+  {
+    "from": "/building/fob/",
+    "to": "/money/logistics/",
+    "relation": "related"
+  },
+  {
+    "from": "/map/drills/",
+    "to": "/building/fob/",
+    "relation": "related"
+  }
+]

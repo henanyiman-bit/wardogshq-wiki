@@ -1,0 +1,33 @@
+{
+  "gameName": "WARDOGS",
+  "gameLinkProvided": null,
+  "referenceWiki": "NONE",
+  "mode": "AUTO_WIKI_MODE",
+  "keywordFiles": [
+    {
+      "filename": "首页词(2).txt",
+      "sourceType": "main",
+      "detectedFormat": "line-text",
+      "rawCount": 1,
+      "dedupedCount": 1
+    },
+    {
+      "filename": "细分词(2).txt",
+      "sourceType": "detail",
+      "detectedFormat": "line-text",
+      "rawCount": 12,
+      "dedupedCount": 12
+    },
+    {
+      "filename": "长尾词(1).csv",
+      "sourceType": "long-tail",
+      "detectedFormat": "csv-table",
+      "keywordColumn": "Keyword",
+      "rawCount": 549,
+      "dedupedCount": 549
+    }
+  ],
+  "totalRawKeywords": 562,
+  "totalDedupedWithinFiles": 562,
+  "note": "Keyword clustering, intent classification, page mapping and long-tail routing are intentionally deferred to Phase 2."
+}

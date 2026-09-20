@@ -1,0 +1,47 @@
+{
+  "playerCap": {
+    "value": 100,
+    "sources": [
+      "src-team17-game",
+      "src-steam-faq"
+    ]
+  },
+  "teamCount": {
+    "value": 3,
+    "sources": [
+      "src-team17-game",
+      "src-steam-faq"
+    ]
+  },
+  "battlefieldArea": {
+    "value": "256 km\u00b2",
+    "sources": [
+      "src-team17-game"
+    ]
+  },
+  "controlZoneSize": {
+    "value": "2x2 km",
+    "sources": [
+      "src-team17-game"
+    ]
+  },
+  "scoreToWin": {
+    "value": 100,
+    "sources": [
+      "src-team17-game"
+    ]
+  },
+  "startingCash": {
+    "value": 10000,
+    "currency": "in-game dollars",
+    "sources": [
+      "src-team17-game"
+    ]
+  },
+  "cashPersistence": {
+    "value": true,
+    "sources": [
+      "src-team17-game"
+    ]
+  }
+}

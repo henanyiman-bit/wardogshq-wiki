@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "phase2Routes": 38,
+  "mdxPages": 37,
+  "homepage": 1,
+  "totalGeneratedRoutes": 38,
+  "expectedIndexable": 32,
+  "actualIndexable": 32,
+  "noindexRoutes": 6,
+  "missingRoutes": [],
+  "extraRoutes": [],
+  "duplicatePageIds": 0,
+  "duplicateCanonicals": 0,
+  "contentBriefs": 38,
+  "aiAddedLongTailConsumed": 34,
+  "stageLock": "Phase 4 not run; Phase 5 build not run."
+}

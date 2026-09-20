@@ -1,0 +1,131 @@
+{
+  "gameMode": {
+    "enabled": true,
+    "features": [
+      "up to 100 players",
+      "three teams",
+      "King-of-the-Hill-inspired Control Zone",
+      "first team to 100 points wins"
+    ],
+    "sources": [
+      "src-team17-game",
+      "src-steam-faq"
+    ]
+  },
+  "factions": {
+    "enabled": true,
+    "entities": [
+      "Valkyra",
+      "Lonestar",
+      "Manticore"
+    ],
+    "sources": [
+      "src-steam-faq"
+    ]
+  },
+  "cashEconomy": {
+    "enabled": true,
+    "features": [
+      "persistent cash between matches",
+      "$10,000 starting cash",
+      "buy loadouts each life",
+      "teamplay actions reward cash",
+      "Hot Zone can reward double cash"
+    ],
+    "sources": [
+      "src-team17-game"
+    ]
+  },
+  "weapons": {
+    "enabled": true,
+    "sources": [
+      "src-team17-game",
+      "src-season1"
+    ]
+  },
+  "equipment": {
+    "enabled": true,
+    "sources": [
+      "src-team17-game",
+      "src-season1"
+    ]
+  },
+  "vehicles": {
+    "enabled": true,
+    "sources": [
+      "src-team17-game",
+      "src-season1"
+    ]
+  },
+  "building": {
+    "enabled": true,
+    "sources": [
+      "src-team17-game",
+      "src-steam-faq"
+    ]
+  },
+  "destruction": {
+    "enabled": true,
+    "sources": [
+      "src-team17-game",
+      "src-steam-faq"
+    ]
+  },
+  "voiceChat": {
+    "enabled": true,
+    "scope": "local/proximity voice chat",
+    "sources": [
+      "src-team17-game",
+      "src-season1"
+    ]
+  },
+  "progression": {
+    "enabled": true,
+    "roleTracks": [
+      "Career",
+      "Medic",
+      "Support",
+      "Driver",
+      "Pilot"
+    ],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  "communityServers": {
+    "enabled": true,
+    "approvedHosts": [
+      "QONZER",
+      "BisectHosting",
+      "xREALM"
+    ],
+    "sources": [
+      "src-steam-announcements",
+      "src-patch011"
+    ]
+  },
+  "codes": {
+    "enabled": false,
+    "reason": "No official WARDOGS redeem-code system was established during Phase 1 research."
+  },
+  "crafting": {
+    "enabled": false,
+    "reason": "No crafting system established by current official sources."
+  },
+  "trading": {
+    "enabled": false,
+    "reason": "No player-trading system established by current official sources."
+  },
+  "pets": {
+    "enabled": false,
+    "reason": "No pet system established by current official sources."
+  },
+  "quests": {
+    "enabled": false,
+    "reason": "No quest system established by current official sources."
+  },
+  "bosses": {
+    "enabled": false,
+    "reason": "No boss system established by current official sources."
+  }
+}

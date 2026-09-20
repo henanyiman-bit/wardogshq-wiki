@@ -1,0 +1,231 @@
+[
+  {
+    "pageId": "home",
+    "url": "/",
+    "requirements": [
+      "official gameplay hero image",
+      "official launch trailer"
+    ],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "guide",
+    "url": "/guide/",
+    "requirements": [
+      "official gameplay/environment image"
+    ],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "money",
+    "url": "/money/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "money-making",
+    "url": "/money/how-to-make-money/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "money-persistence",
+    "url": "/money/persistence/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "money-pilot",
+    "url": "/money/pilot/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "money-logistics",
+    "url": "/money/logistics/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "weapons",
+    "url": "/weapons/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "best-weapons",
+    "url": "/weapons/best-weapons/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "weapon-builds",
+    "url": "/weapons/builds/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "loadouts",
+    "url": "/loadouts/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "best-loadouts",
+    "url": "/loadouts/best-loadouts/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "budget-loadouts",
+    "url": "/loadouts/budget/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "medic-loadout",
+    "url": "/loadouts/medic/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "pilot-loadout",
+    "url": "/loadouts/pilot/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "save-loadout",
+    "url": "/loadouts/save-rebuy/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "vehicles",
+    "url": "/vehicles/",
+    "requirements": [
+      "vehicle imagery only if a verified official source is found"
+    ],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "ground-vehicles",
+    "url": "/vehicles/ground/",
+    "requirements": [
+      "vehicle imagery only if a verified official source is found"
+    ],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "air-vehicles",
+    "url": "/vehicles/air/",
+    "requirements": [
+      "vehicle imagery only if a verified official source is found"
+    ],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "map",
+    "url": "/map/",
+    "requirements": [
+      "official gameplay/environment image"
+    ],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "interactive-map",
+    "url": "/map/interactive/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "control-zone",
+    "url": "/map/control-zone/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "towers",
+    "url": "/map/towers/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "drills",
+    "url": "/map/drills/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "mortar-artillery",
+    "url": "/map/mortar-artillery/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "factions",
+    "url": "/factions/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "valkyra",
+    "url": "/factions/valkyra/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "lonestar",
+    "url": "/factions/lonestar/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "manticore",
+    "url": "/factions/manticore/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "progression",
+    "url": "/progression/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "community-servers",
+    "url": "/community-servers/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "system-requirements",
+    "url": "/system-requirements/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "early-access",
+    "url": "/early-access/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "updates",
+    "url": "/updates/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "map-crash",
+    "url": "/troubleshooting/map-loading-crash/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  },
+  {
+    "pageId": "settings",
+    "url": "/settings/",
+    "requirements": [],
+    "fallback": "render no media rather than invent or use unrelated visuals"
+  }
+]

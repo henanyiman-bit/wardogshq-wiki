@@ -1,0 +1,342 @@
+{
+  "rule": "LONG-TAIL EXPANSION RULE",
+  "userLongTailPreserved": true,
+  "userLongTailCount": 549,
+  "aiAddedCount": 34,
+  "totalLongTailAfterExpansion": 583,
+  "coverageAudit": {
+    "sufficientBefore": false,
+    "gaps": [
+      "beginner/how-to-play",
+      "revive/medic",
+      "server browser/join problems",
+      "FOB/building/supply",
+      "Hot Zone",
+      "helicopter controls/parachute",
+      "ammo/armor/attachments"
+    ],
+    "principle": "Added only when live search showed target-game entity/system/task demand. No generic count-filling terms."
+  },
+  "newPagesCreated": [
+    "/guide/how-to-play/",
+    "/building/fob/"
+  ],
+  "addedKeywords": [
+    {
+      "keyword": "wardogs beginner guide",
+      "cluster": "guide",
+      "intent": "Informational",
+      "decision": "page",
+      "targetUrl": "/guide/how-to-play/",
+      "targetSection": ""
+    },
+    {
+      "keyword": "how to play wardogs",
+      "cluster": "guide",
+      "intent": "How-To",
+      "decision": "merge",
+      "targetUrl": "/guide/how-to-play/",
+      "targetSection": ""
+    },
+    {
+      "keyword": "wardogs first match guide",
+      "cluster": "guide",
+      "intent": "How-To",
+      "decision": "merge",
+      "targetUrl": "/guide/how-to-play/",
+      "targetSection": ""
+    },
+    {
+      "keyword": "wardogs what to do first",
+      "cluster": "guide",
+      "intent": "How-To",
+      "decision": "section",
+      "targetUrl": "/guide/how-to-play/",
+      "targetSection": "First match priorities"
+    },
+    {
+      "keyword": "wardogs how to win",
+      "cluster": "guide",
+      "intent": "How-To",
+      "decision": "section",
+      "targetUrl": "/guide/how-to-play/",
+      "targetSection": "Winning the match"
+    },
+    {
+      "keyword": "wardogs how to revive",
+      "cluster": "medic-loadout",
+      "intent": "How-To",
+      "decision": "section",
+      "targetUrl": "/loadouts/medic/",
+      "targetSection": "Reviving teammates"
+    },
+    {
+      "keyword": "wardogs revive guide",
+      "cluster": "medic-loadout",
+      "intent": "How-To",
+      "decision": "section",
+      "targetUrl": "/loadouts/medic/",
+      "targetSection": "Reviving teammates"
+    },
+    {
+      "keyword": "wardogs medic guide",
+      "cluster": "medic-loadout",
+      "intent": "How-To",
+      "decision": "merge",
+      "targetUrl": "/loadouts/medic/",
+      "targetSection": ""
+    },
+    {
+      "keyword": "wardogs defibrillator",
+      "cluster": "medic-loadout",
+      "intent": "Entity Lookup",
+      "decision": "section",
+      "targetUrl": "/loadouts/medic/",
+      "targetSection": "Medic tools"
+    },
+    {
+      "keyword": "wardogs server browser",
+      "cluster": "community-servers",
+      "intent": "How-To",
+      "decision": "section",
+      "targetUrl": "/community-servers/",
+      "targetSection": "Using the server browser"
+    },
+    {
+      "keyword": "wardogs how to join a server",
+      "cluster": "community-servers",
+      "intent": "How-To",
+      "decision": "section",
+      "targetUrl": "/community-servers/",
+      "targetSection": "Joining a server"
+    },
+    {
+      "keyword": "wardogs community server browser",
+      "cluster": "community-servers",
+      "intent": "How-To",
+      "decision": "merge",
+      "targetUrl": "/community-servers/",
+      "targetSection": ""
+    },
+    {
+      "keyword": "wardogs cant join server",
+      "cluster": "troubleshooting",
+      "intent": "Troubleshooting",
+      "decision": "faq",
+      "targetUrl": "/community-servers/",
+      "targetSection": "Server connection problems"
+    },
+    {
+      "keyword": "wardogs login queue",
+      "cluster": "troubleshooting",
+      "intent": "Troubleshooting",
+      "decision": "faq",
+      "targetUrl": "/community-servers/",
+      "targetSection": "Login queue"
+    },
+    {
+      "keyword": "wardogs fob guide",
+      "cluster": "building",
+      "intent": "How-To",
+      "decision": "page",
+      "targetUrl": "/building/fob/",
+      "targetSection": ""
+    },
+    {
+      "keyword": "wardogs how do fobs work",
+      "cluster": "building",
+      "intent": "Mechanics",
+      "decision": "merge",
+      "targetUrl": "/building/fob/",
+      "targetSection": ""
+    },
+    {
+      "keyword": "wardogs how to build a fob",
+      "cluster": "building",
+      "intent": "How-To",
+      "decision": "merge",
+      "targetUrl": "/building/fob/",
+      "targetSection": ""
+    },
+    {
+      "keyword": "wardogs how to supply a fob",
+      "cluster": "building",
+      "intent": "How-To",
+      "decision": "section",
+      "targetUrl": "/building/fob/",
+      "targetSection": "Supplying a FOB"
+    },
+    {
+      "keyword": "wardogs supply guide",
+      "cluster": "money-logistics",
+      "intent": "How-To",
+      "decision": "section",
+      "targetUrl": "/money/logistics/",
+      "targetSection": "Supply runs"
+    },
+    {
+      "keyword": "wardogs how to deliver supplies",
+      "cluster": "money-logistics",
+      "intent": "How-To",
+      "decision": "section",
+      "targetUrl": "/money/logistics/",
+      "targetSection": "Supply runs"
+    },
+    {
+      "keyword": "wardogs large hammer",
+      "cluster": "building",
+      "intent": "Entity Lookup",
+      "decision": "section",
+      "targetUrl": "/building/fob/",
+      "targetSection": "Building tools"
+    },
+    {
+      "keyword": "wardogs how to build drill rig",
+      "cluster": "drills",
+      "intent": "How-To",
+      "decision": "section",
+      "targetUrl": "/map/drills/",
+      "targetSection": "Building a drill rig"
+    },
+    {
+      "keyword": "wardogs hot zone",
+      "cluster": "control-zone",
+      "intent": "Mechanics",
+      "decision": "section",
+      "targetUrl": "/map/control-zone/",
+      "targetSection": "Hot Zone"
+    },
+    {
+      "keyword": "wardogs hot zone guide",
+      "cluster": "control-zone",
+      "intent": "Mechanics",
+      "decision": "section",
+      "targetUrl": "/map/control-zone/",
+      "targetSection": "Hot Zone"
+    },
+    {
+      "keyword": "wardogs how does hot zone work",
+      "cluster": "control-zone",
+      "intent": "Mechanics",
+      "decision": "section",
+      "targetUrl": "/map/control-zone/",
+      "targetSection": "Hot Zone"
+    },
+    {
+      "keyword": "wardogs helicopter controls",
+      "cluster": "settings",
+      "intent": "How-To",
+      "decision": "section",
+      "targetUrl": "/vehicles/air/",
+      "targetSection": "Helicopter controls"
+    },
+    {
+      "keyword": "wardogs helicopter keybinds",
+      "cluster": "settings",
+      "intent": "How-To",
+      "decision": "section",
+      "targetUrl": "/vehicles/air/",
+      "targetSection": "Helicopter controls"
+    },
+    {
+      "keyword": "wardogs flight assists",
+      "cluster": "settings",
+      "intent": "Mechanics",
+      "decision": "section",
+      "targetUrl": "/vehicles/air/",
+      "targetSection": "Flight assists"
+    },
+    {
+      "keyword": "wardogs parachute key",
+      "cluster": "settings",
+      "intent": "How-To",
+      "decision": "faq",
+      "targetUrl": "/vehicles/air/",
+      "targetSection": "Parachute keybind"
+    },
+    {
+      "keyword": "wardogs ammo types",
+      "cluster": "weapons",
+      "intent": "Database Lookup",
+      "decision": "section",
+      "targetUrl": "/weapons/",
+      "targetSection": "Ammunition"
+    },
+    {
+      "keyword": "wardogs fmj vs ap",
+      "cluster": "weapons",
+      "intent": "Comparison",
+      "decision": "section",
+      "targetUrl": "/weapons/",
+      "targetSection": "Ammunition"
+    },
+    {
+      "keyword": "wardogs armor guide",
+      "cluster": "loadouts",
+      "intent": "Informational",
+      "decision": "section",
+      "targetUrl": "/loadouts/",
+      "targetSection": "Armor and protection"
+    },
+    {
+      "keyword": "wardogs backpack guide",
+      "cluster": "loadouts",
+      "intent": "Informational",
+      "decision": "section",
+      "targetUrl": "/loadouts/",
+      "targetSection": "Storage and backpacks"
+    },
+    {
+      "keyword": "wardogs weapon attachments",
+      "cluster": "weapons",
+      "intent": "Database Lookup",
+      "decision": "section",
+      "targetUrl": "/weapons/",
+      "targetSection": "Attachments"
+    }
+  ],
+  "sourceEvidence": [
+    {
+      "ref": "turn770180search5",
+      "supports": [
+        "beginner/how-to-play"
+      ]
+    },
+    {
+      "ref": "turn770180news60",
+      "supports": [
+        "revive/medic"
+      ]
+    },
+    {
+      "ref": "turn797272search0",
+      "supports": [
+        "server browser/join problems"
+      ]
+    },
+    {
+      "ref": "turn797272search2",
+      "supports": [
+        "FOB/supply/drills"
+      ]
+    },
+    {
+      "ref": "turn797272search7",
+      "supports": [
+        "helicopter controls/parachute"
+      ]
+    },
+    {
+      "ref": "turn770180search0",
+      "supports": [
+        "ammo/loadout search patterns"
+      ]
+    },
+    {
+      "ref": "turn797272search9",
+      "supports": [
+        "Hot Zone/towers/drills"
+      ]
+    }
+  ]
+}

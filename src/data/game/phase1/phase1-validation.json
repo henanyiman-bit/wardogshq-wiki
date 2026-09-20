@@ -1,0 +1,26 @@
+{
+  "phase": "PHASE 1",
+  "status": "PASS",
+  "checks": {
+    "allRequiredInputsRead": true,
+    "referenceWikiMode": "AUTO_WIKI_MODE",
+    "liveWebResearchUsed": true,
+    "officialSourcePriorityApplied": true,
+    "unsupportedFactsOmitted": true,
+    "unsupportedOfficialLinksOmitted": true,
+    "fabricatedMedia": false,
+    "duplicateEntityIds": false,
+    "currentVersionConflictsResolvedWherePossible": true
+  },
+  "counts": {
+    "mainKeywords": 1,
+    "detailKeywords": 12,
+    "longTailKeywords": 549,
+    "entitiesRaw": 29,
+    "relationsRaw": 18,
+    "sourceRecords": 10,
+    "imagesResearched": 4,
+    "videosResearched": 3
+  },
+  "stageLock": "Phase 2 not executed. No page matrix, routes, canonicals, content briefs, MDX, site code, build or ZIP of a full site has been generated."
+}

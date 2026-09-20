@@ -1,0 +1,604 @@
+[
+  {
+    "pageId": "home",
+    "url": "/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs",
+    "primaryIntent": "Navigational",
+    "primaryTopic": "WARDOGS",
+    "mustCover": [
+      "Main Wiki entry point and overview"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "guide",
+    "url": "/guide/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs guide",
+    "primaryIntent": "Informational",
+    "primaryTopic": "WARDOGS",
+    "mustCover": [
+      "Beginner-oriented guide hub for core systems and next-step navigation"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "money",
+    "url": "/money/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs money",
+    "primaryIntent": "Mechanics",
+    "primaryTopic": "Persistent cash economy",
+    "mustCover": [
+      "cash economy basics",
+      "starting cash",
+      "cash persistence overview"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "detailed money-farming methods",
+      "pilot-specific methods"
+    ]
+  },
+  {
+    "pageId": "money-making",
+    "url": "/money/how-to-make-money/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "how to make money in wardogs",
+    "primaryIntent": "How-To",
+    "primaryTopic": "Cash earning",
+    "mustCover": [
+      "cash earning methods supported by SSOT",
+      "method comparison",
+      "early-game earning priorities"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "full economy glossary",
+      "unsupported glitches/cheats"
+    ]
+  },
+  {
+    "pageId": "money-persistence",
+    "url": "/money/persistence/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "do you keep money in wardogs",
+    "primaryIntent": "Mechanics",
+    "primaryTopic": "Cash persistence",
+    "mustCover": [
+      "match-to-match persistence",
+      "leaving/finishing match questions when supported",
+      "running out of cash"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "money-farming rankings"
+    ]
+  },
+  {
+    "pageId": "money-pilot",
+    "url": "/money/pilot/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "how to make money as a pilot in wardogs",
+    "primaryIntent": "How-To",
+    "primaryTopic": "Pilot earnings",
+    "mustCover": [
+      "Pilot-specific money intent"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "money-logistics",
+    "url": "/money/logistics/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs make money doing logistics",
+    "primaryIntent": "How-To",
+    "primaryTopic": "Logistics earnings",
+    "mustCover": [
+      "Transport/supply/logistics earning intent"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "weapons",
+    "url": "/weapons/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs weapons",
+    "primaryIntent": "Database Lookup",
+    "primaryTopic": "Weapons",
+    "mustCover": [
+      "weapon archive",
+      "verified weapon entities",
+      "supported attributes"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unsupported tier ranking"
+    ]
+  },
+  {
+    "pageId": "best-weapons",
+    "url": "/weapons/best-weapons/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs best weapons",
+    "primaryIntent": "Best / Ranking",
+    "primaryTopic": "Weapons",
+    "mustCover": [
+      "evidence-backed comparison criteria",
+      "situational recommendations"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "fabricated DPS/TTK values"
+    ]
+  },
+  {
+    "pageId": "weapon-builds",
+    "url": "/weapons/builds/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs gun builds",
+    "primaryIntent": "Build",
+    "primaryTopic": "Weapon builds",
+    "mustCover": [
+      "Attachment/build guidance without duplicating weapon database"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "loadouts",
+    "url": "/loadouts/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs loadout",
+    "primaryIntent": "Build",
+    "primaryTopic": "Loadouts",
+    "mustCover": [
+      "loadout concept",
+      "purchase-per-life context",
+      "links to specialized loadout guides"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "full weapon database"
+    ]
+  },
+  {
+    "pageId": "best-loadouts",
+    "url": "/loadouts/best-loadouts/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs best loadouts",
+    "primaryIntent": "Best / Ranking",
+    "primaryTopic": "Loadouts",
+    "mustCover": [
+      "Consolidated best/meta loadout intent"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "budget-loadouts",
+    "url": "/loadouts/budget/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs cheap loadouts",
+    "primaryIntent": "Build",
+    "primaryTopic": "Budget loadouts",
+    "mustCover": [
+      "Budget/early-game loadout intent"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "medic-loadout",
+    "url": "/loadouts/medic/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs medic loadout",
+    "primaryIntent": "Build",
+    "primaryTopic": "Medic",
+    "mustCover": [
+      "Medic-role loadout intent"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "pilot-loadout",
+    "url": "/loadouts/pilot/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs recommend pilot loadout",
+    "primaryIntent": "Build",
+    "primaryTopic": "Pilot",
+    "mustCover": [
+      "Pilot-role loadout intent"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "save-loadout",
+    "url": "/loadouts/save-rebuy/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "how to save loadout wardogs",
+    "primaryIntent": "How-To",
+    "primaryTopic": "Loadout presets / rebuy",
+    "mustCover": [
+      "save/preset/rebuy workflow if validated",
+      "limitations/troubleshooting"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "best-loadout rankings"
+    ]
+  },
+  {
+    "pageId": "vehicles",
+    "url": "/vehicles/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs vehicles",
+    "primaryIntent": "Database Lookup",
+    "primaryTopic": "Vehicles",
+    "mustCover": [
+      "Vehicle database/archive and overview"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "ground-vehicles",
+    "url": "/vehicles/ground/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs ground vehicles",
+    "primaryIntent": "Database Lookup",
+    "primaryTopic": "Ground vehicles",
+    "mustCover": [
+      "Ground vehicle subset"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "air-vehicles",
+    "url": "/vehicles/air/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs helicopters",
+    "primaryIntent": "Database Lookup",
+    "primaryTopic": "Air vehicles",
+    "mustCover": [
+      "Air vehicle subset"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "map",
+    "url": "/map/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs map",
+    "primaryIntent": "Database Lookup",
+    "primaryTopic": "Maps",
+    "mustCover": [
+      "battlefield overview",
+      "map count/names only if validated",
+      "map size",
+      "map navigation links"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "tower mechanics depth",
+      "mortar calculator"
+    ]
+  },
+  {
+    "pageId": "interactive-map",
+    "url": "/map/interactive/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs interactive map",
+    "primaryIntent": "Tool / Calculator",
+    "primaryTopic": "Interactive map",
+    "mustCover": [
+      "Dedicated tool intent; requires real local map asset/data before Phase 3 publication"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "control-zone",
+    "url": "/map/control-zone/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs control zone",
+    "primaryIntent": "Mechanics",
+    "primaryTopic": "Control Zone",
+    "mustCover": [
+      "2x2 km zone",
+      "score-to-win",
+      "presence/scoring overview"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "tower walkthrough depth"
+    ]
+  },
+  {
+    "pageId": "towers",
+    "url": "/map/towers/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs towers",
+    "primaryIntent": "Mechanics",
+    "primaryTopic": "Towers",
+    "mustCover": [
+      "tower purpose",
+      "capture/code flow with source attribution",
+      "relationship to Hot Zone"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unverified exact timings/rewards"
+    ]
+  },
+  {
+    "pageId": "drills",
+    "url": "/map/drills/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs drills",
+    "primaryIntent": "Mechanics",
+    "primaryTopic": "Drills",
+    "mustCover": [
+      "drill role",
+      "Hot Zone relationship",
+      "build/fuel facts only if validated"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "community anecdotes presented as official"
+    ]
+  },
+  {
+    "pageId": "mortar-artillery",
+    "url": "/map/mortar-artillery/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs mortar map",
+    "primaryIntent": "Tool / Calculator",
+    "primaryTopic": "Mortar / artillery mapping",
+    "mustCover": [
+      "Own calculator/map-tool intent; publication gated on real firing/map data"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "factions",
+    "url": "/factions/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs factions",
+    "primaryIntent": "Entity Lookup",
+    "primaryTopic": "Factions",
+    "mustCover": [
+      "Faction overview and comparison without unsupported balance claims"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "valkyra",
+    "url": "/factions/valkyra/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs valkyra",
+    "primaryIntent": "Entity Lookup",
+    "primaryTopic": "Valkyra",
+    "mustCover": [
+      "Faction entity page"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "lonestar",
+    "url": "/factions/lonestar/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs lonestar",
+    "primaryIntent": "Entity Lookup",
+    "primaryTopic": "Lonestar",
+    "mustCover": [
+      "Faction entity page"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "manticore",
+    "url": "/factions/manticore/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs manticore",
+    "primaryIntent": "Entity Lookup",
+    "primaryTopic": "Manticore",
+    "mustCover": [
+      "Faction entity page"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "progression",
+    "url": "/progression/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs progression",
+    "primaryIntent": "Progression",
+    "primaryTopic": "Progression",
+    "mustCover": [
+      "Career/role progression hub"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "community-servers",
+    "url": "/community-servers/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs community servers",
+    "primaryIntent": "How-To",
+    "primaryTopic": "Community servers",
+    "mustCover": [
+      "community server existence",
+      "approved hosts",
+      "browser/update context"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "third-party host marketing claims"
+    ]
+  },
+  {
+    "pageId": "system-requirements",
+    "url": "/system-requirements/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs system requirements",
+    "primaryIntent": "Informational",
+    "primaryTopic": "PC requirements",
+    "mustCover": [
+      "official minimum specs",
+      "official recommended specs",
+      "performance-target notes"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unsupported benchmark claims"
+    ]
+  },
+  {
+    "pageId": "early-access",
+    "url": "/early-access/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs release date",
+    "primaryIntent": "Informational",
+    "primaryTopic": "Early Access and platforms",
+    "mustCover": [
+      "release date",
+      "Steam Early Access",
+      "platform availability",
+      "planned console timing only as officially stated"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "guessed console store links",
+      "unsupported price"
+    ]
+  },
+  {
+    "pageId": "updates",
+    "url": "/updates/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs update",
+    "primaryIntent": "Update / Patch",
+    "primaryTopic": "Updates",
+    "mustCover": [
+      "Build-time update/version archive only; no monitoring daemon"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "map-crash",
+    "url": "/troubleshooting/map-loading-crash/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs crash when loading map",
+    "primaryIntent": "Troubleshooting",
+    "primaryTopic": "Map loading crash",
+    "mustCover": [
+      "Troubleshooting owner for map-loading/compiling crashes"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "settings",
+    "url": "/settings/",
+    "pageTitle": "Wardogs Best Settings",
+    "primaryKeyword": "wardogs best settings",
+    "primaryIntent": "How-To",
+    "primaryTopic": "Settings",
+    "mustCover": [
+      "Settings/keybind guidance only where validated"
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "guide-how-to-play",
+    "url": "/guide/how-to-play/",
+    "pageTitle": "WARDOGS Beginner Guide",
+    "primaryKeyword": "wardogs beginner guide",
+    "primaryIntent": "How-To",
+    "primaryTopic": "WARDOGS",
+    "mustCover": [
+      "Explain the first-match loop, objective, economy, useful early roles, and first actions for a new player."
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  },
+  {
+    "pageId": "building-fob",
+    "url": "/building/fob/",
+    "pageTitle": "WARDOGS FOB Guide",
+    "primaryKeyword": "wardogs fob guide",
+    "primaryIntent": "How-To",
+    "primaryTopic": "FOB",
+    "mustCover": [
+      "Explain FOB purpose, construction flow, supply interaction, building tools, and how FOBs connect to drill-rig play without inventing disputed values."
+    ],
+    "mayCover": [],
+    "mustNotExpandInto": [
+      "unrelated owner-page content"
+    ]
+  }
+]

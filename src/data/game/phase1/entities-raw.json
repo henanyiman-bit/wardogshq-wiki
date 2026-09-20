@@ -1,0 +1,444 @@
+[
+  {
+    "id": "faction-valkyra",
+    "name": "Valkyra",
+    "slug": "valkyra",
+    "type": "faction",
+    "summary": "One of the three teams in a WARDOGS match.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-steam-faq"
+    ]
+  },
+  {
+    "id": "faction-lonestar",
+    "name": "Lonestar",
+    "slug": "lonestar",
+    "type": "faction",
+    "summary": "One of the three teams in a WARDOGS match.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-steam-faq"
+    ]
+  },
+  {
+    "id": "faction-manticore",
+    "name": "Manticore",
+    "slug": "manticore",
+    "type": "faction",
+    "summary": "One of the three teams in a WARDOGS match.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-steam-faq"
+    ]
+  },
+  {
+    "id": "system-control-zone",
+    "name": "Control Zone",
+    "slug": "control-zone",
+    "type": "game_system",
+    "summary": "The randomized 2x2 km objective area where team presence determines scoring.",
+    "aliases": [],
+    "attributes": {
+      "size": "2x2 km",
+      "winCondition": "first team to 100 points"
+    },
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-team17-game",
+      "src-steam-faq"
+    ]
+  },
+  {
+    "id": "system-hot-zone",
+    "name": "Hot Zone",
+    "slug": "hot-zone",
+    "type": "game_system",
+    "summary": "A higher-value tactical area referenced by the publisher as rewarding double cash.",
+    "aliases": [],
+    "attributes": {
+      "cashMultiplier": 2
+    },
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-team17-game"
+    ]
+  },
+  {
+    "id": "role-career",
+    "name": "Career",
+    "slug": "career",
+    "type": "progression_role",
+    "summary": "A WARDOGS progression track referenced in the Season 1 launch changelog.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "role-medic",
+    "name": "Medic",
+    "slug": "medic",
+    "type": "progression_role",
+    "summary": "A WARDOGS progression track referenced in the Season 1 launch changelog.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "role-support",
+    "name": "Support",
+    "slug": "support",
+    "type": "progression_role",
+    "summary": "A WARDOGS progression track referenced in the Season 1 launch changelog.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "role-driver",
+    "name": "Driver",
+    "slug": "driver",
+    "type": "progression_role",
+    "summary": "A WARDOGS progression track referenced in the Season 1 launch changelog.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "role-pilot",
+    "name": "Pilot",
+    "slug": "pilot",
+    "type": "progression_role",
+    "summary": "A WARDOGS progression track referenced in the Season 1 launch changelog.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "vehicle-z20-lakota",
+    "name": "Z20 Lakota",
+    "slug": "z20-lakota",
+    "type": "vehicle",
+    "summary": "Named WARDOGS vehicle referenced in official publisher/developer material.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "vehicle-ural",
+    "name": "URAL",
+    "slug": "ural",
+    "type": "vehicle",
+    "summary": "Named WARDOGS vehicle referenced in official publisher/developer material.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "vehicle-dune-buggy",
+    "name": "Dune Buggy",
+    "slug": "dune-buggy",
+    "type": "vehicle",
+    "summary": "Named WARDOGS vehicle referenced in official publisher/developer material.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "vehicle-kodiak-flatbed",
+    "name": "Kodiak Flatbed",
+    "slug": "kodiak-flatbed",
+    "type": "vehicle",
+    "summary": "Named WARDOGS vehicle referenced in official publisher/developer material.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "vehicle-kodiak-assault",
+    "name": "Kodiak Assault",
+    "slug": "kodiak-assault",
+    "type": "vehicle",
+    "summary": "Named WARDOGS vehicle referenced in official publisher/developer material.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "vehicle-ural-covered",
+    "name": "URAL Covered",
+    "slug": "ural-covered",
+    "type": "vehicle",
+    "summary": "Named WARDOGS vehicle referenced in official publisher/developer material.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "vehicle-ural-attack",
+    "name": "URAL Attack",
+    "slug": "ural-attack",
+    "type": "vehicle",
+    "summary": "Named WARDOGS vehicle referenced in official publisher/developer material.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "vehicle-humvee-with-minigun",
+    "name": "Humvee with minigun",
+    "slug": "humvee-with-minigun",
+    "type": "vehicle",
+    "summary": "Named WARDOGS vehicle referenced in official publisher/developer material.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "vehicle-heavy-tank",
+    "name": "Heavy Tank",
+    "slug": "heavy-tank",
+    "type": "vehicle",
+    "summary": "Named WARDOGS vehicle referenced in official publisher/developer material.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "vehicle-artillery-tank",
+    "name": "Artillery Tank",
+    "slug": "artillery-tank",
+    "type": "vehicle",
+    "summary": "Named WARDOGS vehicle referenced in official publisher/developer material.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-team17-game",
+      "src-season1"
+    ]
+  },
+  {
+    "id": "equipment-large-supply-crate",
+    "name": "Large Supply Crate",
+    "slug": "large-supply-crate",
+    "type": "equipment",
+    "summary": "Named WARDOGS equipment or unlock referenced in the Season 1 changelog.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "equipment-large-hammer",
+    "name": "Large Hammer",
+    "slug": "large-hammer",
+    "type": "equipment",
+    "summary": "Named WARDOGS equipment or unlock referenced in the Season 1 changelog.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "equipment-sports-parachute",
+    "name": "Sports Parachute",
+    "slug": "sports-parachute",
+    "type": "equipment",
+    "summary": "Named WARDOGS equipment or unlock referenced in the Season 1 changelog.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "equipment-large-backpack",
+    "name": "Large Backpack",
+    "slug": "large-backpack",
+    "type": "equipment",
+    "summary": "Named WARDOGS equipment or unlock referenced in the Season 1 changelog.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "equipment-music-tape-h",
+    "name": "Music Tape H",
+    "slug": "music-tape-h",
+    "type": "equipment",
+    "summary": "Named WARDOGS equipment or unlock referenced in the Season 1 changelog.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "weapon-deagle",
+    "name": "Deagle",
+    "slug": "deagle",
+    "type": "weapon",
+    "summary": "Named weapon unlock referenced in the Season 1 changelog.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "attachment-pp19-drum",
+    "name": "PP-19 50 round drum magazine",
+    "slug": "pp-19-50-round-drum-magazine",
+    "type": "attachment",
+    "summary": "Named Medic-track magazine unlock referenced in the Season 1 changelog.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "ammo-762x54mm-ap",
+    "name": "762x54mm AP",
+    "slug": "762x54mm-ap",
+    "type": "ammunition",
+    "summary": "Named armor-piercing ammunition unlock referenced in the Season 1 changelog.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  },
+  {
+    "id": "ammo-556mm-ap",
+    "name": "556mm AP",
+    "slug": "556mm-ap",
+    "type": "ammunition",
+    "summary": "Named armor-piercing ammunition unlock referenced in the Season 1 changelog.",
+    "aliases": [],
+    "attributes": {},
+    "relations": [],
+    "media": [],
+    "relatedPages": [],
+    "sources": [
+      "src-season1"
+    ]
+  }
+]

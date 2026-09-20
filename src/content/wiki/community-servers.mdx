@@ -1,0 +1,83 @@
+---
+title: "WARDOGS Community Servers: Browser, Search & Patch 0.11"
+description: "WARDOGS community server Wiki guide covering Patch 0.11 browser changes, server search, persistent IDs, joining issues and hosting context."
+primaryKeyword: "wardogs community servers"
+intent: "How-To"
+pageType: "guide"
+canonicalPath: "/community-servers/"
+indexable: true
+priority: "P1"
+updated: "2026-09-20"
+pageId: "community-servers"
+---
+import MediaFigure from '../../components/wiki/MediaFigure.astro';
+
+<div class="ref-portal">
+  <div class="ref-portal-copy">
+    <span class="ref-kicker">SERVER BROWSER REFERENCE</span>
+    <h2>Find the right server before troubleshooting the wrong problem</h2>
+    <p>Patch 0.11 changed how Community and Official servers are surfaced, searched and identified. This page is a browser workflow first, not a generic multiplayer article.</p>
+    <div class="ref-stat-grid">
+      <div><small>Current patch</small><strong>0.11</strong></div>
+      <div><small>Browser split</small><strong>Community / Official</strong></div>
+      <div><small>Identity</small><strong>Persistent server IDs</strong></div>
+    </div>
+  </div>
+  <MediaFigure src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/7d946d467dcde886602685d49b438731bc003237/ss_7d946d467dcde886602685d49b438731bc003237.1920x1080.jpg?t=1785318392" fallback="/media/wiki/map-objective-stack.svg" fallbackFit="contain" alt="WARDOGS multiplayer battlefield used as server selection context" title="Server choice changes the session before the match starts" explanation="Use the browser category, text search and persistent identity tools before assuming a community server has disappeared or your client is broken." />
+</div>
+
+WARDOGS officially supports **community-hosted servers**. The September Patch 0.11 update was specifically framed around improving the server-browser experience and community-server discoverability.
+
+## Server browser workflow
+
+<div class="ref-check-grid">
+<div class="ref-check"><strong>1. Pick the correct browser</strong><span>Community and Official servers are separate browsing contexts.</span></div>
+<div class="ref-check"><strong>2. Search before scrolling</strong><span>Use community-server text search when you already know the server name.</span></div>
+<div class="ref-check"><strong>3. Prefer persistent identity</strong><span>A persistent server ID helps distinguish a returning community from a renamed list entry.</span></div>
+<div class="ref-check"><strong>4. Separate browser issues from service issues</strong><span>If many servers fail at once, check maintenance or platform status before changing local files.</span></div>
+</div>
+
+## What Patch 0.11 changed
+
+| Browser area | Patch 0.11 direction | Why it matters |
+|---|---|---|
+| Community vs Official | Clearer separation | Reduces confusion when searching for player-hosted servers |
+| Community discovery | Improved visibility | Makes stable communities easier to find |
+| Search | Text search | Lets players locate a known server directly |
+| Server identity | Persistent IDs | Helps identify the same server across sessions |
+
+The developer announcement described the browser experience as an area that had underserved community servers and said Patch 0.11 was the start of improving that layer.
+
+## When a server does not join
+
+<div class="ref-split">
+<div class="ref-panel">
+<h3>First determine the scope</h3>
+<p>If only one server fails, treat it as a server-specific problem first. If several Official and Community servers fail, the issue may be broader than your local installation.</p>
+<p>Launch-period official updates separately acknowledged players being unable to join, unexpected kicks and extended login queues, so not every failed join should be treated as a corrupt install.</p>
+</div>
+<MediaFigure src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1867240/4792ae161c417d87c55e8fc5097f3653579c702b/ss_4792ae161c417d87c55e8fc5097f3653579c702b.1920x1080.jpg?t=1785318392" fallback="/media/wiki/loadout-rebuy.svg" fallbackFit="contain" alt="WARDOGS multiplayer session used as connection troubleshooting context" title="A failed join is not automatically a broken install" explanation="Compare another server and browser category before reinstalling or deleting files. Service and queue problems can affect an otherwise healthy client." />
+</div>
+
+## Join checklist
+
+1. Confirm WARDOGS is not under scheduled maintenance.
+2. Open the correct **Community** or **Official** browser.
+3. Search by server name when possible.
+4. Use the persistent server identifier when one is available.
+5. Refresh the list before restarting the client.
+6. Test a different server to determine whether the failure is local or server-specific.
+7. Only move to file verification when the problem reproduces across sessions.
+
+## Hosting context
+
+Official launch material named **QONZER**, **BisectHosting** and **xREALM** as approved community-server hosting partners. That is hosting infrastructure context, not a claim that every individual server is endorsed by BULKHEAD.
+
+Community servers also matter for moderation because player-hosted communities can have their own active administration. The browser therefore is not just a ping list: it is also the front door into different server communities.
+
+## Related pages
+
+- [Updates](/updates/)
+- [Early Access](/early-access/)
+- [Map Loading Crash](/troubleshooting/map-loading-crash/)
+- [Guide Hub](/guide/)

@@ -1,0 +1,26 @@
+{
+  "purpose": "Targeted current-source checks before locking Phase 2 architecture where user keyword demand exposed gaps in the Phase 1 extraction.",
+  "records": [
+    {
+      "topic": "PC system requirements",
+      "source": "Steam store",
+      "sourceClass": "current official platform",
+      "use": "supports /system-requirements/ page value",
+      "facts": "Official minimum/recommended Windows PC requirements are present on Steam."
+    },
+    {
+      "topic": "Towers / drills",
+      "source": "Steam Community discussions",
+      "sourceClass": "community discussion",
+      "use": "supports topic existence and search-intent architecture only; mechanics must remain attributed/cross-checked in Phase 3",
+      "facts": "Multiple current players discuss towers, codes, drills and Hot Zone interaction."
+    },
+    {
+      "topic": "Map names / interactive map demand",
+      "source": "same-game specialist tools/Wiki search results",
+      "sourceClass": "specialized same-game reference",
+      "use": "supports intent existence, not yet enough to publish our interactive map tool",
+      "facts": "Specialist sites expose Bakurani/Ozeti/Zestafona map tooling; target tool remains publication HOLD until local authoritative map data is acquired."
+    }
+  ]
+}

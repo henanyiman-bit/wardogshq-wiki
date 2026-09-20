@@ -1,0 +1,17 @@
+{
+  "phase": "PHASE 2 REOPENED — LONG-TAIL EXPANSION",
+  "status": "PASS",
+  "userLongTailPreserved": true,
+  "userLongTailCount": 549,
+  "aiAddedLongTailCount": 34,
+  "totalLongTailCount": 583,
+  "plannedRoutes": 38,
+  "indexableRoutes": 32,
+  "noindexRoutes": 6,
+  "duplicateRoutes": 0,
+  "unroutedAddedKeywords": 0,
+  "downstreamInvalidation": {
+    "phase3PreviousBuild": "STALE",
+    "reason": "Phase 2 architecture changed; Phase 3 must be regenerated before Phase 4."
+  }
+}

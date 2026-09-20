@@ -1,0 +1,8 @@
+---
+const { src, alt, title, note } = Astro.props;
+const fallback = '/media/wiki/image-unavailable.svg';
+---
+<figure class="entity-visual">
+  <div class="entity-visual-stage"><img src={src} alt={alt} loading="lazy" onerror={`this.onerror=null;this.src='${fallback}'`} /></div>
+  {(title || note) && <figcaption>{title && <strong>{title}</strong>}{note && <span>{note}</span>}</figcaption>}
+</figure>

@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-09-19",
+  "purpose": "Phase 3 regeneration after LONG-TAIL EXPANSION RULE.",
+  "records": [
+    {
+      "topic": "Server browser/community servers",
+      "sourceClass": "official Steam announcement",
+      "url": "https://steamcommunity.com/app/1867240/",
+      "facts": [
+        "Patch 0.11 improves server-browser/community-server discoverability",
+        "Community and Official browsers were split",
+        "Community server text search and persistent server IDs were added"
+      ]
+    },
+    {
+      "topic": "Season 1 building/economy anchors",
+      "sourceClass": "official Steam Season 1 changelog",
+      "url": "https://steamcommunity.com/app/1867240/allnews/",
+      "facts": [
+        "Forward Operating Base vendor price changed to $7,500",
+        "Large Hammer vendor price changed to $2,400",
+        "Large Hammer Support unlock moved from level 7 to level 8"
+      ]
+    },
+    {
+      "topic": "Medic/revive demand",
+      "sourceClass": "current specialist reporting",
+      "url": "https://www.pcgamer.com/games/fps/wardogs-is-the-only-fps-where-i-actually-expect-to-get-revived/",
+      "facts": [
+        "Reviving is a meaningful player task",
+        "Defibrillator is described as an advanced medic tool"
+      ],
+      "publicUse": "Attribute non-official mechanical details; do not present as developer documentation."
+    },
+    {
+      "topic": "FOB/drill task flow",
+      "sourceClass": "current same-game specialist/community guides",
+      "urls": [
+        "https://wardogsbuild.com/guides/fob/",
+        "https://allthings.how/wardogs-how-to-build-a-drill-rig/"
+      ],
+      "facts": [
+        "FOB construction, supply, hammer and Drill Rig are active guide/search intents",
+        "Drill Rig is described as connected to Hot Zone influence"
+      ],
+      "publicUse": "Use only attributed/high-level flow unless official data corroborates exact values."
+    },
+    {
+      "topic": "Helicopter controls",
+      "sourceClass": "current same-game guides/community FAQ",
+      "urls": [
+        "https://www.wardogsguide.wiki/guide/wardogs-controls/",
+        "https://steamcommunity.com/app/1867240/discussions/0/588436698284822212/"
+      ],
+      "facts": [
+        "Settings > Controls is the safest current source for bindings",
+        "Beta/community reports describe helicopter controls, Flight Assists and Deploy Parachute"
+      ],
+      "publicUse": "Do not claim reported Beta defaults as confirmed Early Access defaults."
+    }
+  ]
+}

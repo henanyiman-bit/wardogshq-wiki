@@ -1,0 +1,22 @@
+{
+  "homepageModified": false,
+  "hubPagesUpgraded": [
+    "/money/",
+    "/map/",
+    "/loadouts/"
+  ],
+  "childPageFamilies": [
+    "money",
+    "map",
+    "loadouts"
+  ],
+  "localWikiVisuals": 30,
+  "duplicateImageRefsAcrossTheseFamilies": 0,
+  "remoteImageRefsRemaining": 2,
+  "remoteImagesWithLocalFallback": 2,
+  "offlineVerify": "PASS",
+  "mdxPages": 95,
+  "registeredRoutes": 96,
+  "canonicals": 96,
+  "brokenInternalLinks": 0
+}

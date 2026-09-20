@@ -1,0 +1,39 @@
+---
+const { title, description, canonical, pageType='WebPage' } = Astro.props;
+const url = new URL(canonical);
+const parts = url.pathname.split('/').filter(Boolean);
+const breadcrumbItems = [
+  { '@type': 'ListItem', position: 1, name: 'WARDOGS Wiki', item: new URL('/', Astro.site).href },
+  ...parts.map((part, index) => ({
+    '@type': 'ListItem',
+    position: index + 2,
+    name: part.replace(/-/g, ' ').replace(/\b\w/g, (m) => m.toUpperCase()),
+    item: new URL('/' + parts.slice(0, index + 1).join('/') + '/', Astro.site).href,
+  })),
+];
+const graph = [
+  {
+    '@type': pageType,
+    '@id': canonical + '#page',
+    name: title,
+    description,
+    url: canonical,
+    isPartOf: { '@id': new URL('/', Astro.site).href + '#website' },
+  },
+  {
+    '@type': 'WebSite',
+    '@id': new URL('/', Astro.site).href + '#website',
+    name: 'WARDOGS Wiki',
+    url: new URL('/', Astro.site).href,
+  },
+];
+if (parts.length) {
+  graph.push({
+    '@type': 'BreadcrumbList',
+    '@id': canonical + '#breadcrumb',
+    itemListElement: breadcrumbItems,
+  });
+}
+const data = { '@context': 'https://schema.org', '@graph': graph };
+---
+<script type="application/ld+json" set:html={JSON.stringify(data)} />

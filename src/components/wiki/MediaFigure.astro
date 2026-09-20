@@ -1,0 +1,52 @@
+---
+const {
+  src,
+  alt,
+  title,
+  explanation,
+  loading = 'lazy',
+  fallback = '',
+  fit = 'cover',
+  fallbackFit = fit,
+  position = 'center'
+} = Astro.props;
+const isRemote = /^https?:\/\//i.test(src);
+const resolvedFallback = isRemote ? '/media/wiki/image-unavailable.svg' : fallback;
+---
+<figure class="wiki-media-figure">
+  <img
+    src={src}
+    alt={alt}
+    loading={loading}
+    data-fallback={resolvedFallback || undefined}
+    data-fallback-fit={resolvedFallback ? 'contain' : undefined}
+    style={`object-fit:${fit};object-position:${position};`}
+  />
+  {(title || explanation) && (
+    <figcaption>
+      {title && <strong>{title}</strong>}
+      {explanation && <span>{explanation}</span>}
+    </figcaption>
+  )}
+</figure>
+<script is:inline>
+(() => {
+  document.querySelectorAll('img[data-fallback]').forEach((img) => {
+    if (img.dataset.fallbackBound === '1') return;
+    img.dataset.fallbackBound = '1';
+    img.addEventListener('error', () => {
+      const fallback = img.getAttribute('data-fallback');
+      if (fallback && img.getAttribute('src') !== fallback) {
+        img.setAttribute('src', fallback);
+        const fallbackFit = img.getAttribute('data-fallback-fit');
+        if (fallbackFit) img.style.objectFit = fallbackFit;
+        if (fallbackFit === 'contain') {
+          img.style.padding = '18px';
+          img.style.background = '#0d1216';
+        }
+        img.removeAttribute('data-fallback');
+      }
+    });
+  });
+})();
+</script>

@@ -1,0 +1,202 @@
+{
+  "frozen": [
+    "/",
+    "/money/",
+    "/map/",
+    "/loadouts/",
+    "/vehicles/",
+    "/weapons/"
+  ],
+  "audited_mdx": 95,
+  "repaired_indexable_pages": [
+    "community-servers.mdx",
+    "early-access.mdx",
+    "factions.mdx",
+    "guide.mdx",
+    "loadouts/best-loadouts.mdx",
+    "loadouts/budget.mdx",
+    "loadouts/medic.mdx",
+    "loadouts/pilot.mdx",
+    "loadouts/save-rebuy.mdx",
+    "map/control-zone.mdx",
+    "map/drills.mdx",
+    "map/entities/bakurani.mdx",
+    "map/entities/ozeti.mdx",
+    "map/entities/zestafona.mdx",
+    "map/towers.mdx",
+    "money/how-to-make-money.mdx",
+    "money/logistics.mdx",
+    "money/persistence.mdx",
+    "money/pilot.mdx",
+    "progression.mdx",
+    "system-requirements.mdx",
+    "troubleshooting/map-loading-crash.mdx",
+    "updates.mdx",
+    "vehicles/ground.mdx",
+    "weapons/best-weapons.mdx",
+    "weapons/builds.mdx"
+  ],
+  "entity_cleanup": "Removed repeated generic context screenshots from weapon and vehicle entity pages; kept dedicated entity renders.",
+  "policy": "Remote real-game media is primary; local SVG is fallback only on load failure.",
+  "metrics": [
+    {
+      "page": "community-servers.mdx",
+      "words_approx": 551,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "early-access.mdx",
+      "words_approx": 284,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "factions.mdx",
+      "words_approx": 286,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "guide.mdx",
+      "words_approx": 743,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "loadouts/best-loadouts.mdx",
+      "words_approx": 328,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "loadouts/budget.mdx",
+      "words_approx": 325,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "loadouts/medic.mdx",
+      "words_approx": 709,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "loadouts/pilot.mdx",
+      "words_approx": 295,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "loadouts/save-rebuy.mdx",
+      "words_approx": 286,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "map/control-zone.mdx",
+      "words_approx": 710,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "map/drills.mdx",
+      "words_approx": 657,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "map/entities/bakurani.mdx",
+      "words_approx": 544,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "map/entities/ozeti.mdx",
+      "words_approx": 537,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "map/entities/zestafona.mdx",
+      "words_approx": 530,
+      "images": 2,
+      "videos": 1
+    },
+    {
+      "page": "map/towers.mdx",
+      "words_approx": 639,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "money/how-to-make-money.mdx",
+      "words_approx": 825,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "money/logistics.mdx",
+      "words_approx": 334,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "money/persistence.mdx",
+      "words_approx": 298,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "money/pilot.mdx",
+      "words_approx": 321,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "progression.mdx",
+      "words_approx": 530,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "system-requirements.mdx",
+      "words_approx": 309,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "troubleshooting/map-loading-crash.mdx",
+      "words_approx": 312,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "updates.mdx",
+      "words_approx": 298,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "vehicles/ground.mdx",
+      "words_approx": 304,
+      "images": 3,
+      "videos": 0
+    },
+    {
+      "page": "weapons/best-weapons.mdx",
+      "words_approx": 352,
+      "images": 2,
+      "videos": 0
+    },
+    {
+      "page": "weapons/builds.mdx",
+      "words_approx": 316,
+      "images": 2,
+      "videos": 0
+    }
+  ],
+  "offline_verification": "PASS",
+  "frozen_pages_unchanged": true,
+  "fob_media_upgrade": true
+}

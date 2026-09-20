@@ -1,0 +1,16 @@
+{
+  "scope": "all non-frozen wiki pages",
+  "frozen_routes": [
+    "/",
+    "/money/",
+    "/map/",
+    "/loadouts/",
+    "/vehicles/",
+    "/weapons/"
+  ],
+  "image_src_references_scanned": 110,
+  "svg_fallbacks_with_contain_rule": 36,
+  "direct_svg_figures_with_contain_rule": 3,
+  "known_overlay_or_watermark_prone_hosts_remaining": {},
+  "frozen_pages_modified": false
+}

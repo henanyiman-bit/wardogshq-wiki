@@ -1,0 +1,15 @@
+---
+const cards = [
+  ['/guide/how-to-play/','Start Here','First match, objective and economy'],
+  ['/money/','Money','Persistent cash, earning and spending'],
+  ['/map/','Map','Control Zone, Hot Zone, Towers and Drills'],
+  ['/loadouts/','Loadouts','Roles, protection, storage and rebuy'],
+  ['/building/fob/','Building','FOBs, supplies and Drill Rigs'],
+  ['/vehicles/','Vehicles','Verified ground and air vehicle data'],
+  ['/weapons/','Weapons','Ammo, attachments and verified entities'],
+  ['/progression/','Progression','Career, Medic, Support, Driver, Pilot'],
+];
+---
+<div class="bento" data-pagefind-ignore>
+{cards.map(([href,title,desc],i)=><a href={href} class:list={['bento-card', i<2 && 'bento-card--wide']}><strong>{title}</strong><span>{desc}</span></a>)}
+</div>

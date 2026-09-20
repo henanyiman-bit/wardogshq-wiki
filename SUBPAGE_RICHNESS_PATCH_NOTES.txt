@@ -1,0 +1,20 @@
+WARDOGS Subpage Richness Upgrade Patch
+
+Updated pages:
+- /map/
+- /loadouts/
+- /money/
+- /weapons/
+- /guide/how-to-play/
+- /building/fob/
+- /map/control-zone/
+- /vehicles/
+- /vehicles/air/
+- /vehicles/ground/
+
+What changed:
+- Reduced visual text density with more callout grids, quick cards and entity link cards.
+- Inserted more relevant screenshots into key subpages.
+- Interleaved video embeds into major guide / hub pages.
+- Strengthened weapons, vehicles and map sections with more visual support.
+- Kept homepage untouched.
