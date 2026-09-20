@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "astro dev",
     "check": "astro check",
-    "build": "astro build",
+    "build": "astro build && pagefind --site dist && node -e \"require('fs').copyFileSync('dist/pagefind/pagefind-entry.json','dist/pagefind/index.json')\"",
     "search": "pagefind --site dist",
     "build:prod": "npm run check && npm run build && npm run search",
     "preview": "astro preview",
