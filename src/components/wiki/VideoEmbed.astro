@@ -1,4 +1,5 @@
 ---
-const { id, title } = Astro.props;
+const { id, title, loading = 'lazy', privacyEnhanced = true } = Astro.props;
+const videoHost = privacyEnhanced ? 'https://www.youtube-nocookie.com' : 'https://www.youtube.com';
 ---
-<div class="video-wrap"><iframe src={`https://www.youtube-nocookie.com/embed/${id}`} title={title} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="video-wrap"><iframe src={`${videoHost}/embed/${id}`} title={title} loading={loading} referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
