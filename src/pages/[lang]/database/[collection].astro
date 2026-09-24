@@ -1,0 +1,34 @@
+---
+import { getCollection } from 'astro:content';
+import WikiLayout from '../../../layouts/WikiLayout.astro';
+import { locales, localeMeta, type Locale } from '../../../i18n/config';
+import { entityCollectionMessages, itemCategoryLinks, type EntityCollectionSlug } from '../../../i18n/entity-collections';
+import { localizedAlternates } from '../../../i18n/utils';
+import { collectionSeoKeywords } from '../../../i18n/seo-keywords';
+
+export function getStaticPaths() {
+  const collections: EntityCollectionSlug[] = ['weapons', 'vehicles', 'items', 'maps'];
+  return locales.flatMap((lang) => collections.map((collection) => ({ params: { lang, collection }, props: { lang, collection } })));
+}
+const { lang, collection } = Astro.props as { lang: Locale; collection: EntityCollectionSlug };
+const copy = entityCollectionMessages[lang];
+const page = copy.collections[collection];
+const wiki = await getCollection('wiki');
+const prefix = collection === 'weapons' ? '/weapons/' : collection === 'vehicles' ? '/vehicles/' : '/map/';
+const contentItems = collection === 'items' ? itemCategoryLinks.map((item) => ({...item, href:`/${lang}/items/${item.type === 'attachment' ? 'attachments' : item.type === 'ammunition' ? 'ammunition' : item.type === 'loadout' ? 'loadouts' : 'armor'}/`})) : wiki
+  .filter((entry) => entry.id.includes('/entities/') && typeof entry.data.canonicalPath === 'string' && entry.data.canonicalPath.startsWith(prefix))
+  .map((entry) => ({ name: entry.data.title.replace(/ \|.*$/, ''), type: collection.slice(0, -1), href: `/${lang}${entry.data.canonicalPath}` }));
+const canonicalPath = `/${lang}/database/${collection}/`;
+const xDefault = collection === 'items' ? '/equipment/' : `/database/${collection}/`;
+const seoKeywords = collectionSeoKeywords(lang, collection);
+---
+<WikiLayout title={page.title} description={page.description} canonicalPath={canonicalPath} pageType="CollectionPage" lang={localeMeta[lang].htmlLang} primaryKeyword={seoKeywords[0]} keywords={seoKeywords.slice(1)} alternates={localizedAlternates(`database/${collection}`)} xDefaultPath={xDefault} schemaItems={contentItems.map((item) => ({ name:item.name, url:item.href }))} showAd={true} adPlacement="entity">
+  <section class="locale-entity-collection">
+    <p class="eyebrow">{page.eyebrow}</p><h1>{page.heading}</h1><p class="lede">{page.intro}</p>
+    <section><h2>{page.contextTitle}</h2><p>{page.context}</p><p>{copy.verifiedNote}</p></section>
+    <div class="knowledge-table-wrap"><table class="knowledge-table">
+      <thead><tr><th>{copy.labels.name}</th><th>{copy.labels.type}</th><th>{copy.labels.status}</th></tr></thead>
+      <tbody>{contentItems.map((item) => <tr><td><a href={item.href}><strong>{item.name}</strong></a></td><td>{item.type}</td><td><a href={item.href}>{copy.labels.open}</a></td></tr>)}</tbody>
+    </table></div>
+  </section>
+</WikiLayout>

@@ -1,0 +1,12 @@
+---
+import type { DatabaseEntity } from '../../data/database/global-entity-registry';
+const { entity } = Astro.props as { entity: DatabaseEntity };
+---
+<section class="entity-knowledge" aria-labelledby="entity-knowledge-title">
+  <p class="eyebrow">GLOBAL ENTITY REGISTRY</p>
+  <h2 id="entity-knowledge-title">Relations and version history</h2>
+  <div class="entity-knowledge-grid">
+    <div><h3>Related content</h3><nav>{entity.relations.map((relation) => <a href={relation.url}><small>{relation.type.replaceAll('_',' ')}</small><strong>{relation.name}</strong></a>)}</nav></div>
+    <div><h3>Patch history</h3>{entity.patchHistory.map((entry) => <article><strong>Patch {entry.version}</strong><p>{entry.note}</p></article>)}</div>
+  </div>
+</section>

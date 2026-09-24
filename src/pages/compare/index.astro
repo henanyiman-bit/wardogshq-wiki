@@ -1,0 +1,12 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import { PROGRAMMATIC_COMPARISONS, comparisonPath } from '../../data/seo/programmatic-growth';
+---
+<WikiLayout title="WARDOGS Comparisons — Weapons and Vehicles" description="Browse evidence-aware WARDOGS weapon and vehicle comparisons connected to entity records, tools and guides." canonicalPath="/compare/" pageType="CollectionPage" primaryKeyword="WARDOGS comparisons" keywords={['WARDOGS weapon comparison','WARDOGS vehicle comparison']} schemaItems={PROGRAMMATIC_COMPARISONS.map((comparison) => ({name:comparison.title,url:comparisonPath(comparison)}))} showAd={true} adPlacement="tool">
+  <p class="eyebrow">PROGRAMMATIC SEO / COMPARISONS</p>
+  <h1>WARDOGS Comparisons</h1>
+  <p class="lede">Compare related records without separating a weapon or vehicle from its role, evidence and current patch context.</p>
+  <section><h2>Weapon comparisons</h2><div class="comparison-index-grid">{PROGRAMMATIC_COMPARISONS.filter((item) => item.category === 'weapons').map((item) => <a href={comparisonPath(item)}><strong>{item.leftName} vs {item.rightName}</strong><span>{item.intent}</span></a>)}</div></section>
+  <section><h2>Vehicle comparisons</h2><div class="comparison-index-grid">{PROGRAMMATIC_COMPARISONS.filter((item) => item.category === 'vehicles').map((item) => <a href={comparisonPath(item)}><strong>{item.leftName} vs {item.rightName}</strong><span>{item.intent}</span></a>)}</div></section>
+  <section><h2>Comparison policy</h2><p>Every page links back to the underlying entity records. Unsupported numbers remain currently unconfirmed, and comparisons focus on the decision context that can be defended from the available evidence.</p><div class="inline-link-row"><a href="/database/">Database</a><a href="/tools/weapon-compare/">Weapon Compare</a><a href="/tools/vehicle-compare/">Vehicle Compare</a><a href="/sources/">Source Policy</a></div></section>
+</WikiLayout>

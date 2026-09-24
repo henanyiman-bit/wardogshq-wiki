@@ -1,0 +1,52 @@
+---
+import { getCollection } from 'astro:content';
+import WikiLayout from '../../../layouts/WikiLayout.astro';
+import { locales, localeMeta, type Locale } from '../../../i18n/config';
+import { entityDetailMessages, fillEntityTemplate, getEntityDetailEnhancement, type LocalizedEntityType } from '../../../i18n/entity-details';
+import { localizedAlternates } from '../../../i18n/utils';
+import { getEntityForPath } from '../../../data/database/global-entity-registry';
+import { entitySeoKeywords } from '../../../i18n/seo-keywords';
+
+type EntityProps = { lang: Locale; entityType: 'weapons'|'vehicles'|'map'|'items'; entitySlug: string; name: string; kind: LocalizedEntityType; sourceUrl: string; sourceDescription: string; collectionUrl: string; guideUrl: string };
+export async function getStaticPaths() {
+  const wiki = await getCollection('wiki');
+  const contentEntities = wiki.filter((entry) => entry.id.includes('/entities/')).flatMap((entry) => {
+    const match = entry.data.canonicalPath.match(/^\/(weapons|vehicles|map)\/([^/]+)\/$/);
+    if (!match) return [];
+    const entityType = match[1] as 'weapons'|'vehicles'|'map';
+    const kind = entityType === 'weapons' ? 'weapon' : entityType === 'vehicles' ? 'vehicle' : 'map';
+    const name = entry.data.title.replace(/\s*(?:\||—).*$/, '');
+    const guideUrl = kind === 'weapon' ? '/loadouts/' : kind === 'vehicle' ? '/money/logistics/' : '/map/control-zone/';
+    return locales.map((lang) => ({ params:{lang,entityType,entitySlug:match[2]}, props:{lang,entityType,entitySlug:match[2],name,kind,sourceUrl:entry.data.canonicalPath,sourceDescription:entry.data.description,collectionUrl:`/${lang}/database/${entityType === 'map' ? 'maps' : entityType}/`,guideUrl} }));
+  });
+  const itemTypes: Array<{slug:string;name:string;kind:LocalizedEntityType;sourceUrl:string;guideUrl:string}> = [
+    {slug:'armor',name:'Armor',kind:'armor',sourceUrl:'/equipment/',guideUrl:'/loadouts/'},
+    {slug:'attachments',name:'Attachments',kind:'attachment',sourceUrl:'/weapons/builds/',guideUrl:'/weapons/builds/'},
+    {slug:'ammunition',name:'Ammunition',kind:'ammunition',sourceUrl:'/weapons/',guideUrl:'/weapons/'},
+    {slug:'loadouts',name:'Loadouts',kind:'loadout',sourceUrl:'/loadouts/',guideUrl:'/loadouts/'},
+  ];
+  return [...contentEntities, ...locales.flatMap((lang) => itemTypes.map((item) => ({ params:{lang,entityType:'items',entitySlug:item.slug}, props:{lang,entityType:'items',entitySlug:item.slug,name:item.name,kind:item.kind,sourceUrl:item.sourceUrl,sourceDescription:'',collectionUrl:`/${lang}/database/items/`,guideUrl:item.guideUrl} })))];
+}
+const { lang, entityType, entitySlug, name, kind, sourceUrl, sourceDescription, collectionUrl, guideUrl } = Astro.props as EntityProps;
+const copy = entityDetailMessages[lang];
+const typeName = copy.typeNames[kind];
+const canonicalPath = `/${lang}/${entityType}/${entitySlug}/`;
+const intro = fillEntityTemplate(copy.overviewTemplates[kind], name);
+const description = fillEntityTemplate(copy.descriptionTemplate, name);
+const enhancement = getEntityDetailEnhancement(lang,kind);
+const sourceEntity = getEntityForPath(sourceUrl, name);
+const seoKeywords = entitySeoKeywords(lang, name, typeName);
+---
+<WikiLayout title={`${name} — ${copy.titleSuffix}`} description={description} canonicalPath={canonicalPath} pageType="WebPage" lang={localeMeta[lang].htmlLang} primaryKeyword={seoKeywords[0]} keywords={seoKeywords.slice(1)} image={sourceEntity?.image} imageAlt={sourceEntity?.image ? `${name} WARDOGS ${typeName} reference` : undefined} alternates={localizedAlternates(`${entityType}/${entitySlug}`)} xDefaultPath={sourceUrl} entity={{name,type:typeName,description,relations:[{name:copy.collection,url:collectionUrl},{name:copy.original,url:sourceUrl},{name:copy.guide,url:guideUrl}]}} showAd={true} adPlacement="entity">
+  <article class="localized-entity-detail">
+    <p class="eyebrow">{copy.eyebrow} / {typeName}</p><h1>{name}</h1>
+    <section><h2>{copy.overview}</h2><p>{intro}</p><p>{copy.unconfirmed}</p></section>
+    {sourceDescription && <section class="entity-source-summary"><h2>{enhancement.sourceSummary}</h2><p lang="en">{sourceDescription}</p></section>}
+    <section><h2>{enhancement.contextTitle}</h2><p>{fillEntityTemplate(enhancement.context,name)}</p></section>
+    <section><h2>{enhancement.decisionTitle}</h2><p>{fillEntityTemplate(enhancement.decision,name)}</p></section>
+    <section><h2>{copy.facts}</h2><dl class="entity-facts"><div><dt>{copy.category}</dt><dd>{typeName}</dd></div><div><dt>{copy.version}</dt><dd>{copy.versionValue}</dd></div><div><dt>{copy.evidence}</dt><dd>{copy.evidenceValue}</dd></div></dl></section>
+    <section><h2>{copy.relations}</h2><div class="inline-link-row"><a href={collectionUrl}>{copy.collection}</a><a href={sourceUrl}>{copy.original}</a><a href={guideUrl}>{copy.guide}</a></div></section>
+    <section><h2>{copy.patchHistory}</h2><p>{copy.patchNote}</p></section>
+    <section><h2>{enhancement.evidenceTitle}</h2><p>{enhancement.evidenceBody}</p></section>
+  </article>
+</WikiLayout>

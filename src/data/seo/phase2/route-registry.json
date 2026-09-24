@@ -8,6 +8,22 @@
     "canonical": "/"
   },
   {
+    "pageId": "building",
+    "url": "/building/",
+    "pageType": "hub",
+    "index": true,
+    "status": "published",
+    "canonical": "/building/"
+  },
+  {
+    "pageId": "how-to-play-root",
+    "url": "/how-to-play/",
+    "pageType": "guide",
+    "index": true,
+    "status": "published",
+    "canonical": "/how-to-play/"
+  },
+  {
     "pageId": "guide",
     "url": "/guide/",
     "pageType": "guide",

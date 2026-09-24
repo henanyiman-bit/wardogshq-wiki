@@ -1,0 +1,29 @@
+export type ComparisonCategory = 'weapons' | 'vehicles';
+
+export interface ProgrammaticComparison {
+  category: ComparisonCategory;
+  slug: string;
+  leftPath: string;
+  rightPath: string;
+  leftName: string;
+  rightName: string;
+  title: string;
+  description: string;
+  primaryKeyword: string;
+  intent: string;
+  context: string;
+  questions: string[];
+  guidePath: string;
+  guideName: string;
+}
+
+export const PROGRAMMATIC_COMPARISONS: ProgrammaticComparison[] = [
+  { category:'weapons', slug:'m4-vs-ak74', leftPath:'/weapons/m4/', rightPath:'/weapons/ak74/', leftName:'M4', rightName:'AK74', title:'M4 vs AK74 in WARDOGS', description:'Compare the M4 and AK74 WARDOGS records by role, battlefield context, loadout fit and current evidence.', primaryKeyword:'WARDOGS M4 vs AK74', intent:'Compare two general-purpose rifle records before choosing a loadout.', context:'Use this comparison when both rifles are candidates for a flexible infantry kit. The decision should remain connected to engagement range, ammunition planning, budget and the rest of the loadout.', questions:['Which rifle better fits the expected engagement distance?','Which option leaves room for the required utility and ammunition?','Does the current patch evidence support the claimed handling difference?'], guidePath:'/weapons/builds/', guideName:'Weapon Builds' },
+  { category:'weapons', slug:'rpg-7-vs-maaws', leftPath:'/weapons/rpg-7/', rightPath:'/weapons/maaws/', leftName:'RPG-7', rightName:'MAAWS', title:'RPG-7 vs MAAWS in WARDOGS', description:'Compare the RPG-7 and MAAWS WARDOGS launcher records without relying on unsupported damage claims.', primaryKeyword:'WARDOGS RPG-7 vs MAAWS', intent:'Compare anti-vehicle launcher roles and their loadout implications.', context:'Launcher selection starts with the expected target, available support and the cost of carrying a specialist tool. A useful comparison must include ammunition access and the primary weapon that completes the kit.', questions:['What target type is the squad preparing to counter?','Can the team sustain the selected launcher with ammunition and positioning?','What capability is lost elsewhere in the loadout?'], guidePath:'/weapons/best-weapons/', guideName:'Best Weapons by Role' },
+  { category:'weapons', slug:'mosin-nagant-vs-sv98', leftPath:'/weapons/mosin-nagant/', rightPath:'/weapons/sv98/', leftName:'Mosin-Nagant', rightName:'SV98', title:'Mosin-Nagant vs SV98 in WARDOGS', description:'Compare Mosin-Nagant and SV98 WARDOGS precision-rifle records by role, range context and evidence.', primaryKeyword:'WARDOGS Mosin-Nagant vs SV98', intent:'Compare precision-rifle references for deliberate long-range play.', context:'Precision weapons should be compared around sightlines, position, follow-up opportunities and the objective rather than an isolated headline statistic. Confirm patch-sensitive values on both source records.', questions:['Does the map provide repeatable long sightlines?','Can the position still contribute to the active objective?','Which claimed differences are confirmed for the current snapshot?'], guidePath:'/loadouts/', guideName:'Loadouts' },
+  { category:'vehicles', slug:'ural-vs-ural-defender', leftPath:'/vehicles/ural/', rightPath:'/vehicles/ural-defender/', leftName:'URAL', rightName:'URAL Defender', title:'URAL vs URAL Defender in WARDOGS', description:'Compare URAL and URAL Defender WARDOGS vehicle records for transport, crew and logistics planning.', primaryKeyword:'WARDOGS URAL vs URAL Defender', intent:'Compare two related ground-vehicle records before planning a logistics route.', context:'Treat this as a route and mission comparison. Review what each current entity record confirms about transport, protection, crew use and replacement risk before spending persistent cash.', questions:['Is the task movement, resupply or protected frontline support?','How exposed is the planned route?','Does the team have the crew and cash to repeat the route?'], guidePath:'/money/logistics/', guideName:'Logistics Guide' },
+  { category:'vehicles', slug:'mh-6-vs-uh-1y', leftPath:'/vehicles/mh-6/', rightPath:'/vehicles/uh-1y/', leftName:'MH-6', rightName:'UH-1Y', title:'MH-6 vs UH-1Y in WARDOGS', description:'Compare MH-6 and UH-1Y WARDOGS aircraft records by mobility task, crew plan and route risk.', primaryKeyword:'WARDOGS MH-6 vs UH-1Y', intent:'Compare aircraft references for transport and pilot planning.', context:'Aircraft choice depends on the passengers, landing access, route exposure and whether the pilot can produce repeated value. Avoid treating an unverified speed or capacity claim as the entire decision.', questions:['How many players must reach the destination?','Is there a safe approach and landing plan?','Can the aircraft create repeated team value instead of one trip?'], guidePath:'/loadouts/pilot/', guideName:'Pilot Loadout' },
+  { category:'vehicles', slug:'l2a6-vs-sph-2', leftPath:'/vehicles/l2a6/', rightPath:'/vehicles/sph-2/', leftName:'L2A6', rightName:'SPH-2', title:'L2A6 vs SPH-2 in WARDOGS', description:'Compare L2A6 and SPH-2 WARDOGS armored-vehicle records by battlefield role, crew and support requirements.', primaryKeyword:'WARDOGS L2A6 vs SPH-2', intent:'Compare heavy vehicle references without inventing armor or damage values.', context:'Heavy platforms should be evaluated by their documented role, crew burden, route access and team support. Exact armor, weapon and price values remain unconfirmed unless the linked records provide reliable evidence.', questions:['What battlefield problem must the platform solve?','Can the crew maintain awareness, movement and support?','Does the planned route expose the vehicle without infantry coordination?'], guidePath:'/vehicles/ground/', guideName:'Ground Vehicles Guide' },
+];
+
+export const comparisonPath = (comparison: ProgrammaticComparison) => `/compare/${comparison.category}/${comparison.slug}/`;

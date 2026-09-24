@@ -1,0 +1,31 @@
+[
+  {
+    "id": "weapon-example",
+    "name": "Weapon Example",
+    "type": "weapon",
+    "image": "",
+    "description": "Schema-only weapon example; not a claim about live game data.",
+    "stats": { "weaponClass": { "value": null, "status": "currently_unconfirmed" }, "combatRole": { "value": null, "status": "currently_unconfirmed" } },
+    "attributes": {}, "relations": [], "version": "example", "patchHistory": [], "compatibleAttachmentIds": [], "ammunitionIds": []
+  },
+  {
+    "id": "armor-example", "name": "Armor Example", "type": "armor", "image": "", "description": "Schema-only armor example; not live game data.",
+    "stats": { "armorClass": { "value": null, "status": "currently_unconfirmed" }, "protectedArea": { "value": null, "status": "currently_unconfirmed" } },
+    "attributes": {}, "relations": [], "version": "example", "patchHistory": [], "compatibleLoadoutIds": []
+  },
+  {
+    "id": "attachment-example", "name": "Attachment Example", "type": "attachment", "image": "", "description": "Schema-only attachment example; not live game data.",
+    "stats": { "attachmentClass": { "value": null, "status": "currently_unconfirmed" }, "mountType": { "value": null, "status": "currently_unconfirmed" } },
+    "attributes": {}, "relations": [], "version": "example", "patchHistory": [], "compatibleWeaponIds": []
+  },
+  {
+    "id": "ammunition-example", "name": "Ammunition Example", "type": "ammunition", "image": "", "description": "Schema-only ammunition example; not live game data.",
+    "stats": { "caliber": { "value": null, "status": "currently_unconfirmed" }, "ammunitionClass": { "value": null, "status": "currently_unconfirmed" } },
+    "attributes": {}, "relations": [], "version": "example", "patchHistory": [], "compatibleWeaponIds": []
+  },
+  {
+    "id": "loadout-example", "name": "Loadout Example", "type": "loadout", "image": "", "description": "Schema-only loadout example; not live game data.",
+    "stats": { "role": { "value": null, "status": "currently_unconfirmed" }, "budgetTier": { "value": null, "status": "currently_unconfirmed" } },
+    "attributes": {}, "relations": [], "version": "example", "patchHistory": [], "weaponIds": [], "armorIds": [], "attachmentIds": [], "ammunitionIds": []
+  }
+]

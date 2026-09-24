@@ -1,0 +1,30 @@
+---
+interface Props {
+  updated?: Date | string;
+  reviewer?: string;
+}
+
+const {
+  updated,
+  reviewer = 'WARDOGS Wiki Editorial Team',
+} = Astro.props as Props;
+const reviewedDate = updated ? new Date(updated).toISOString().slice(0, 10) : 'Version reviewed';
+---
+<aside class="editorial-trust" aria-labelledby="editorial-trust-title" data-pagefind-ignore>
+  <div>
+    <p class="editorial-trust__eyebrow">Editorial record</p>
+    <h2 id="editorial-trust-title">Reviewed for clarity and evidence</h2>
+    <p>This reference distinguishes official information, version-bound observation, and strategic interpretation. Unverified values are identified instead of being presented as fact.</p>
+  </div>
+  <dl>
+    <div><dt>Reviewed by</dt><dd>{reviewer}</dd></div>
+    <div><dt>Last reviewed</dt><dd><time datetime={reviewedDate}>{reviewedDate}</time></dd></div>
+    <div><dt>Evidence standard</dt><dd>Source-weighted, version-bound</dd></div>
+  </dl>
+  <nav aria-label="Editorial transparency">
+    <a href="/sources/">Sources</a>
+    <a href="/methodology/">Methodology</a>
+    <a href="/editorial-policy/">Editorial policy</a>
+    <a href="/contributors/">Contributors</a>
+  </nav>
+</aside>

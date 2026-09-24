@@ -18,7 +18,7 @@ export default defineConfig({
   integrations: [
     mdx(),
     sitemap({
-      filter: (page) => !noindexPaths.some((path) => page.endsWith(path)),
+      filter: (page) => !noindexPaths.includes(new URL(page).pathname),
     }),
   ],
   vite: { plugins: [tailwindcss()] },

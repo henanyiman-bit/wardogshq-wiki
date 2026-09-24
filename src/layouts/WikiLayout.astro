@@ -2,34 +2,62 @@
 import '../styles/global.css';
 import JsonLd from '../components/seo/JsonLd.astro';
 import VersionBadge from '../components/wiki/VersionBadge.astro';
-const { title, description, canonicalPath='/', indexable=true, pageType='WebPage' } = Astro.props;
+import AdSlot from '../components/ads/AdSlot.astro';
+import LanguageSwitcher from '../components/i18n/LanguageSwitcher.astro';
+import GrowthPathways from '../components/seo/GrowthPathways.astro';
+import { localeMeta, locales } from '../i18n/config';
+import { uiMessages } from '../i18n/ui';
+const { title, description, canonicalPath='/', indexable=true, pageType='WebPage', schemaItems=[], datasetName, entity, primaryKeyword='', keywords=[], image='', imageAlt=title, imageWidth, imageHeight, lang='en', alternates=[], xDefaultPath='/', showAd=false, adPlacement='wiki', dateModified, authorName='WARDOGS Wiki Editorial Team', reviewerName='WARDOGS Wiki Editorial Team' } = Astro.props;
 const canonical = new URL(canonicalPath, Astro.site).href;
+const absoluteImage = image ? new URL(image, Astro.site).href : '';
+const resolvedAlternates = alternates.length ? alternates : [{ lang, path: canonicalPath }];
+const currentLocale = locales.find((locale) => localeMeta[locale].htmlLang === lang) ?? 'en';
+const ui = uiMessages[currentLocale];
+const localizedPrefix = currentLocale === 'en' ? '' : `/${currentLocale}`;
 ---
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <title>{title}</title>
   <meta name="description" content={description} />
+  {(primaryKeyword || keywords.length) && <meta name="keywords" content={[primaryKeyword, ...keywords].filter(Boolean).filter((value, index, values) => values.indexOf(value) === index).join(', ')} />}
   <meta name="robots" content={indexable ? 'index,follow' : 'noindex,follow'} />
+  <link rel="alternate" type="application/rss+xml" title="WARDOGS Wiki updates" href={new URL('/feed.xml', Astro.site).href} />
   <link rel="canonical" href={canonical} />
+  {resolvedAlternates.map((alternate: { lang: string; path: string }) => <link rel="alternate" hreflang={alternate.lang} href={new URL(alternate.path, Astro.site).href} />)}
+  <link rel="alternate" hreflang="x-default" href={new URL(xDefaultPath, Astro.site).href} />
   <meta property="og:url" content={canonical} />
-  <JsonLd title={title} description={description} canonical={canonical} pageType={pageType}/>
+  {absoluteImage && <meta property="og:image" content={absoluteImage} />}
+  {absoluteImage && <meta property="og:image:alt" content={imageAlt} />}
+  {absoluteImage && imageWidth && <meta property="og:image:width" content={String(imageWidth)} />}
+  {absoluteImage && imageHeight && <meta property="og:image:height" content={String(imageHeight)} />}
+  {absoluteImage && <meta name="twitter:card" content="summary_large_image" />}
+  {absoluteImage && <meta name="twitter:image" content={absoluteImage} />}
+  {absoluteImage && <meta name="twitter:image:alt" content={imageAlt} />}
+  <JsonLd title={title} description={description} canonical={canonical} pageType={pageType} schemaItems={schemaItems} datasetName={datasetName} entity={entity} keywords={[primaryKeyword, ...keywords].filter(Boolean)} image={absoluteImage} imageAlt={imageAlt} imageWidth={imageWidth} imageHeight={imageHeight} inLanguage={lang} dateModified={dateModified} authorName={authorName} reviewerName={reviewerName}/>
 </head>
 <body>
 <header class="site-header" data-pagefind-ignore>
   <a class="brand" href="/">WARDOGS <span>WIKI</span></a>
-  <nav><a href="/money/">Money</a><a href="/map/">Map</a><a href="/loadouts/">Loadouts</a><a href="/vehicles/">Vehicles</a><a href="/weapons/">Weapons</a></nav>
+  <div class="header-actions">
+    <nav class="primary-nav"><a href="/money/">{ui.nav[0]}</a><a href="/map/">{ui.nav[1]}</a><a href="/loadouts/">{ui.nav[2]}</a><a href="/vehicles/">{ui.nav[3]}</a><a href="/weapons/">{ui.nav[4]}</a><a href={`${localizedPrefix}/database/`}>{ui.nav[5]}</a><a href={`${localizedPrefix}/tools/`}>{ui.nav[6]}</a></nav>
+    <LanguageSwitcher />
+  </div>
 </header>
 <main class="shell">
-  <VersionBadge />
+  <VersionBadge label={ui.version} />
   <article class="wiki-article" data-pagefind-body>
     <slot />
+    {lang === 'en' && <GrowthPathways path={canonicalPath} />}
   </article>
+  {showAd && <AdSlot placement={adPlacement} />}
 </main>
 <footer class="site-footer" data-pagefind-ignore>
-  <p>Independent WARDOGS Wiki snapshot. Game facts are version-bound; unsupported values are omitted.</p>
+  <p>{ui.footer[0]}</p>
+  <p><a href="/about/">{ui.footer[1]}</a> · <a href="/sources/">{ui.footer[2]}</a> · <a href="/methodology/">Methodology</a> · <a href="/contributors/">Contributors</a> · <a href="/editorial-policy/">{ui.footer[3]}</a> · <a href="/advertising-policy/">Advertising</a> · <a href="/feed.xml">Updates feed</a></p>
+  <p><a href="/en/" lang="en">English</a> · <a href="/zh-cn/" lang="zh-CN">简体中文</a> · <a href="/es/" lang="es">Español</a> · <a href="/pt-br/" lang="pt-BR">Português</a> · <a href="/de/" lang="de">Deutsch</a> · <a href="/fr/" lang="fr">Français</a> · <a href="/ja/" lang="ja">日本語</a> · <a href="/ko/" lang="ko">한국어</a></p>
 </footer>
 <script is:inline>
 (() => {
@@ -38,12 +66,19 @@ const canonical = new URL(canonicalPath, Astro.site).href;
     if (img.dataset.safeFallbackBound === '1') return;
     img.dataset.safeFallbackBound = '1';
     const useFallback = () => {
-      if (img.getAttribute('src') === fallback) return;
-      img.setAttribute('src', fallback);
-      img.style.objectFit = 'contain';
+      const preferred = img.dataset.fallback;
+      const current = img.getAttribute('src');
+      const next = preferred && current !== preferred ? preferred : fallback;
+      if (current === next) return;
+      img.setAttribute('src', next);
+      if (next === preferred) img.removeAttribute('data-fallback');
+      const fallbackFit = img.dataset.fallbackFit || 'contain';
+      img.style.objectFit = fallbackFit;
       img.style.objectPosition = 'center';
-      img.style.padding = '18px';
-      img.style.background = '#0d1216';
+      if (fallbackFit === 'contain') {
+        img.style.padding = '18px';
+        img.style.background = '#0d1216';
+      }
     };
     img.addEventListener('error', useFallback);
     if (img.complete && img.naturalWidth === 0) useFallback();

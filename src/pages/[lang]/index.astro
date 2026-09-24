@@ -1,0 +1,32 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import { locales, localeMeta, type Locale } from '../../i18n/config';
+import { messages } from '../../i18n/messages';
+import { languageAlternates } from '../../i18n/utils';
+import { uiMessages } from '../../i18n/ui';
+import { homeSeoKeywords } from '../../i18n/seo-keywords';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang }, props: { lang } }));
+}
+
+const { lang } = Astro.props as { lang: Locale };
+const copy = messages[lang];
+const meta = localeMeta[lang];
+const ui = uiMessages[lang];
+const seoKeywords = homeSeoKeywords(lang);
+---
+<WikiLayout title={copy.title} description={copy.description} canonicalPath={meta.path} pageType="CollectionPage" lang={meta.htmlLang} primaryKeyword={seoKeywords[0]} keywords={seoKeywords.slice(1)} alternates={languageAlternates}>
+  <section class="locale-portal">
+    <p class="eyebrow">{copy.eyebrow}</p>
+    <h1>{copy.heading}</h1>
+    <p class="lede">{copy.introduction}</p>
+    <nav class="locale-switcher" aria-label={ui.selector}>{locales.map((locale) => <a href={localeMeta[locale].path} lang={localeMeta[locale].htmlLang} aria-current={locale === lang ? 'page' : undefined}>{localeMeta[locale].label}</a>)}</nav>
+    <div class="section-heading locale-overview"><h2>{ui.overviewTitle}</h2><p>{ui.overview}</p></div>
+    <div class="database-hub-grid">
+      <a href={`/${lang}/database/`}><strong>{copy.database}</strong><small>{ui.cardDescriptions[0]}</small></a>
+      <a href={`/${lang}/tools/`}><strong>{copy.tools}</strong><small>{ui.cardDescriptions[1]}</small></a>
+      <a href={`/${lang}/guide/`}><strong>{copy.guides}</strong><small>{ui.cardDescriptions[2]}</small></a>
+    </div>
+  </section>
+</WikiLayout>

@@ -1,0 +1,20 @@
+---
+const { tool, description, leftLabel, rightLabel, options } = Astro.props;
+---
+<section class="tool-app" data-tool-app>
+  <p>{description}</p>
+  <div class="tool-controls">
+    <label>{leftLabel}<select data-left>{options.map((option: string) => <option>{option}</option>)}</select></label>
+    <label>{rightLabel}<select data-right>{options.map((option: string, index: number) => <option selected={index === 1}>{option}</option>)}</select></label>
+  </div>
+  <div class="tool-result" aria-live="polite"><strong>{tool}</strong><p data-summary>Select two entries to build a quick comparison.</p></div>
+</section>
+<script is:inline>
+document.querySelectorAll('[data-tool-app]').forEach((app) => {
+  const left = app.querySelector('[data-left]');
+  const right = app.querySelector('[data-right]');
+  const summary = app.querySelector('[data-summary]');
+  const update = () => { summary.textContent = `${left.value} compared with ${right.value}. Open the linked database entries for verified, version-bound details.`; };
+  left.addEventListener('change', update); right.addEventListener('change', update); update();
+});
+</script>

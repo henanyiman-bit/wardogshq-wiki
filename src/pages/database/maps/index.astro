@@ -1,0 +1,15 @@
+---
+import WikiLayout from '../../../layouts/WikiLayout.astro';
+import { localizedAlternates } from '../../../i18n/utils';
+import { collectionSeoKeywords } from '../../../i18n/seo-keywords';
+import DatabaseCollection from '../../../components/database/DatabaseCollection.astro';
+import { databaseGroups } from '../../../data/database/global-entity-registry';
+const items = databaseGroups.maps;
+const seoKeywords = collectionSeoKeywords('en', 'maps');
+---
+<WikiLayout title="WARDOGS Maps Database" description="Structured WARDOGS map data with terrain orientation, parameters, relationships and patch history." canonicalPath="/database/maps/" pageType="CollectionPage" datasetName="WARDOGS Maps Dataset" schemaItems={items} primaryKeyword={seoKeywords[0]} keywords={seoKeywords.slice(1)} alternates={localizedAlternates('database/maps')} xDefaultPath="/database/maps/">
+  <p class="eyebrow">DATABASE / MAPS</p><h1>Maps Database</h1>
+  <h2>Introduction</h2><DatabaseCollection intro="Use the map index to compare terrain identity and orientation anchors without confusing named maps with the randomized Control Zone." items={items}/>
+  <section><h2>Terrain data and objective data</h2><p>Named maps provide the terrain, roads, settlements and landmarks used for orientation. The active Control Zone is a match objective layered onto that wider space, so a static map reference should never be read as a promise that the next fight will happen in the same place.</p><p>Each entry connects terrain identity to the <a href="/map/control-zone/">Control Zone system</a>, tower information and another map for comparison. Coordinates or marker states that cannot be verified remain <strong>Currently unconfirmed</strong>.</p></section>
+  <section><h2>Frequently asked questions</h2><h3>Does a map page show the next Control Zone?</h3><p>No. It provides orientation and documented context; the objective location is determined in the live match.</p><h3>Are community map markers official?</h3><p>Not automatically. Community observations are labeled separately from confirmed publisher information.</p></section>
+</WikiLayout>

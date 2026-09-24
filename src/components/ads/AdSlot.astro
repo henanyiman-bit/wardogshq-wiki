@@ -1,0 +1,51 @@
+---
+import { adPlacements, advertisingPolicyPath, type AdPlacement } from '../../config/monetization';
+const { placement = 'wiki', label, width, height } = Astro.props as {
+  placement?: AdPlacement;
+  label?: string;
+  width?: number;
+  height?: number;
+};
+const config = adPlacements[placement];
+const adKey = config.key;
+const resolvedLabel = label ?? config.label;
+const resolvedWidth = width ?? config.width;
+const resolvedHeight = height ?? config.height;
+const enabled = Boolean(adKey);
+const scriptUrl = enabled ? `https://www.highperformanceformat.com/${adKey}/invoke.js` : '';
+---
+<aside class="ad-slot" style={`--ad-slot-height:${resolvedHeight}px`} data-ad-placement={placement} data-ad-status={enabled ? 'configured' : 'unconfigured'} data-ad-key={adKey} data-ad-width={resolvedWidth} data-ad-height={resolvedHeight} data-ad-script={scriptUrl} aria-label={resolvedLabel} data-pagefind-ignore>
+  {enabled && <div class="ad-slot__label"><span>{resolvedLabel}</span><a href={advertisingPolicyPath}>Ad disclosure</a></div>}
+  {enabled && <div class="ad-slot__frame"></div>}
+</aside>
+<script is:inline>
+(() => {
+  const loadAd = (slot) => {
+    if (slot.dataset.adLoaded === 'true') return;
+    slot.dataset.adLoaded = 'true';
+    window.atOptions = {
+      key: slot.dataset.adKey,
+      format: 'iframe',
+      height: Number(slot.dataset.adHeight),
+      width: Number(slot.dataset.adWidth),
+      params: {},
+    };
+    const script = document.createElement('script');
+    script.src = slot.dataset.adScript;
+    script.async = true;
+    script.referrerPolicy = 'strict-origin-when-cross-origin';
+    slot.querySelector('.ad-slot__frame')?.appendChild(script);
+  };
+  const slots = document.querySelectorAll('.ad-slot[data-ad-status="configured"]:not([data-ad-loaded])');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      loadAd(entry.target);
+      observer.unobserve(entry.target);
+    }), { rootMargin: '400px 0px' });
+    slots.forEach((slot) => observer.observe(slot));
+  } else {
+    window.addEventListener('load', () => slots.forEach(loadAd), { once: true });
+  }
+})();
+</script>

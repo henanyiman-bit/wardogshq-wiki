@@ -1,0 +1,41 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import { getCollection } from 'astro:content';
+import { locales, localeMeta, type Locale } from '../../i18n/config';
+import { corePages, type CorePageSlug } from '../../i18n/core-pages';
+import { localizedAlternates } from '../../i18n/utils';
+import LocalizedGuide from '../../components/i18n/LocalizedGuide.astro';
+import { fillGuideText, guideSourceUrl, guideTitles, guideUi, localizedGuideRoutes, type LocalizedGuideRoute } from '../../i18n/guide-pages';
+import { coreSeoKeywords, guideSeoKeywords } from '../../i18n/seo-keywords';
+
+export async function getStaticPaths() {
+  const coreSlugs: CorePageSlug[] = ['database', 'tools', 'guide'];
+  const wiki = await getCollection('wiki');
+  const descriptions = new Map(wiki.map((entry) => [entry.data.canonicalPath,entry.data.description]));
+  return locales.flatMap((lang) => [
+    ...coreSlugs.map((slug) => ({ params: { lang, slug }, props: { lang, slug, contentKind:'core' as const } })),
+    ...localizedGuideRoutes.map((slug) => ({ params:{lang,slug}, props:{lang,slug,contentKind:'guide' as const,sourceDescription:descriptions.get(guideSourceUrl(slug)) ?? ''} })),
+  ]);
+}
+const { lang, slug, contentKind, sourceDescription = '' } = Astro.props as { lang: Locale; slug: CorePageSlug|LocalizedGuideRoute; contentKind:'core'|'guide'; sourceDescription?:string };
+const copy = contentKind === 'core' ? corePages[lang][slug as CorePageSlug] : undefined;
+const guideCopy = contentKind === 'guide' ? guideUi[lang] : undefined;
+const guideTitle = contentKind === 'guide' ? guideTitles[lang][slug as LocalizedGuideRoute] : '';
+const canonicalPath = `/${lang}/${slug}/`;
+const title = copy?.title ?? `${guideTitle} — ${guideCopy!.titleSuffix}`;
+const description = copy?.description ?? fillGuideText(guideCopy!.description,guideTitle);
+const sourceUrl = contentKind === 'guide' ? guideSourceUrl(slug as LocalizedGuideRoute) : `/${slug}/`;
+const seoKeywords = contentKind === 'guide' ? guideSeoKeywords(lang, guideTitle) : coreSeoKeywords(lang, slug as CorePageSlug);
+---
+<WikiLayout title={title} description={description} canonicalPath={canonicalPath} pageType={contentKind === 'core' ? 'CollectionPage' : 'WebPage'} lang={localeMeta[lang].htmlLang} primaryKeyword={seoKeywords[0]} keywords={seoKeywords.slice(1)} alternates={localizedAlternates(slug)} xDefaultPath={sourceUrl} schemaItems={copy?.cards.map((card) => ({ name: card.name, url: card.href })) ?? []} showAd={true} adPlacement={slug === 'tools' ? 'tool' : 'wiki'}>
+  {contentKind === 'core' && copy ? <section class="locale-core-page">
+    <p class="eyebrow">{copy.eyebrow}</p>
+    <h1>{copy.heading}</h1>
+    <p class="lede">{copy.introduction}</p>
+    <section><h2>{copy.sectionTitle}</h2><p>{copy.sectionBody}</p></section>
+    <div class="database-hub-grid">{copy.cards.map((card) => <a href={card.href}><strong>{card.name}</strong><small>{card.description}</small></a>)}</div>
+    <p class="content-status-note">{copy.note}</p>
+    <nav class="inline-link-row" aria-label="Localized core pages"><a href={`/${lang}/database/`}>{corePages[lang].database.heading}</a><a href={`/${lang}/tools/`}>{corePages[lang].tools.heading}</a><a href={`/${lang}/guide/`}>{corePages[lang].guide.heading}</a></nav>
+    {slug === 'guide' && <section class="localized-guide-index"><h2>{guideCopy?.related ?? guideUi[lang].related}</h2><div class="database-hub-grid">{localizedGuideRoutes.map((route) => <a href={`/${lang}/${route}/`}><strong>{guideTitles[lang][route]}</strong><small>{fillGuideText(guideUi[lang].description,guideTitles[lang][route])}</small></a>)}</div></section>}
+  </section> : <LocalizedGuide lang={lang} route={slug as LocalizedGuideRoute} sourceDescription={sourceDescription} />}
+</WikiLayout>

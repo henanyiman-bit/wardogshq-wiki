@@ -18,8 +18,12 @@ const resolvedFallback = isRemote ? '/media/wiki/image-unavailable.svg' : fallba
     src={src}
     alt={alt}
     loading={loading}
+    decoding="async"
+    fetchpriority={loading === 'eager' ? 'high' : 'low'}
+    width="1200"
+    height="675"
     data-fallback={resolvedFallback || undefined}
-    data-fallback-fit={resolvedFallback ? 'contain' : undefined}
+    data-fallback-fit={resolvedFallback ? fallbackFit : undefined}
     style={`object-fit:${fit};object-position:${position};`}
   />
   {(title || explanation) && (
@@ -29,24 +33,3 @@ const resolvedFallback = isRemote ? '/media/wiki/image-unavailable.svg' : fallba
     </figcaption>
   )}
 </figure>
-<script is:inline>
-(() => {
-  document.querySelectorAll('img[data-fallback]').forEach((img) => {
-    if (img.dataset.fallbackBound === '1') return;
-    img.dataset.fallbackBound = '1';
-    img.addEventListener('error', () => {
-      const fallback = img.getAttribute('data-fallback');
-      if (fallback && img.getAttribute('src') !== fallback) {
-        img.setAttribute('src', fallback);
-        const fallbackFit = img.getAttribute('data-fallback-fit');
-        if (fallbackFit) img.style.objectFit = fallbackFit;
-        if (fallbackFit === 'contain') {
-          img.style.padding = '18px';
-          img.style.background = '#0d1216';
-        }
-        img.removeAttribute('data-fallback');
-      }
-    });
-  });
-})();
-</script>

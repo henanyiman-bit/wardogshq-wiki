@@ -2,6 +2,7 @@
 import { getEntry, render } from 'astro:content';
 import WikiLayout from '../../layouts/WikiLayout.astro';
 import PageSidebar from '../../components/wiki/PageSidebar.astro';
+import EditorialTrustPanel from '../../components/wiki/EditorialTrustPanel.astro';
 
 const page = await getEntry('wiki', 'building');
 if (!page) throw new Error('Building page not found');
@@ -13,11 +14,14 @@ const { Content } = await render(page);
   canonicalPath="/building/"
   indexable={page.data.indexable}
   pageType="Article"
+  dateModified={page.data.updated}
 >
   <div class="wiki-content-grid">
     <div class="wiki-main">
       <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">WARDOGS Wiki</a><span>›</span><span>{page.data.title}</span></nav>
       <Content />
+      <nav class="inline-link-row" aria-label="Related systems"><a href="/game-modes/">Game Modes</a><a href="/map/control-zone/">Control Zone</a></nav>
+      <EditorialTrustPanel updated={page.data.updated} />
     </div>
     <PageSidebar updated={page.data.updated} pageType={page.data.pageType} />
   </div>

@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import WikiLayout from '../../../layouts/WikiLayout.astro';
+import ProgrammaticComparisonView from '../../../components/seo/ProgrammaticComparison.astro';
+import { PROGRAMMATIC_COMPARISONS, comparisonPath, type ProgrammaticComparison } from '../../../data/seo/programmatic-growth';
+
+export async function getStaticPaths() {
+  const wiki = await getCollection('wiki');
+  const descriptions = new Map(wiki.map((entry) => [entry.data.canonicalPath, entry.data.description]));
+  return PROGRAMMATIC_COMPARISONS.map((comparison) => ({
+    params: { category: comparison.category, pair: comparison.slug },
+    props: {
+      comparison,
+      leftDescription: descriptions.get(comparison.leftPath) ?? `${comparison.leftName} WARDOGS entity record.`,
+      rightDescription: descriptions.get(comparison.rightPath) ?? `${comparison.rightName} WARDOGS entity record.`,
+    },
+  }));
+}
+
+const { comparison, leftDescription, rightDescription } = Astro.props as { comparison: ProgrammaticComparison; leftDescription: string; rightDescription: string };
+const canonicalPath = comparisonPath(comparison);
+---
+<WikiLayout title={comparison.title} description={comparison.description} canonicalPath={canonicalPath} pageType="WebPage" primaryKeyword={comparison.primaryKeyword} keywords={[`${comparison.leftName} vs ${comparison.rightName}`, `${comparison.category} comparison WARDOGS`]} schemaItems={[{name:comparison.leftName,url:comparison.leftPath},{name:comparison.rightName,url:comparison.rightPath}]} showAd={true} adPlacement="tool">
+  <ProgrammaticComparisonView comparison={comparison} leftDescription={leftDescription} rightDescription={rightDescription} />
+</WikiLayout>

@@ -1,0 +1,18 @@
+---
+import type { Locale } from '../../i18n/config';
+import { fillGuideText, guideCategory, guideEnhancements, guideSourceUrl, guideTitles, guideUi, relatedGuideRoutes, type LocalizedGuideRoute } from '../../i18n/guide-pages';
+const { lang, route, sourceDescription = '' } = Astro.props as { lang: Locale; route: LocalizedGuideRoute; sourceDescription?: string };
+const copy = guideUi[lang]; const title = guideTitles[lang][route]; const sourceUrl = guideSourceUrl(route);
+const enhancement = guideEnhancements[lang]; const category = guideCategory(route);
+const relatedRoutes = relatedGuideRoutes(route);
+---
+<article class="localized-guide-page">
+  <p class="eyebrow">{copy.eyebrow}</p><h1>{title}</h1><p class="lede">{fillGuideText(copy.intro,title)}</p>
+  {sourceDescription && <section class="guide-source-summary"><h2>{enhancement.sourceSummary}</h2><p lang="en">{sourceDescription}</p></section>}
+  <section><h2>{enhancement.focusTitle}</h2><p>{enhancement.focus[category]}</p></section>
+  <section><h2>{copy.understand}</h2><p>{copy.understandBody}</p></section>
+  <section><h2>{copy.apply}</h2><p>{copy.applyBody}</p></section>
+  <section><h2>{copy.verify}</h2><p>{copy.verifyBody}</p></section>
+  <section><h2>{enhancement.checklistTitle}</h2><ol>{enhancement.checklist.map((item) => <li>{item}</li>)}</ol></section>
+  <section><h2>{copy.related}</h2><div class="inline-link-row"><a href={`/${lang}/guide/`}>{copy.hub}</a>{relatedRoutes.map((relatedRoute) => <a href={`/${lang}/${relatedRoute}/`}>{guideTitles[lang][relatedRoute]}</a>)}<a href={sourceUrl}>{copy.source}</a></div></section>
+</article>

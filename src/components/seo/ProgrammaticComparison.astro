@@ -1,0 +1,19 @@
+---
+import type { ProgrammaticComparison } from '../../data/seo/programmatic-growth';
+const { comparison, leftDescription, rightDescription } = Astro.props as { comparison: ProgrammaticComparison; leftDescription: string; rightDescription: string };
+---
+<article class="comparison-page">
+  <p class="eyebrow">PROGRAMMATIC DATABASE / {comparison.category}</p>
+  <h1>{comparison.leftName} vs {comparison.rightName}</h1>
+  <p class="lede">{comparison.context}</p>
+  <section>
+    <h2>Record overview</h2>
+    <div class="comparison-record-grid">
+      <article><h3><a href={comparison.leftPath}>{comparison.leftName}</a></h3><p>{leftDescription}</p><a href={comparison.leftPath}>Open {comparison.leftName} record →</a></article>
+      <article><h3><a href={comparison.rightPath}>{comparison.rightName}</a></h3><p>{rightDescription}</p><a href={comparison.rightPath}>Open {comparison.rightName} record →</a></article>
+    </div>
+  </section>
+  <section><h2>How to compare these records</h2><p>This page organizes a decision; it does not manufacture hidden statistics. Read both entity records in the same version context, identify their documented roles, and verify any patch-sensitive claim before using it in a loadout or purchase decision.</p><ol>{comparison.questions.map((question) => <li>{question}</li>)}</ol></section>
+  <section><h2>Evidence boundaries</h2><p>Damage, armor, speed, price, capacity and handling values are included only when supported by the linked WARDOGS records. Missing precision remains <strong>Currently unconfirmed</strong>. This keeps a comparison useful without turning assumptions into database facts.</p></section>
+  <section><h2>Related research</h2><div class="inline-link-row"><a href={comparison.category === 'weapons' ? '/database/weapons/' : '/database/vehicles/'}>{comparison.category === 'weapons' ? 'Weapons Database' : 'Vehicles Database'}</a><a href={comparison.guidePath}>{comparison.guideName}</a><a href={comparison.category === 'weapons' ? '/tools/weapon-compare/' : '/tools/vehicle-compare/'}>Open comparison tool</a></div></section>
+</article>

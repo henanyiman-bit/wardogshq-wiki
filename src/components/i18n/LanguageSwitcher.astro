@@ -1,0 +1,30 @@
+---
+import { defaultLocale, isLocale, localeMeta, locales, type Locale } from '../../i18n/config';
+import { uiMessages } from '../../i18n/ui';
+import { localizedGuideRoutes } from '../../i18n/guide-pages';
+const pathname = Astro.url.pathname;
+const firstSegment = pathname.split('/').filter(Boolean)[0] || '';
+const currentLocale: Locale = isLocale(firstSegment) ? firstSegment : defaultLocale;
+const isLocalizedPortal = isLocale(firstSegment) && pathname === `/${firstSegment}/`;
+const segments = pathname.split('/').filter(Boolean);
+const pathSegments = isLocale(firstSegment) ? segments.slice(1) : segments;
+const localizedSlug = pathSegments.join('/');
+const localizedCoreSlugs = new Set(['database', 'tools', 'guide', 'database/weapons', 'database/vehicles', 'database/items', 'database/maps']);
+const englishRouteMap: Record<string, string> = { 'database/items': '/equipment/' };
+const nonEntityPaths = new Set(['map/control-zone','map/drills','map/interactive','map/mortar-artillery','map/towers','vehicles/air','vehicles/ground','weapons/best-weapons','weapons/builds']);
+const isLocalizedEntity = /^(weapons|vehicles|map|items)\/[^/]+$/.test(localizedSlug) && !nonEntityPaths.has(localizedSlug);
+const hasLocalizedEquivalent = localizedCoreSlugs.has(localizedSlug) || isLocalizedEntity;
+const hasLocalizedGuide = localizedGuideRoutes.includes(localizedSlug as typeof localizedGuideRoutes[number]);
+const itemSourceMap: Record<string, string> = { 'items/armor':'/equipment/', 'items/attachments':'/weapons/builds/', 'items/ammunition':'/weapons/', 'items/loadouts':'/loadouts/' };
+const englishPath = pathname === '/404/' ? '/' : (hasLocalizedEquivalent || hasLocalizedGuide) ? (englishRouteMap[localizedSlug] ?? itemSourceMap[localizedSlug] ?? `/${localizedSlug}/`) : pathname;
+const localePath = (locale: Locale) => locale === 'en'
+  ? (isLocalizedPortal ? '/en/' : englishPath)
+  : ((hasLocalizedEquivalent || hasLocalizedGuide) ? `/${locale}/${localizedSlug}/` : localeMeta[locale].path);
+const selectorLabel = uiMessages[currentLocale].selector;
+---
+<details class="language-switcher" data-pagefind-ignore>
+  <summary aria-label={selectorLabel}><span aria-hidden="true">🌐</span><span>{localeMeta[currentLocale].label}</span></summary>
+  <div class="language-menu" role="list" aria-label={selectorLabel}>
+    {locales.map((locale) => <a href={localePath(locale)} lang={localeMeta[locale].htmlLang} hreflang={localeMeta[locale].htmlLang} aria-current={locale === currentLocale ? 'page' : undefined}>{localeMeta[locale].label}</a>)}
+  </div>
+</details>

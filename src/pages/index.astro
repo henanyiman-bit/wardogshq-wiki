@@ -3,8 +3,11 @@ import WikiLayout from '../layouts/WikiLayout.astro';
 import HeroSearch from '../components/wiki/HeroSearch.astro';
 import GamePlatformCTA from '../components/wiki/GamePlatformCTA.astro';
 import VideoEmbed from '../components/wiki/VideoEmbed.astro';
+import { languageAlternates } from '../i18n/utils';
+import { homeSeoKeywords } from '../i18n/seo-keywords';
+const seoKeywords = homeSeoKeywords('en');
 ---
-<WikiLayout title="WARDOGS Wiki: Guides, Money, Map, Weapons & Vehicles" description="WARDOGS Wiki for beginner help, money, map systems, loadouts, FOB building, vehicles, weapons, progression and community servers. Season 1 / Patch 0.11 research snapshot." canonicalPath="/" indexable={true} pageType="WebPage">
+<WikiLayout title="WARDOGS Wiki: Guides, Money, Map, Weapons & Vehicles" description="WARDOGS Wiki for beginner help, money, map systems, loadouts, FOB building, vehicles, weapons, progression and community servers. Season 1 / Patch 0.11 research snapshot." canonicalPath="/" indexable={true} pageType="WebPage" primaryKeyword={seoKeywords[0]} keywords={seoKeywords.slice(1)} image="https://www.team17.com/hs-fs/hubfs/WD_Screenshot_ResidentialStreet_1_WD1.jpg?length=1200&name=WD_Screenshot_ResidentialStreet_1_WD1.jpg" imageAlt="WARDOGS battle taking place on a residential street" imageWidth={1200} imageHeight={675} alternates={[{lang:'en',path:'/'},...languageAlternates.filter((alternate)=>alternate.lang !== 'en')]}>
   <section class="home-hero portal-hero">
     <div class="home-hero-grid">
       <div class="home-hero-copy">
@@ -18,7 +21,7 @@ import VideoEmbed from '../components/wiki/VideoEmbed.astro';
         </div>
       </div>
       <figure class="hero-media">
-        <img src="https://www.team17.com/hs-fs/hubfs/WD_Screenshot_ResidentialStreet_1_WD1.jpg?length=1200&name=WD_Screenshot_ResidentialStreet_1_WD1.jpg" alt="WARDOGS battle taking place on a residential street" loading="eager" />
+        <img src="https://www.team17.com/hs-fs/hubfs/WD_Screenshot_ResidentialStreet_1_WD1.jpg?length=1200&name=WD_Screenshot_ResidentialStreet_1_WD1.jpg" alt="WARDOGS battle taking place on a residential street" loading="eager" decoding="async" fetchpriority="high" width="1200" height="675" />
         <figcaption>Large-scale three-team combat with vehicles, objectives and player-built positions.</figcaption>
       </figure>
     </div>
@@ -58,15 +61,15 @@ import VideoEmbed from '../components/wiki/VideoEmbed.astro';
     </div>
     <div class="visual-story-grid">
       <figure class="visual-story visual-story--large">
-        <img src="https://www.team17.com/hs-fs/hubfs/WD_Screenshot_River_2_WD1.jpg?length=1200&name=WD_Screenshot_River_2_WD1.jpg" alt="WARDOGS soldiers moving through a river battlefield" loading="lazy" />
+        <img src="https://www.team17.com/hs-fs/hubfs/WD_Screenshot_River_2_WD1.jpg?length=1200&name=WD_Screenshot_River_2_WD1.jpg" alt="WARDOGS soldiers moving through a river battlefield" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="675" />
         <figcaption><strong>Map control</strong><span>Randomized Control Zones pull the fight into different parts of the wider battlefield.</span><a href="/map/">Explore maps →</a></figcaption>
       </figure>
       <figure class="visual-story">
-        <img src="https://www.team17.com/hs-fs/hubfs/WD_Screenshot_Foundry_1_WD1.jpg?length=1200&name=WD_Screenshot_Foundry_1_WD1.jpg" alt="WARDOGS combat in an industrial foundry environment" loading="lazy" />
+        <img src="https://www.team17.com/hs-fs/hubfs/WD_Screenshot_Foundry_1_WD1.jpg?length=1200&name=WD_Screenshot_Foundry_1_WD1.jpg" alt="WARDOGS combat in an industrial foundry environment" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="675" />
         <figcaption><strong>Combined arms</strong><span>Transport, logistics, tanks, artillery and helicopters have distinct battlefield jobs.</span><a href="/vehicles/">Browse vehicles →</a></figcaption>
       </figure>
       <figure class="visual-story">
-        <img src="https://www.team17.com/hs-fs/hubfs/WD_Screenshot_house%20interior_WD2.jpg?length=1200&name=WD_Screenshot_house+interior_WD2.jpg" alt="WARDOGS close-quarters gameplay inside a building" loading="lazy" />
+        <img src="https://www.team17.com/hs-fs/hubfs/WD_Screenshot_house%20interior_WD2.jpg?length=1200&name=WD_Screenshot_house+interior_WD2.jpg" alt="WARDOGS close-quarters gameplay inside a building" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="675" />
         <figcaption><strong>Build & destroy</strong><span>FOBs and supplies change how teams reinforce and hold useful ground.</span><a href="/building/fob/">FOB guide →</a></figcaption>
       </figure>
     </div>
@@ -112,7 +115,7 @@ import VideoEmbed from '../components/wiki/VideoEmbed.astro';
       <div class="inline-link-row"><a href="/money/">Economy overview</a><a href="/loadouts/">Build a loadout</a><a href="/progression/">Role progression</a></div>
     </div>
     <figure class="portal-inline-media">
-      <img src="https://www.team17.com/hs-fs/hubfs/WD_Screenshot_ResidentialStreet_1_WD1.jpg?length=1200&name=WD_Screenshot_ResidentialStreet_1_WD1.jpg" alt="WARDOGS combat on a residential street" loading="lazy" />
+      <img src="https://www.team17.com/hs-fs/hubfs/WD_Screenshot_ResidentialStreet_1_WD1.jpg?length=1200&name=WD_Screenshot_ResidentialStreet_1_WD1.jpg" alt="WARDOGS combat on a residential street" loading="lazy" decoding="async" fetchpriority="low" width="1200" height="675" />
       <figcaption>Combat choices, positioning and equipment are tied to the persistent match economy.</figcaption>
     </figure>
   </section>
@@ -123,6 +126,14 @@ import VideoEmbed from '../components/wiki/VideoEmbed.astro';
     <div class="section-heading"><p class="eyebrow">SYSTEMS</p><h2>WARDOGS Battlefield Systems</h2></div>
     <p>Explore core battlefield mechanics including construction, bases, economy and equipment planning.</p>
     <div class="inline-link-row"><a href="/building/">Building Wiki</a><a href="/money/">Money System</a><a href="/loadouts/">Loadouts</a></div>
+  </section>
+
+  <section class="portal-section knowledge-entry-section">
+    <div class="section-heading section-heading--split"><div><p class="eyebrow">KNOWLEDGE PLATFORM</p><h2>Search data, then test a decision</h2></div><p>Browse connected entity records or use an interactive tool to narrow down the next guide you need.</p></div>
+    <div class="knowledge-entry-grid">
+      <a href="/database/"><strong>Game Database</strong><span>Weapons, vehicles and maps with parameters, relations and patch history.</span><small>Browse database →</small></a>
+      <a href="/tools/"><strong>Interactive Tools</strong><span>Build a loadout or compare weapon and vehicle roles.</span><small>Open tools →</small></a>
+    </div>
   </section>
 
   <section class="portal-section portal-section--trailer">

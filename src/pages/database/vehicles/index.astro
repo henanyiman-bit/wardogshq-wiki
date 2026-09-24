@@ -1,0 +1,15 @@
+---
+import WikiLayout from '../../../layouts/WikiLayout.astro';
+import { localizedAlternates } from '../../../i18n/utils';
+import { collectionSeoKeywords } from '../../../i18n/seo-keywords';
+import DatabaseCollection from '../../../components/database/DatabaseCollection.astro';
+import { databaseGroups } from '../../../data/database/global-entity-registry';
+const items = databaseGroups.vehicles;
+const seoKeywords = collectionSeoKeywords('en', 'vehicles');
+---
+<WikiLayout title="WARDOGS Vehicles Database" description="Structured WARDOGS vehicle data with battlefield roles, parameters, relationships and patch history." canonicalPath="/database/vehicles/" pageType="CollectionPage" datasetName="WARDOGS Vehicles Dataset" schemaItems={items} primaryKeyword={seoKeywords[0]} keywords={seoKeywords.slice(1)} alternates={localizedAlternates('database/vehicles')} xDefaultPath="/database/vehicles/">
+  <p class="eyebrow">DATABASE / VEHICLES</p><h1>Vehicles Database</h1>
+  <h2>Introduction</h2><DatabaseCollection intro="Compare representative transport, aircraft and armored platforms, then follow the relationship graph into logistics and role guides." items={items}/>
+  <section><h2>Vehicle roles and crew context</h2><p>Vehicle records are organized by battlefield purpose: movement, logistics, direct pressure or air mobility. A name alone does not explain whether a platform is appropriate for a task. The database therefore connects each entry to crew usage, related vehicles and the guides that explain its wider system.</p><p>Purchase prices, armor thresholds, top speeds and damage values are shown only when supported. Otherwise the parameter is <strong>Currently unconfirmed</strong>. Before committing persistent cash, compare the intended role and review the <a href="/money/logistics/">logistics guide</a> or <a href="/vehicles/ground/">ground vehicle guide</a>.</p></section>
+  <section><h2>Frequently asked questions</h2><h3>Can one player use every vehicle effectively?</h3><p>Some platforms are easier to operate alone, while others benefit from coordinated crew usage. Check the entity overview before purchasing.</p><h3>Where can I compare two vehicles?</h3><p>Use <a href="/tools/vehicle-compare/">Vehicle Compare</a>, then follow the entity links for version-bound details.</p></section>
+</WikiLayout>

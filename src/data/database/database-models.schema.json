@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wardogshq.wiki/schemas/database-models.schema.json",
+  "title": "WARDOGS Database Models",
+  "description": "Schema for weapon, armor, attachment, ammunition and loadout knowledge entities.",
+  "oneOf": [
+    { "$ref": "#/$defs/weapon" },
+    { "$ref": "#/$defs/armor" },
+    { "$ref": "#/$defs/attachment" },
+    { "$ref": "#/$defs/ammunition" },
+    { "$ref": "#/$defs/loadout" }
+  ],
+  "$defs": {
+    "value": {
+      "type": "object",
+      "required": ["value", "status"],
+      "properties": {
+        "value": { "type": ["string", "number", "boolean", "null"] },
+        "status": { "enum": ["confirmed", "observed", "currently_unconfirmed"] },
+        "source": { "type": "string" },
+        "note": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "relation": {
+      "type": "object",
+      "required": ["type", "targetId", "name", "url"],
+      "properties": {
+        "type": { "enum": ["belongs_to", "used_in", "compare_with", "related_guide", "related_system", "compatible_with", "uses"] },
+        "targetId": { "type": "string" },
+        "name": { "type": "string" },
+        "url": { "type": "string", "pattern": "^/" }
+      },
+      "additionalProperties": false
+    },
+    "patchRecord": {
+      "type": "object",
+      "required": ["version", "note"],
+      "properties": {
+        "version": { "type": "string" },
+        "date": { "type": "string" },
+        "note": { "type": "string" },
+        "changedFields": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "base": {
+      "type": "object",
+      "required": ["id", "name", "type", "image", "description", "attributes", "relations", "version", "patchHistory", "stats"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "type": { "enum": ["weapon", "armor", "attachment", "ammunition", "loadout"] },
+        "image": { "type": "string" },
+        "description": { "type": "string" },
+        "attributes": { "type": "object", "additionalProperties": { "$ref": "#/$defs/value" } },
+        "relations": { "type": "array", "items": { "$ref": "#/$defs/relation" } },
+        "version": { "type": "string" },
+        "patchHistory": { "type": "array", "items": { "$ref": "#/$defs/patchRecord" } },
+        "stats": { "type": "object", "additionalProperties": { "$ref": "#/$defs/value" } }
+      }
+    },
+    "weapon": { "allOf": [{ "$ref": "#/$defs/base" }, { "properties": { "type": { "const": "weapon" }, "compatibleAttachmentIds": { "type": "array", "items": { "type": "string" } }, "ammunitionIds": { "type": "array", "items": { "type": "string" } } }, "required": ["compatibleAttachmentIds", "ammunitionIds"] }] },
+    "armor": { "allOf": [{ "$ref": "#/$defs/base" }, { "properties": { "type": { "const": "armor" }, "compatibleLoadoutIds": { "type": "array", "items": { "type": "string" } } }, "required": ["compatibleLoadoutIds"] }] },
+    "attachment": { "allOf": [{ "$ref": "#/$defs/base" }, { "properties": { "type": { "const": "attachment" }, "compatibleWeaponIds": { "type": "array", "items": { "type": "string" } } }, "required": ["compatibleWeaponIds"] }] },
+    "ammunition": { "allOf": [{ "$ref": "#/$defs/base" }, { "properties": { "type": { "const": "ammunition" }, "compatibleWeaponIds": { "type": "array", "items": { "type": "string" } } }, "required": ["compatibleWeaponIds"] }] },
+    "loadout": { "allOf": [{ "$ref": "#/$defs/base" }, { "properties": { "type": { "const": "loadout" }, "weaponIds": { "type": "array", "items": { "type": "string" } }, "armorIds": { "type": "array", "items": { "type": "string" } }, "attachmentIds": { "type": "array", "items": { "type": "string" } }, "ammunitionIds": { "type": "array", "items": { "type": "string" } } }, "required": ["weaponIds", "armorIds", "attachmentIds", "ammunitionIds"] }] }
+  }
+}

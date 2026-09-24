@@ -1,0 +1,16 @@
+---
+import type { DatabaseEntity } from '../../data/database/global-entity-registry';
+const { intro, items } = Astro.props as { intro: string; items: DatabaseEntity[] };
+---
+<p class="database-intro">{intro}</p>
+<div class="knowledge-table-wrap">
+  <table class="knowledge-table">
+    <thead><tr><th>Thumbnail</th><th>Name</th><th>Parameters</th><th>Related data</th></tr></thead>
+    <tbody>{items.map((item) => <tr>
+      <td><a class="knowledge-thumb" href={item.url}>{item.image ? <img src={item.image} alt={`${item.name} thumbnail`} loading="lazy" decoding="async" fetchpriority="low" width="96" height="54" /> : <span>{item.name.slice(0,2)}</span>}</a></td>
+      <td><a href={item.url}><strong>{item.name}</strong></a><small>{item.description}</small></td>
+      <td><dl>{Object.entries({...item.stats,...item.attributes}).slice(0,4).map(([key,value]) => <div><dt>{key}</dt><dd>{value}</dd></div>)}</dl></td>
+      <td><nav>{item.relations.slice(0,3).map((relation) => <a href={relation.url}>{relation.name}</a>)}</nav></td>
+    </tr>)}</tbody>
+  </table>
+</div>

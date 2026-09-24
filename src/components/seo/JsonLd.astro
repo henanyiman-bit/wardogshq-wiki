@@ -1,5 +1,28 @@
 ---
-const { title, description, canonical, pageType='WebPage' } = Astro.props;
+interface SchemaItem { name: string; url: string }
+interface SchemaRelation { url: string }
+interface SchemaEntity { name: string; type: string; description: string; relations: SchemaRelation[] }
+interface Props {
+  title: string;
+  description: string;
+  canonical: string;
+  pageType?: string;
+  schemaItems?: SchemaItem[];
+  datasetName?: string;
+  entity?: SchemaEntity;
+  keywords?: string[];
+  image?: string;
+  imageAlt?: string;
+  imageWidth?: number;
+  imageHeight?: number;
+  inLanguage?: string;
+  dateModified?: Date | string;
+  authorName?: string;
+  reviewerName?: string;
+}
+const { title, description, canonical, pageType='WebPage', schemaItems=[], datasetName, entity, keywords=[], image='', imageAlt=title, imageWidth, imageHeight, inLanguage='en', dateModified, authorName='WARDOGS Wiki Editorial Team', reviewerName='WARDOGS Wiki Editorial Team' } = Astro.props as Props;
+const organizationId = new URL('/', Astro.site).href + '#organization';
+const normalizedDateModified = dateModified ? new Date(dateModified).toISOString() : undefined;
 const url = new URL(canonical);
 const parts = url.pathname.split('/').filter(Boolean);
 const breadcrumbItems = [
@@ -11,28 +34,91 @@ const breadcrumbItems = [
     item: new URL('/' + parts.slice(0, index + 1).join('/') + '/', Astro.site).href,
   })),
 ];
-const graph = [
+const graph: Record<string, unknown>[] = [
   {
     '@type': pageType,
     '@id': canonical + '#page',
     name: title,
     description,
     url: canonical,
+    inLanguage,
+    ...(keywords.length ? { keywords: [...new Set(keywords)].join(', ') } : {}),
     isPartOf: { '@id': new URL('/', Astro.site).href + '#website' },
+    author: { '@id': organizationId },
+    reviewedBy: { '@id': organizationId },
+    publisher: { '@id': organizationId },
+    ...(normalizedDateModified ? { dateModified: normalizedDateModified } : {}),
   },
   {
     '@type': 'WebSite',
     '@id': new URL('/', Astro.site).href + '#website',
     name: 'WARDOGS Wiki',
     url: new URL('/', Astro.site).href,
+    publisher: { '@id': organizationId },
+  },
+  {
+    '@type': 'Organization',
+    '@id': organizationId,
+    name: authorName,
+    alternateName: reviewerName,
+    url: new URL('/about/', Astro.site).href,
+    publishingPrinciples: new URL('/editorial-policy/', Astro.site).href,
   },
 ];
+if (image) {
+  const imageObject = {
+    '@type': 'ImageObject',
+    '@id': canonical + '#primaryimage',
+    contentUrl: image,
+    url: image,
+    caption: imageAlt,
+    ...(imageWidth ? { width: imageWidth } : {}),
+    ...(imageHeight ? { height: imageHeight } : {}),
+  };
+  graph.push(imageObject);
+  (graph[0] as Record<string, unknown>).primaryImageOfPage = { '@id': canonical + '#primaryimage' };
+  (graph[0] as Record<string, unknown>).image = { '@id': canonical + '#primaryimage' };
+}
 if (parts.length) {
   graph.push({
     '@type': 'BreadcrumbList',
     '@id': canonical + '#breadcrumb',
     itemListElement: breadcrumbItems,
   });
+}
+if (datasetName) {
+  graph.push({
+    '@type': 'Dataset',
+    '@id': canonical + '#dataset',
+    name: datasetName,
+    description,
+    url: canonical,
+    version: 'Season 1 / Patch 0.11',
+  });
+}
+if (schemaItems.length) {
+  graph.push({
+    '@type': 'ItemList',
+    '@id': canonical + '#items',
+    numberOfItems: schemaItems.length,
+    itemListElement: schemaItems.map((item, index) => ({
+      '@type': 'ListItem', position: index + 1, name: item.name, url: new URL(item.url, Astro.site).href,
+    })),
+  });
+}
+if (entity) {
+  const entityNode: Record<string, unknown> = {
+    '@type': 'Thing',
+    '@id': canonical + '#entity',
+    name: entity.name,
+    description: entity.description,
+    url: canonical,
+    additionalType: entity.type,
+    relatedLink: entity.relations.map((relation) => new URL(relation.url, Astro.site).href),
+    subjectOf: { '@id': canonical + '#page' },
+  };
+  if (image) entityNode.image = { '@id': canonical + '#primaryimage' };
+  graph.push(entityNode);
 }
 const data = { '@context': 'https://schema.org', '@graph': graph };
 ---

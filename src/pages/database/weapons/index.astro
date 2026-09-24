@@ -1,0 +1,15 @@
+---
+import WikiLayout from '../../../layouts/WikiLayout.astro';
+import { localizedAlternates } from '../../../i18n/utils';
+import { collectionSeoKeywords } from '../../../i18n/seo-keywords';
+import DatabaseCollection from '../../../components/database/DatabaseCollection.astro';
+import { databaseGroups } from '../../../data/database/global-entity-registry';
+const items = databaseGroups.weapons;
+const seoKeywords = collectionSeoKeywords('en', 'weapons');
+---
+<WikiLayout title="WARDOGS Weapons Database" description="Structured WARDOGS weapon data with roles, parameters, relationships and patch history." canonicalPath="/database/weapons/" pageType="CollectionPage" datasetName="WARDOGS Weapons Dataset" schemaItems={items} primaryKeyword={seoKeywords[0]} keywords={seoKeywords.slice(1)} alternates={localizedAlternates('database/weapons')} xDefaultPath="/database/weapons/">
+  <p class="eyebrow">DATABASE / WEAPONS</p><h1>Weapons Database</h1>
+  <h2>Introduction</h2><DatabaseCollection intro="Browse a focused weapon index. Parameters are version-bound, while each entry connects to comparisons, loadouts and broader combat systems." items={items}/>
+  <section><h2>Reading weapon records</h2><p>A weapon entry separates identification, combat role and supported observations. Class labels help navigation, but they do not replace context: effective use depends on range, positioning, team composition and the cost of the full loadout. Exact damage, recoil and attachment effects are marked <strong>Currently unconfirmed</strong> when the project does not have reliable evidence.</p><p>Use <a href="/tools/weapon-compare/">Weapon Compare</a> to choose two references, then open their full entity pages. The <a href="/weapons/builds/">weapon builds guide</a> explains why a build should be evaluated as a complete kit rather than an isolated number.</p></section>
+  <section><h2>Frequently asked questions</h2><h3>Which weapon is best?</h3><p>There is no universal answer. Start with role, engagement distance and budget, then review the <a href="/weapons/best-weapons/">best weapons guide</a> for contextual recommendations.</p><h3>Are all numeric weapon stats confirmed?</h3><p>No. Any unsupported precision remains <strong>Currently unconfirmed</strong>.</p></section>
+</WikiLayout>

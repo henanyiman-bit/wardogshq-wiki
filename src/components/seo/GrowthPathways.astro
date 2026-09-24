@@ -1,0 +1,25 @@
+---
+import { getGrowthPathways } from '../../data/seo/growth-loop';
+
+interface Props { path: string }
+const { path } = Astro.props as Props;
+const pathway = getGrowthPathways(path);
+---
+{pathway && pathway.links.length > 0 && (
+  <section class="growth-pathways" aria-labelledby="growth-pathways-title" data-topic-cluster={pathway.cluster}>
+    <div class="growth-pathways__intro">
+      <p class="eyebrow">Continue your research</p>
+      <h2 id="growth-pathways-title">From overview to battlefield decision</h2>
+      <p>Follow the topic through reference data, comparison context, and a practical next step.</p>
+    </div>
+    <nav aria-label="Related research path">
+      {pathway.links.map((item) => (
+        <a href={item.href}>
+          <small>{item.stage}</small>
+          <strong>{item.label}</strong>
+          <span>{item.description}</span>
+        </a>
+      ))}
+    </nav>
+  </section>
+)}

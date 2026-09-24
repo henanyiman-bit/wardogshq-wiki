@@ -2,6 +2,11 @@
 import { getCollection, render } from 'astro:content';
 import WikiLayout from '../layouts/WikiLayout.astro';
 import PageSidebar from '../components/wiki/PageSidebar.astro';
+import EntityKnowledgePanel from '../components/database/EntityKnowledgePanel.astro';
+import EditorialTrustPanel from '../components/wiki/EditorialTrustPanel.astro';
+import { getEntityForPath } from '../data/database/global-entity-registry';
+import { localizedAlternates } from '../i18n/utils';
+import { localizedGuideRoutes } from '../i18n/guide-pages';
 export async function getStaticPaths() {
   const pages = await getCollection('wiki');
   return pages.filter((page) => page.data.canonicalPath !== '/building/').map((page) => {
@@ -13,13 +18,18 @@ export async function getStaticPaths() {
 const { page } = Astro.props;
 const { Content } = await render(page);
 const contentOwnsH1 = new Set(['/money/', '/map/', '/loadouts/', '/progression/']).has(page.data.canonicalPath);
+const entity = getEntityForPath(page.data.canonicalPath, page.data.title);
+const localizedSlug = page.data.canonicalPath.replace(/^\/+|\/+$/g, '');
+const hasLocalizedVersion = localizedSlug === 'guide' || localizedGuideRoutes.includes(localizedSlug as (typeof localizedGuideRoutes)[number]) || page.id.includes('/entities/');
 ---
-<WikiLayout title={page.data.title} description={page.data.description} canonicalPath={page.data.canonicalPath} indexable={page.data.indexable} pageType={page.data.pageType === 'archive' || page.data.pageType === 'hub' ? 'CollectionPage' : 'Article'}>
+<WikiLayout title={page.data.title} description={page.data.description} canonicalPath={page.data.canonicalPath} indexable={page.data.indexable} pageType={page.data.pageType === 'archive' || page.data.pageType === 'hub' ? 'CollectionPage' : 'Article'} primaryKeyword={page.data.primaryKeyword} entity={entity} image={entity?.image} imageAlt={entity?.image ? `${entity.name} WARDOGS ${entity.type} reference` : undefined} alternates={hasLocalizedVersion ? localizedAlternates(localizedSlug) : []} xDefaultPath={page.data.canonicalPath} showAd={true} adPlacement={entity ? 'entity' : 'wiki'} dateModified={page.data.updated}>
   <div class="wiki-content-grid">
     <div class="wiki-main">
       <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">WARDOGS Wiki</a><span>›</span><span>{page.data.title}</span></nav>
       {!contentOwnsH1 && <h1>{page.data.title}</h1>}
       <Content />
+      {entity && <EntityKnowledgePanel entity={entity} />}
+      <EditorialTrustPanel updated={page.data.updated} />
     </div>
     <PageSidebar updated={page.data.updated} pageType={page.data.pageType} />
   </div>
